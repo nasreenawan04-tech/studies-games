@@ -10,16 +10,16 @@ import { searchAndFilterTools } from '@/lib/search';
 import { Target, Puzzle, Brain, Lightbulb, Search, Plus, X, Divide } from 'lucide-react';
 
 const LogicGames = () => {
-  const [location] = useLocation();
+  const [location, setLocation] = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredTools, setFilteredTools] = useState(tools.filter(tool => tool.category === 'logic'));
 
   // Parse URL parameters
   useEffect(() => {
-    const urlParams = new URLSearchParams(location.split('?')[1] || '');
+    const urlParams = new URLSearchParams(window.location.search);
     const searchParam = urlParams.get('search') || '';
     setSearchQuery(searchParam);
-  }, [location]);
+  }, []);
 
   // Filter games based on search
   useEffect(() => {
@@ -28,7 +28,12 @@ const LogicGames = () => {
   }, [searchQuery]);
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
+    const newQuery = e.target.value;
+    setSearchQuery(newQuery);
+    
+    // Update URL to reflect search state
+    const newUrl = newQuery ? `/logic-games?search=${encodeURIComponent(newQuery)}` : '/logic-games';
+    setLocation(newUrl);
   };
 
   return (
@@ -40,7 +45,7 @@ const LogicGames = () => {
         <meta property="og:title" content="Logic & Puzzle Games - 32+ Free Brain Training Games | DapsiGames" />
         <meta property="og:description" content="Free logic games including sudoku solver, chess tactics, and 29+ more puzzle games." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dapsiwow.com/logic-games" />
+        <link rel="canonical" href="https://dapsigames.com/logic-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-logic-games">
