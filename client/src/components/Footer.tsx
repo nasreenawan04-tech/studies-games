@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-xl font-bold">DapsiGames</span>
             </div>
             <p className="text-neutral-300 leading-relaxed">
-              Educational games for effective learning. Fun, engaging, and completely free.
+              Your go-to platform for educational study games. Learn through play - fast, free, and always available.
             </p>
           </div>
 
@@ -35,55 +35,25 @@ const Footer = () => {
 
           {/* Categories */}
           <div>
-            <h4 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-4">Game Categories</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/math-games" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Math Games
-                </Link>
-              </li>
-              <li>
-                <Link href="/science-games" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Science Games
-                </Link>
-              </li>
-              <li>
-                <Link href="/language-games" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Language Games
-                </Link>
-              </li>
-              <li>
-                <Link href="/memory-games" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Memory Games
-                </Link>
-              </li>
-              <li>
-                <Link href="/logic-games" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Logic Games
-                </Link>
-              </li>
+            <h3 className="text-lg font-semibold mb-6">Game Categories</h3>
+            <ul className="space-y-3 text-neutral-300">
+              <li><Link href="/math-games" className="hover:text-white transition-colors" data-testid="link-math-games">Math Games</Link></li>
+              <li><Link href="/science-games" className="hover:text-white transition-colors" data-testid="link-science-games">Science Games</Link></li>
+              <li><Link href="/language-games" className="hover:text-white transition-colors" data-testid="link-language-games">Language Games</Link></li>
+              <li><Link href="/memory-games" className="hover:text-white transition-colors" data-testid="link-memory-games">Memory Games</Link></li>
+              <li><Link href="/logic-games" className="hover:text-white transition-colors" data-testid="link-logic-games">Logic Games</Link></li>
             </ul>
           </div>
 
           {/* Support */}
           <div>
-            <h4 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200 mb-4">Support</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/privacy-policy" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms-of-service" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <a href="mailto:support@dapsiwow.com" className="text-neutral-600 dark:text-neutral-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  Support
-                </a>
-              </li>
+            <h3 className="text-lg font-semibold mb-6">Company</h3>
+            <ul className="space-y-3 text-neutral-300">
+              <li><Link href="/about" className="hover:text-white transition-colors" data-testid="link-about-us">About Us</Link></li>
+              <li><Link href="/help" className="hover:text-white transition-colors" data-testid="link-help-center">Help Center</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors" data-testid="link-contact-us">Contact Us</Link></li>
+              <li><Link href="/privacy" className="hover:text-white transition-colors" data-testid="link-privacy-policy">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-white transition-colors" data-testid="link-terms-of-service">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
@@ -92,7 +62,7 @@ const Footer = () => {
         <div className="border-t border-neutral-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-neutral-400 text-center md:text-left mb-4 md:mb-0">
-              <p>© {currentYear} DapsiGames. All rights reserved. Made with ❤️ for learning.</p>
+              <p>© {currentYear} DapsiGames.com. All rights reserved. Made with ❤️ for learning.</p>
             </div>
             <div className="text-neutral-400 text-center md:text-right">
               <p className="flex items-center justify-center md:justify-end">

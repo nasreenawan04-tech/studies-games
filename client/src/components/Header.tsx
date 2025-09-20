@@ -47,25 +47,22 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
-            <Link href="/" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              Home
-            </Link>
-            <Link href="/games" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              All Games
-            </Link>
-            <Link href="/math-games" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              Math
-            </Link>
-            <Link href="/science-games" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              Science
-            </Link>
-            <Link href="/language-games" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              Language
-            </Link>
-            <Link href="/about-us" className="text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
-              About
-            </Link>
+          <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/games" className="text-neutral-600 hover:text-blue-600 px-3 py-2 rounded-lg transition-colors" data-testid="nav-games">
+            All Games
+          </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`text-neutral-600 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200 font-medium ${
+                  location === link.href ? 'text-blue-500 dark:text-blue-400' : ''
+                }`}
+                data-testid={`link-${link.label.toLowerCase().replace(' ', '-')}`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Search and Mobile Menu */}
@@ -103,31 +100,21 @@ const Header = () => {
           data-testid="mobile-menu"
           aria-label="Mobile navigation"
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
-            <Link href="/" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Home
-            </Link>
-            <Link href="/games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+          <div className="px-4 py-3 space-y-3">
+            <Link href="/games" className="block px-4 py-2 text-neutral-600 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors" data-testid="mobile-nav-games">
               All Games
             </Link>
-            <Link href="/math-games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Math Games
-            </Link>
-            <Link href="/science-games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Science Games
-            </Link>
-            <Link href="/language-games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Language Games
-            </Link>
-            <Link href="/memory-games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Memory Games
-            </Link>
-            <Link href="/logic-games" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              Logic Games
-            </Link>
-            <Link href="/about-us" className="block px-3 py-2 text-neutral-700 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              About
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block text-neutral-600 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+                data-testid={`mobile-link-${link.label.toLowerCase().replace(' ', '-')}`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
         </nav>
       )}

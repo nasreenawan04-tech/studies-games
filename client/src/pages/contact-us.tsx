@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -26,23 +27,23 @@ const ContactUs = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
+    
     try {
       // EmailJS configuration - get from environment variables
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
+      
       // Check if EmailJS is properly configured
       if (!serviceId || !templateId || !publicKey) {
         toast({
           title: "Configuration Error",
-          description: "Email service is not properly configured. Please contact us directly at support@dapsigames.com",
+          description: "Email service is not properly configured. Please contact us directly at saifkhan09@dapsiwow.com",
           variant: "destructive"
         });
         return;
       }
-
+      
       // Template parameters for EmailJS
       const templateParams = {
         from_name: formData.name,
@@ -53,21 +54,21 @@ const ContactUs = () => {
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
-
+      
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for your message! We'll get back to you within 24 hours.",
         variant: "default"
       });
-
+      
       // Reset form
       setFormData({ name: '', email: '', subject: '', message: '' });
-
+      
     } catch (error) {
       console.error('Error sending message:', error);
       toast({
         title: "Failed to Send Message",
-        description: "Sorry, there was an error sending your message. Please try again or contact us directly at support@dapsigames.com",
+        description: "Sorry, there was an error sending your message. Please try again or contact us directly at saifkhan09@dapsiwow.com",
         variant: "destructive"
       });
     } finally {
@@ -78,25 +79,25 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - DapsiGames | Get Support & Feedback</title>
-        <meta name="description" content="Contact DapsiGames for support, feedback, or questions about our educational games. We're here to help!" />
-        <meta name="keywords" content="contact DapsiGames, support, feedback, help, educational games" />
-        <meta property="og:title" content="Contact Us - DapsiGames | Get Support & Feedback" />
-        <meta property="og:description" content="Contact DapsiGames for support, feedback, or questions about our educational games." />
+        <title>Contact Us - Get in Touch with DapsiWow</title>
+        <meta name="description" content="Contact DapsiWow for support, feedback, or suggestions. We're here to help you make the most of our free online tools." />
+        <meta name="keywords" content="contact dapsiwow, support, feedback, suggestions, help" />
+        <meta property="og:title" content="Contact Us - Get in Touch with DapsiWow" />
+        <meta property="og:description" content="Contact DapsiWow for support, feedback, or suggestions. We're here to help you make the most of our free online tools." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/contact" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-contact-us">
         <Header />
-
+        
         <main className="flex-1">
           {/* Hero Section */}
           <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6" data-testid="text-page-title">
-                  Contact <span className="text-blue-600">DapsiGames</span>
+                  Contact <span className="text-blue-600">DapsiWow</span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
                   We'd love to hear from you. Send us a message and we'll respond as soon as possible.
@@ -123,7 +124,7 @@ const ContactUs = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                         placeholder="Your full name"
                       />
                     </div>
@@ -139,7 +140,7 @@ const ContactUs = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                         placeholder="your.email@example.com"
                       />
                     </div>
@@ -154,12 +155,12 @@ const ContactUs = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
                       >
                         <option value="">Select a subject</option>
                         <option value="general">General Inquiry</option>
                         <option value="support">Technical Support</option>
-                        <option value="feature">New Game Suggestion</option>
+                        <option value="feature">Feature Request</option>
                         <option value="bug">Bug Report</option>
                         <option value="partnership">Partnership</option>
                         <option value="other">Other</option>
@@ -177,8 +178,8 @@ const ContactUs = () => {
                         onChange={handleChange}
                         required
                         rows={6}
-                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical"
-                        placeholder="Tell us about the game you'd like to play or any feedback you have..."
+                        className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent resize-vertical"
+                        placeholder="Tell us how we can help you..."
                       ></textarea>
                     </div>
 
@@ -214,7 +215,7 @@ const ContactUs = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Email</h3>
-                          <p className="text-neutral-600" data-testid="text-contact-email">support@dapsigames.com</p>
+                          <p className="text-neutral-600" data-testid="text-contact-email">saifkhan09@dapsiwow.com</p>
                         </div>
                       </div>
 
@@ -236,7 +237,7 @@ const ContactUs = () => {
                           <h3 className="font-semibold text-neutral-800">Quick Help</h3>
                           <p className="text-neutral-600">
                             <a href="/help" className="text-blue-600 hover:underline">
-                              Check our Game Guides
+                              Check our Help Center
                             </a>
                           </p>
                         </div>
@@ -245,23 +246,23 @@ const ContactUs = () => {
                   </div>
 
                   <div className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl p-8">
-                    <h3 className="text-xl font-bold text-neutral-800 mb-4">We're here to help you learn and play!</h3>
+                    <h3 className="text-xl font-bold text-neutral-800 mb-4">We're here to help!</h3>
                     <p className="text-neutral-600 mb-4">
-                      Whether you have a question about a game, need help with a concept, or want to suggest a new game,
+                      Whether you have a question, need technical support, or want to suggest a new tool, 
                       we're always happy to hear from you.
                     </p>
                     <ul className="text-sm text-neutral-600 space-y-2">
                       <li className="flex items-center">
                         <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
-                        24-hour response time for game-related queries
+                        24-hour response time
                       </li>
                       <li className="flex items-center">
                         <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
-                        Friendly support team dedicated to your learning journey
+                        Friendly support team
                       </li>
                       <li className="flex items-center">
                         <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
-                        We value your feedback on our study games
+                        We value your feedback
                       </li>
                     </ul>
                   </div>
@@ -270,7 +271,7 @@ const ContactUs = () => {
             </div>
           </section>
         </main>
-
+        
         <Footer />
       </div>
     </>
