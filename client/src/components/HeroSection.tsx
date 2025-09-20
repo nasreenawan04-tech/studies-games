@@ -58,7 +58,7 @@ const HeroSection = () => {
           Learn Through Play - 150+ Free Study Games
         </h1>
         <p className="text-xl lg:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
-          Transform your learning with engaging educational games across math, science, language, memory, and logic. No sign-up required.
+          Transform your studying with engaging educational games across math, science, language, memory, and logic. No sign-up required.
         </p>
         
         {/* Search Bar */}

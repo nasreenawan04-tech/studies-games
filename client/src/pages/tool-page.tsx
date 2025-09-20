@@ -62,8 +62,8 @@ const ToolPage = () => {
     <>
       <Helmet>
         <title>{tool.name} - Free Educational Game | DapsiGames</title>
-        <meta name="description" content={`Play ${tool.name}: ${tool.description}. Free educational game - no registration required.`} />
-        <meta name="keywords" content={`${tool.name}, educational games, ${tool.category} games, free learning games`} />
+        <meta name="description" content={`Play ${tool.name}: ${tool.description}. Free study game - no registration required.`} />
+        <meta name="keywords" content={`${tool.name}, study games, ${tool.category} games, free learning games`} />
         <link rel="canonical" href={`https://dapsigames.com/games/${tool.id}`} />
       </Helmet>
 

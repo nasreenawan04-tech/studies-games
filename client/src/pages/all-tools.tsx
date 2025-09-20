@@ -100,9 +100,9 @@ const AllTools = () => {
   return (
     <>
       <Helmet>
-        <title>All Study Games - 150+ Free Educational Games | Math, Science, Language, Memory & Logic</title>
-        <meta name="description" content="Browse all 150+ free educational games including Math Adventures, Science Simulations, Language Learning, Memory Training, and Logic Puzzles. No registration required." />
-        <meta name="keywords" content="educational games, study games, math games, science games, language games, memory games, logic games" />
+        <title>All Study Games - 150+ Free Educational Study Games | Math, Science, Language, Memory & Logic</title>
+        <meta name="description" content="Browse all 150+ free study games including Math Adventures, Science Simulations, Language Learning, Memory Training, and Logic Puzzles. No registration required." />
+        <meta name="keywords" content="study games, educational games, math games, science games, language games, memory games, logic games" />
         <link rel="canonical" href="/games" />
       </Helmet>
 
@@ -125,17 +125,17 @@ const AllTools = () => {
                 </div>
                 
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-testid="text-page-title">
-                  Complete Games Directory
+                  Complete Study Games Directory
                 </h1>
                 <p className="text-xl lg:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto leading-relaxed">
-                  Access our complete collection of 150+ educational games. Everything you need for math learning, science exploration, language development, memory training, and logic puzzles in one place.
+                  Access our complete collection of 150+ study games. Everything you need for math learning, science exploration, language development, memory training, and logic puzzles in one place.
                 </p>
 
                 {/* Trust Indicators */}
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 max-w-2xl lg:max-w-4xl mx-auto mb-12">
                   <div className="text-center">
                     <div className="text-2xl lg:text-3xl font-bold mb-1">{tools.length}+</div>
-                    <div className="text-blue-100 text-sm">Free Tools</div>
+                    <div className="text-blue-100 text-sm">Study Games</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl lg:text-3xl font-bold mb-1">1M+</div>
@@ -159,7 +159,7 @@ const AllTools = () => {
                     </div>
                     <input
                       type="text"
-                      placeholder="Search through 150+ educational games..."
+                      placeholder="Search through 150+ study games..."
                       value={searchQuery}
                       onChange={handleSearchChange}
                       className="w-full py-4 pl-12 pr-20 text-lg text-neutral-800 bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 focus:bg-white transition-all duration-200"

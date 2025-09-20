@@ -11,11 +11,11 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>DapsiGames: 150+ Free Educational Games for Learning</title>
-        <meta name="description" content="Transform your learning with engaging study games across math, science, language, memory, and logic. Play 150+ educational games designed to make studying fun and effective. No registration required!" />
-        <meta name="keywords" content="DapsiGames, educational games, learning games, math games, science games, language games, memory games, logic puzzles, brain training, free study games, educational activities" />
-        <meta property="og:title" content="DapsiGames: 150+ Free Educational Games for Learning" />
-        <meta property="og:description" content="Transform your learning with engaging study games across math, science, language, memory, and logic. Play 150+ educational games designed to make studying fun and effective." />
+        <title>DapsiGames: 150+ Free Study Games for Learning</title>
+        <meta name="description" content="Transform your studying with engaging educational games across math, science, language, memory, and logic. Play 150+ study games designed to make learning fun and effective. No registration required!" />
+        <meta name="keywords" content="DapsiGames, study games, educational games, learning games, math games, science games, language games, memory games, logic puzzles, brain training, free study games, educational activities" />
+        <meta property="og:title" content="DapsiGames: 150+ Free Study Games for Learning" />
+        <meta property="og:description" content="Transform your studying with engaging educational games across math, science, language, memory, and logic. Play 150+ study games designed to make learning fun and effective." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dapsiwow.com/" />
         <script type="application/ld+json">
@@ -224,11 +224,11 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  What is DapsiGames?
+                  What is DapsiGames Study Hub?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                  DapsiGames is your ultimate educational gaming platform featuring 150+ engaging study games completely free to play. 
-                  No registration required, no hidden fees, no software downloads - just fun educational games that make learning effective 
+                  DapsiGames is your ultimate study games platform featuring 150+ engaging educational games completely free to play. 
+                  No registration required, no hidden fees, no software downloads - just fun study games that make learning effective 
                   and enjoyable across all devices.
                 </p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -269,27 +269,27 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  Why Choose DapsiGames?
+                  Why Choose DapsiGames Study Hub?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  We've created the most engaging collection of educational games to help you learn smarter, not harder. 
+                  We've created the most engaging collection of study games to help you learn smarter, not harder. 
                   From interactive math challenges to virtual science labs and brain training exercises, we've got you covered with 
-                  educational games that make learning fun and effective.
+                  study games that make learning fun and effective.
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                 <div>
                   <h3 className="text-3xl font-bold text-neutral-800 mb-6">
-                    Educational Games, Zero Cost
+                    Study Games, Zero Cost
                   </h3>
                   <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-                    Access high-quality educational games designed by learning experts and game developers. Our platform offers engaging 
+                    Access high-quality study games designed by learning experts and game developers. Our platform offers engaging 
                     learning experiences that rival expensive educational software, but completely free and accessible through your web browser.
                   </p>
                   <p className="text-lg text-neutral-600 leading-relaxed">
                     Whether you're a student mastering math concepts, a teacher looking for classroom activities, or a parent supporting learning at home - 
-                    our games deliver effective education without the expensive price tag.
+                    our study games deliver effective education without the expensive price tag.
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-inner">
