@@ -68,7 +68,7 @@ const LogicGames = () => {
                     placeholder="Search logic games..."
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-emerald-200 transition-all duration-200"
+                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-green-200 transition-all duration-200"
                     data-testid="input-search-logic-games"
                   />
                   <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl flex items-center pointer-events-none">
@@ -111,23 +111,23 @@ const LogicGames = () => {
               <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
                 <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Logic Games</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-4 bg-emerald-50 rounded-xl">
-                    <Target className="w-6 h-6 text-emerald-600 mb-2 mx-auto" />
+                  <div className="text-center p-4 bg-green-50 rounded-xl">
+                    <Target className="w-6 h-6 text-green-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Sudoku Solver</h3>
                     <p className="text-sm text-neutral-600">Master sudoku puzzles with hints</p>
                   </div>
-                  <div className="text-center p-4 bg-teal-50 rounded-xl">
-                    <Puzzle className="w-6 h-6 text-teal-600 mb-2 mx-auto" />
+                  <div className="text-center p-4 bg-green-50 rounded-xl">
+                    <Puzzle className="w-6 h-6 text-green-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Chess Tactics</h3>
                     <p className="text-sm text-neutral-600">Improve chess strategy</p>
                   </div>
-                  <div className="text-center p-4 bg-cyan-50 rounded-xl">
-                    <Brain className="w-6 h-6 text-cyan-600 mb-2 mx-auto" />
+                  <div className="text-center p-4 bg-green-50 rounded-xl">
+                    <Brain className="w-6 h-6 text-green-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Brain Teasers</h3>
                     <p className="text-sm text-neutral-600">Challenge your mind</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-xl">
-                    <Lightbulb className="w-6 h-6 text-blue-600 mb-2 mx-auto" />
+                  <div className="text-center p-4 bg-green-50 rounded-xl">
+                    <Lightbulb className="w-6 h-6 text-green-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Logic Puzzles</h3>
                     <p className="text-sm text-neutral-600">Develop reasoning skills</p>
                   </div>
@@ -137,7 +137,7 @@ const LogicGames = () => {
           </section>
 
           {/* Why Logic Games Section */}
-          <section className="py-16 bg-gradient-to-br from-emerald-50 to-teal-50">
+          <section className="py-16 bg-gradient-to-br from-green-50 to-green-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
@@ -151,7 +151,7 @@ const LogicGames = () => {
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Brain className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Critical Thinking</h3>
@@ -161,7 +161,7 @@ const LogicGames = () => {
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Puzzle className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Problem Solving</h3>
@@ -171,7 +171,7 @@ const LogicGames = () => {
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Target className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Strategic Planning</h3>
@@ -181,7 +181,7 @@ const LogicGames = () => {
                 </div>
                 
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Lightbulb className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Creative Solutions</h3>
