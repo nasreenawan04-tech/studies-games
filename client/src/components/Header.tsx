@@ -53,9 +53,6 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
-            <Link href="/games" className="text-neutral-600 hover:text-blue-600 px-3 py-2 rounded-lg transition-colors whitespace-nowrap" data-testid="nav-games">
-              All Games
-            </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -113,14 +110,6 @@ const Header = () => {
             aria-label="Mobile navigation"
           >
             <div className="px-4 py-6 space-y-1">
-              <Link 
-                href="/games" 
-                className="block px-4 py-3 text-base font-medium text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-lg transition-colors" 
-                data-testid="mobile-nav-games"
-                onClick={handleLinkClick}
-              >
-                All Games
-              </Link>
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
