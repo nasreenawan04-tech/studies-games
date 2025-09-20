@@ -71,7 +71,7 @@ const PopularToolsSection = () => {
             className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             data-testid="button-view-all-games"
           >
-            View All 150+ Study Games
+            View All 30+ Study Games
           </button>
         </div>
       </div>

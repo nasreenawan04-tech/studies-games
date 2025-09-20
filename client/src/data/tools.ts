@@ -62,20 +62,12 @@ const toolsData: Tool[] = [
     href: '/games/geometry-genius'
   },
   {
-    id: 'percentage-calculator',
-    name: 'Percentage Calculator',
-    description: 'Calculate percentages, increases, decreases, and percentage differences',
+    id: 'percentage-puzzle',
+    name: 'Percentage Puzzle',
+    description: 'Master percentages through fun problem-solving challenges',
     category: 'math',
     icon: '%',
-    href: '/games/percentage-calculator'
-  },
-  {
-    id: 'business-loan-calculator',
-    name: 'Business Loan Calculator',
-    description: 'Calculate business loan payments and explore financial math concepts',
-    category: 'math',
-    icon: '💼',
-    href: '/games/business-loan-calculator'
+    href: '/games/percentage-puzzle'
   },
 
   // Science Games
@@ -121,12 +113,12 @@ const toolsData: Tool[] = [
     href: '/games/earth-science-lab'
   },
   {
-    id: 'cholesterol-risk-calculator',
-    name: 'Health Science Explorer',
-    description: 'Learn about cardiovascular health through interactive science games',
+    id: 'chemistry-lab',
+    name: 'Chemistry Lab',
+    description: 'Learn about chemical reactions and compounds through safe virtual experiments',
     category: 'science',
-    icon: '❤️',
-    href: '/games/cholesterol-risk-calculator'
+    icon: '🧪',
+    href: '/games/chemistry-lab'
   },
 
   // Language Games
@@ -172,12 +164,12 @@ const toolsData: Tool[] = [
     href: '/games/creative-writing'
   },
   {
-    id: 'word-counter',
-    name: 'Word Analysis Game',
-    description: 'Learn about word structure and text analysis through interactive counting games',
+    id: 'word-analysis',
+    name: 'Word Analysis',
+    description: 'Learn about word structure and text analysis through interactive games',
     category: 'language',
     icon: '🔢',
-    href: '/games/word-counter'
+    href: '/games/word-analysis'
   },
 
   // Memory Games
