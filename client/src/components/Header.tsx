@@ -48,6 +48,9 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/games" className="text-neutral-600 hover:text-blue-600 px-3 py-2 rounded-lg transition-colors" data-testid="nav-games">
+            All Games
+          </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -98,7 +101,9 @@ const Header = () => {
           aria-label="Mobile navigation"
         >
           <div className="px-4 py-3 space-y-3">
-
+            <Link href="/games" className="block px-4 py-2 text-neutral-600 hover:text-blue-600 hover:bg-neutral-50 rounded-lg transition-colors" data-testid="mobile-nav-games">
+              All Games
+            </Link>
             {navLinks.map((link) => (
               <Link
                 key={link.href}

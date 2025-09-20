@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <img 
+              <img
                 src={logoImage}
                 alt="DapsiWow Logo"
                 className="w-8 h-8 object-contain filter drop-shadow-sm"
@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="text-xl font-bold">DapsiGames</span>
             </div>
             <p className="text-neutral-300 leading-relaxed">
-              Free educational games to make learning fun and effective. No sign-up required, completely free forever.
+              Your go-to platform for educational study games. Learn through play - fast, free, and always available.
             </p>
           </div>
 

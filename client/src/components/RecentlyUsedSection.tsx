@@ -14,10 +14,10 @@ const RecentlyUsedSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 dark:text-neutral-100 mb-4">
-            Recently Used Tools
+            Recently Played Games
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            Quick access to tools you've used recently
+            Quick access to games you've played recently
           </p>
         </div>
 
@@ -32,11 +32,11 @@ const RecentlyUsedSection = () => {
 
         <div className="text-center">
           <Link
-            href="/tools"
+            href="/games"
             className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
-            data-testid="link-browse-all-tools"
+            data-testid="link-browse-all-games"
           >
-            Browse All Tools
+            Browse All Games
             <i className="fas fa-arrow-right ml-2"></i>
           </Link>
         </div>

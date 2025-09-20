@@ -36,8 +36,8 @@ const ToolRecommendations = ({ currentTool, maxRecommendations = 4 }: ToolRecomm
   return (
     <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-sm border border-gray-200 dark:border-neutral-700 p-6">
       <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100 mb-4 flex items-center">
-        <i className="fas fa-lightbulb text-yellow-500 mr-2"></i>
-        You might also like
+        <i className="fas fa-gamepad text-yellow-500 mr-2"></i>
+        Similar Games You Might Enjoy
       </h3>
       
       <div className="grid gap-3">
@@ -70,11 +70,11 @@ const ToolRecommendations = ({ currentTool, maxRecommendations = 4 }: ToolRecomm
       
       <div className="mt-4 pt-4 border-t border-gray-200 dark:border-neutral-600">
         <Link
-          href="/tools"
+          href="/games"
           className="text-sm text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium"
-          data-testid="link-browse-all-tools"
+          data-testid="link-browse-all-games"
         >
-          Browse all {tools.length}+ tools →
+          Browse all {tools.length}+ games →
         </Link>
       </div>
     </div>
