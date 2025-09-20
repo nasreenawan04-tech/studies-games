@@ -264,7 +264,7 @@ const Home = () => {
           <PopularToolsSection />
           <CategorySection />
 
-          {/* About Study Games Hub Section */}
+          {/* About DapsiGames Section */}
           <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
@@ -543,7 +543,7 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  How Study Games Hub Works
+                  How DapsiGames Works
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
                   Getting started is simple. No complicated setup, no subscriptions, no hidden fees.
@@ -599,7 +599,7 @@ const Home = () => {
                   Trusted by Learners Worldwide
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Join millions of students, educators, and lifelong learners who rely on Study Games Hub's 
+                  Join millions of students, educators, and lifelong learners who rely on DapsiGames' 
                   collection of engaging educational games for fun and effective learning. Our platform delivers 
                   consistent, enjoyable experiences that users trust for academic success.
                 </p>
@@ -653,10 +653,10 @@ const Home = () => {
 
               <div className="text-center mb-12">
                 <h3 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
-                  Why Students Love Study Games Hub
+                  Why Students Love DapsiGames
                 </h3>
                 <p className="text-lg text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Our platform serves students of all ages who want to make learning fun and effective. Here's how different learners engage with Study Games Hub:
+                  Our platform serves students of all ages who want to make learning fun and effective. Here's how different learners engage with DapsiGames:
                 </p>
               </div>
 
@@ -720,7 +720,7 @@ const Home = () => {
                         Start Learning Today
                       </h4>
                       <p className="text-neutral-700 mb-6 leading-relaxed text-center">
-                        Join millions of learners who engage with Study Games Hub for fun and effective education. 
+                        Join millions of learners who engage with DapsiGames for fun and effective education. 
                         No registration required - just click and start playing any game instantly.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
@@ -785,7 +785,7 @@ const Home = () => {
                   Frequently Asked Questions
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Everything you need to know about Study Games Hub's free educational games
+                  Everything you need to know about DapsiGames' free educational games
                 </p>
               </div>
 
@@ -796,7 +796,7 @@ const Home = () => {
                       Are all 150+ study games really free to play?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Yes! Every single game on Study Games Hub is completely free with no hidden costs, subscriptions, or premium upgrades. 
+                      Yes! Every single game on DapsiGames is completely free with no hidden costs, subscriptions, or premium upgrades. 
                       This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles. 
                       We believe educational games should be accessible to all learners.
                     </p>

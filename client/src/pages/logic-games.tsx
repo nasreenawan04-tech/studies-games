@@ -36,10 +36,10 @@ const LogicGames = () => {
   return (
     <>
       <Helmet>
-        <title>Logic & Puzzle Games - 32+ Free Brain Training Games | Study Games Hub</title>
+        <title>Logic & Puzzle Games - 32+ Free Brain Training Games | DapsiGames</title>
         <meta name="description" content="Free logic games including sudoku solver, chess tactics, brain teasers, and 29+ more puzzle games. Develop critical thinking and problem-solving skills." />
         <meta name="keywords" content="logic games, puzzle games, sudoku, chess tactics, brain teasers, critical thinking games, problem solving puzzles" />
-        <meta property="og:title" content="Logic & Puzzle Games - 32+ Free Brain Training Games | Study Games Hub" />
+        <meta property="og:title" content="Logic & Puzzle Games - 32+ Free Brain Training Games | DapsiGames" />
         <meta property="og:description" content="Free logic games including sudoku solver, chess tactics, and 29+ more puzzle games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/logic-games" />

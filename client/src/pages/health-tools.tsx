@@ -33,10 +33,10 @@ const HealthTools = () => {
   return (
     <>
       <Helmet>
-        <title>Science Games - 25+ Free Educational Science Games | Study Games Hub</title>
+        <title>Science Games - 25+ Free Educational Science Games | DapsiGames</title>
         <meta name="description" content="Free science games including periodic table quest, physics playground, biology explorer, and 22+ more interactive learning games." />
         <meta name="keywords" content="science games, chemistry games, physics games, biology games, earth science games, educational games" />
-        <meta property="og:title" content="Science Games - 25+ Free Educational Science Games | Study Games Hub" />
+        <meta property="og:title" content="Science Games - 25+ Free Educational Science Games | DapsiGames" />
         <meta property="og:description" content="Free science games including periodic table quest, physics playground, and 22+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/science-games" />

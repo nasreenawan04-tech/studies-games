@@ -36,10 +36,10 @@ const MemoryGames = () => {
   return (
     <>
       <Helmet>
-        <title>Memory Games - 25+ Free Memory Training Games | Study Games Hub</title>
+        <title>Memory Games - 25+ Free Memory Training Games | DapsiGames</title>
         <meta name="description" content="Free memory games including memory palace builder, sequence master, pattern recall, and 22+ more brain training games. Improve focus and cognitive abilities." />
         <meta name="keywords" content="memory games, brain training games, memory palace, pattern recognition, sequence memory, cognitive training games" />
-        <meta property="og:title" content="Memory Games - 25+ Free Memory Training Games | Study Games Hub" />
+        <meta property="og:title" content="Memory Games - 25+ Free Memory Training Games | DapsiGames" />
         <meta property="og:description" content="Free memory games including memory palace builder, sequence master, and 22+ more brain training games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/memory-games" />

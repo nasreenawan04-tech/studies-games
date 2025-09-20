@@ -33,10 +33,10 @@ const TextTools = () => {
   return (
     <>
       <Helmet>
-        <title>Language Games - 32+ Free Educational Language Games | Study Games Hub</title>
+        <title>Language Games - 32+ Free Educational Language Games | DapsiGames</title>
         <meta name="description" content="Free language games including vocabulary builder, spelling bee champion, grammar guardian, and 29+ more educational games." />
         <meta name="keywords" content="language games, vocabulary games, spelling games, grammar games, reading games, writing games" />
-        <meta property="og:title" content="Language Games - 32+ Free Educational Language Games | Study Games Hub" />
+        <meta property="og:title" content="Language Games - 32+ Free Educational Language Games | DapsiGames" />
         <meta property="og:description" content="Free language games including vocabulary builder, spelling bee champion, and 29+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/language-games" />

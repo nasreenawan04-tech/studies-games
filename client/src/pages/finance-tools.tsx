@@ -33,10 +33,10 @@ const FinanceTools = () => {
   return (
     <>
       <Helmet>
-        <title>Math Games - 36+ Free Educational Math Games | Study Games Hub</title>
+        <title>Math Games - 36+ Free Educational Math Games | DapsiGames</title>
         <meta name="description" content="Free math games including addition race, multiplication master, fraction frenzy, and 33+ more interactive learning games." />
         <meta name="keywords" content="math games, educational games, addition games, multiplication games, fraction games, algebra games, geometry games" />
-        <meta property="og:title" content="Math Games - 36+ Free Educational Math Games | Study Games Hub" />
+        <meta property="og:title" content="Math Games - 36+ Free Educational Math Games | DapsiGames" />
         <meta property="og:description" content="Free math games including addition race, multiplication master, and 33+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/math-games" />
