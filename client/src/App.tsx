@@ -47,7 +47,7 @@ function Router() {
         <Switch>
       <Route path="/" component={Home} />
       <Route path="/games" component={AllTools} />
-      <Route path="/games/:toolId" component={ToolPage} />
+      <Route path="/games/:gameId" component={ToolPage} />
 
       {/* Game category routes */}
       <Route path="/math-games" component={MathGames} />

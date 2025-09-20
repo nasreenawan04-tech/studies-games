@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -8,37 +7,36 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Learn More About DapsiWow</title>
-        <meta name="description" content="Learn about DapsiWow's mission to provide free, accessible online tools for everyone. Discover our story, values, and commitment to user privacy." />
-        <meta name="keywords" content="about dapsiwow, mission, free tools, online utilities, team" />
-        <meta property="og:title" content="About Us - Learn More About DapsiWow" />
-        <meta property="og:description" content="Learn about DapsiWow's mission to provide free, accessible online tools for everyone." />
+        <title>About Us - DapsiGames | Educational Gaming Platform</title>
+        <meta name="description" content="Learn about DapsiGames - your trusted source for educational games. Fun, engaging, and completely free games for effective learning." />
+        <meta name="keywords" content="about DapsiGames, educational games, study games, learning games" />
+        <meta property="og:title" content="About Us - DapsiGames | Educational Gaming Platform" />
+        <meta property="og:description" content="Learn about DapsiGames - your trusted source for educational games. Fun, engaging, and completely free." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/about" />
       </Helmet>
 
       <div className="min-h-screen bg-white">
         <Header />
-        
+
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6">
-                About <span className="text-blue-600">DapsiWow</span>
+                About <span className="text-blue-600">DapsiGames</span>
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                Empowering millions of users worldwide with free, accessible, and reliable online tools 
-                that make everyday tasks simpler and more efficient.
+                Transforming education through engaging, interactive study games
               </p>
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
                 <div className="text-center">
                   <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">1M+</div>
-                  <div className="text-neutral-600 font-medium">Happy Users</div>
+                  <div className="text-neutral-600 font-medium">Happy Learners</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">150+</div>
-                  <div className="text-neutral-600 font-medium">Free Tools</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">100+</div>
+                  <div className="text-neutral-600 font-medium">Study Games</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">99.9%</div>
@@ -62,14 +60,14 @@ const AboutUs = () => {
                   <Rocket className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h2 className="text-4xl font-bold text-neutral-800 mb-6">Our Mission</h2>
-                <p className="text-lg text-neutral-600 leading-relaxed mb-6">
-                  At DapsiWow, we believe that powerful digital tools should be accessible to everyone, regardless of 
-                  their technical expertise or budget. Our mission is to democratize access to essential online utilities 
-                  that help people be more productive, creative, and efficient in their daily lives.
+                <p className="text-lg text-neutral-600 mb-6">
+                  At DapsiGames, we believe that learning should be fun and engaging for everyone. 
+                  Our mission is to provide interactive, educational games that transform traditional 
+                  studying into enjoyable experiences that improve knowledge retention.
                 </p>
-                <p className="text-lg text-neutral-600 leading-relaxed">
-                  We're committed to breaking down barriers and making professional-grade tools available to students, 
-                  professionals, entrepreneurs, and anyone who needs them - completely free, forever.
+                <p className="text-lg text-neutral-600">
+                  We're committed to creating games that make complex subjects accessible through 
+                  play-based learning, helping students of all ages achieve their educational goals.
                 </p>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-yellow-100 rounded-3xl p-12 shadow-inner">
@@ -79,8 +77,8 @@ const AboutUs = () => {
                       <Users className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-neutral-800">For Everyone</h4>
-                      <p className="text-neutral-600 text-sm">Accessible to all skill levels</p>
+                      <h4 className="font-semibold text-neutral-800">For Learners</h4>
+                      <p className="text-neutral-600 text-sm">Accessible to all ages and skill levels</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
@@ -97,8 +95,8 @@ const AboutUs = () => {
                       <Shield className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-neutral-800">Privacy First</h4>
-                      <p className="text-neutral-600 text-sm">Your data stays secure and private</p>
+                      <h4 className="font-semibold text-neutral-800">Safe & Fun</h4>
+                      <p className="text-neutral-600 text-sm">Your data stays secure and learning is enjoyable</p>
                     </div>
                   </div>
                 </div>
@@ -115,8 +113,7 @@ const AboutUs = () => {
                 What We Offer
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                A comprehensive collection of 150+ free online tools across 4 main categories, 
-                designed to meet all your digital needs.
+                A comprehensive collection of educational games covering various subjects and skills.
               </p>
             </div>
 
@@ -125,14 +122,15 @@ const AboutUs = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
                   <Calculator className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">Finance Tools</h3>
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Math Games</h3>
                 <p className="text-neutral-600 mb-4">
-                  Advanced calculators for loans, mortgages, investments, taxes, and financial planning.
+                  Engaging games that reinforce math concepts from basic arithmetic to advanced algebra.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
-                  <li>• Loan & Mortgage Calculators</li>
-                  <li>• Investment & ROI Tools</li>
-                  <li>• Tax & Budget Planners</li>
+                  <li>• Addition & Subtraction</li>
+                  <li>• Multiplication & Division</li>
+                  <li>• Fractions & Decimals</li>
+                  <li>• Algebra & Geometry</li>
                 </ul>
               </div>
 
@@ -140,15 +138,15 @@ const AboutUs = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-6">
                   <Type className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">Text Tools</h3>
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Language Games</h3>
                 <p className="text-neutral-600 mb-4">
-                  Comprehensive text processing utilities for writers, editors, and content creators.
+                  Fun and interactive games to improve vocabulary, spelling, grammar, and reading comprehension.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
-                  <li>• Word & Character Counters</li>
-                  <li>• Text Formatters</li>
-                  <li>• Case Converters</li>
-                  <li>• Content Generators</li>
+                  <li>• Vocabulary Builders</li>
+                  <li>• Spelling Bees</li>
+                  <li>• Grammar Quizzes</li>
+                  <li>• Reading Comprehension</li>
                 </ul>
               </div>
 
@@ -156,15 +154,15 @@ const AboutUs = () => {
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mb-6">
                   <Activity className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">Health Tools</h3>
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Science Games</h3>
                 <p className="text-neutral-600 mb-4">
-                  Health and fitness calculators to help you maintain a healthy lifestyle.
+                  Explore scientific concepts through interactive simulations and challenges.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
-                  <li>• BMI & Body Fat Calculators</li>
-                  <li>• Calorie Counters</li>
-                  <li>• Fitness Trackers</li>
-                  <li>• Health Assessments</li>
+                  <li>• Biology Quizzes</li>
+                  <li>• Chemistry Experiments</li>
+                  <li>• Physics Puzzles</li>
+                  <li>• Earth Science Explorations</li>
                 </ul>
               </div>
             </div>
@@ -179,7 +177,7 @@ const AboutUs = () => {
                 Our Core Values
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                These principles guide everything we do and every decision we make at DapsiWow.
+                These principles guide everything we do and every decision we make at DapsiGames.
               </p>
             </div>
 
@@ -190,8 +188,8 @@ const AboutUs = () => {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Free Forever</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  All our tools are completely free to use with no hidden fees, subscriptions, or premium tiers. 
-                  Quality tools shouldn't cost a fortune.
+                  All our games are completely free to use with no hidden fees, subscriptions, or premium tiers. 
+                  Quality education shouldn't cost a fortune.
                 </p>
               </div>
 
@@ -202,7 +200,7 @@ const AboutUs = () => {
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
                 <p className="text-neutral-600 leading-relaxed">
                   We respect your privacy and don't store your personal data or require account creation. 
-                  Your information stays yours.
+                  Your learning journey stays yours.
                 </p>
               </div>
 
@@ -210,10 +208,10 @@ const AboutUs = () => {
                 <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Smile className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">User-Friendly</h3>
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Engaging & Fun</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  Our tools are designed to be intuitive and accessible to users of all technical levels. 
-                  Simplicity is our strength.
+                  Our games are designed to be fun and motivating, making learning an enjoyable experience. 
+                  Play and learn!
                 </p>
               </div>
 
@@ -221,10 +219,10 @@ const AboutUs = () => {
                 <div className="w-20 h-20 bg-gradient-to-r from-yellow-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
-                <h3 className="text-xl font-bold text-neutral-800 mb-4">Reliable</h3>
+                <h3 className="text-xl font-bold text-neutral-800 mb-4">Effective Learning</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  We maintain high standards of accuracy and reliability across all our tools and services. 
-                  You can depend on us.
+                  We focus on pedagogical principles to ensure our games enhance knowledge retention and understanding. 
+                  Learn effectively with us.
                 </p>
               </div>
             </div>
@@ -239,26 +237,26 @@ const AboutUs = () => {
                 Our Global Impact
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                DapsiWow serves millions of users worldwide, from students and professionals to entrepreneurs and hobbyists. 
-                We're proud to be part of a global community that values efficiency, productivity, and accessibility.
+                DapsiGames serves millions of learners worldwide, from young students to lifelong learners. 
+                We're proud to be part of a global community that values accessible and enjoyable education.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
                 <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-4">50M+</div>
-                <h4 className="text-lg font-semibold text-neutral-800 mb-2">Tasks Completed</h4>
-                <p className="text-neutral-600">Tools used to complete millions of tasks and projects worldwide</p>
+                <h4 className="text-lg font-semibold text-neutral-800 mb-2">Learning Sessions</h4>
+                <p className="text-neutral-600">Engaging gameplay sessions completed by learners worldwide</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
                 <div className="text-4xl lg:text-5xl font-bold text-yellow-600 mb-4">195</div>
                 <h4 className="text-lg font-semibold text-neutral-800 mb-2">Countries Served</h4>
-                <p className="text-neutral-600">Users from almost every country trust our platform daily</p>
+                <p className="text-neutral-600">Learners from almost every country engage with our games</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-blue-500 mb-4">15TB+</div>
-                <h4 className="text-lg font-semibold text-neutral-800 mb-2">Data Processed</h4>
-                <p className="text-neutral-600">Files and data securely processed through our tools</p>
+                <div className="text-4xl lg:text-5xl font-bold text-blue-500 mb-4">100+</div>
+                <h4 className="text-lg font-semibold text-neutral-800 mb-2">Games Available</h4>
+                <p className="text-neutral-600">A growing library of educational games across various subjects</p>
               </div>
             </div>
 
@@ -266,15 +264,15 @@ const AboutUs = () => {
               <div className="text-center mb-12">
                 <h3 className="text-3xl font-bold text-neutral-800 mb-4">Join Our Community</h3>
                 <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-                  Be part of a global community that believes in making powerful tools accessible to everyone.
+                  Be part of a global community that believes in making learning fun and accessible to everyone.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="/tools" 
+                  href="/games" 
                   className="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200 text-center"
                 >
-                  Start Using Tools
+                  Play Study Games
                 </a>
                 <a 
                   href="/contact" 
