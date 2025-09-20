@@ -1,51 +1,32 @@
 
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useState, useEffect } from 'react';
-import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
-import { tools } from '@/data/tools';
+import { getToolsByCategory } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
-import { Puzzle, Target, Brain, Lightbulb, Search, Plus, X, Divide } from 'lucide-react';
+import { Search, Puzzle, Brain, Lightbulb, Target, Gamepad2, TrendingUp, Zap, Award } from 'lucide-react';
 
 const LogicGames = () => {
-  const [location, setLocation] = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredTools, setFilteredTools] = useState(tools.filter(tool => tool.category === 'logic'));
-
-  // Parse URL parameters
-  useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const searchParam = urlParams.get('search') || '';
-    setSearchQuery(searchParam);
-  }, []);
-
-  // Filter games based on search
-  useEffect(() => {
-    const filtered = searchAndFilterTools(searchQuery, 'logic');
-    setFilteredTools(filtered);
-  }, [searchQuery]);
+  const logicGames = getToolsByCategory('logic');
+  const filteredGames = searchQuery ? searchAndFilterTools(searchQuery, 'logic') : logicGames;
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newQuery = e.target.value;
-    setSearchQuery(newQuery);
-    
-    // Update URL to reflect search state
-    const newUrl = newQuery ? `/logic-games?search=${encodeURIComponent(newQuery)}` : '/logic-games';
-    setLocation(newUrl);
+    setSearchQuery(e.target.value);
   };
 
   return (
     <>
       <Helmet>
-        <title>Logic & Puzzle Games - 32+ Free Brain Training Games | DapsiGames</title>
-        <meta name="description" content="Free logic games including sudoku solver, chess tactics, brain teasers, and 29+ more puzzle games. Develop critical thinking and problem-solving skills." />
-        <meta name="keywords" content="logic games, puzzle games, sudoku, chess tactics, brain teasers, critical thinking games, problem solving puzzles" />
-        <meta property="og:title" content="Logic & Puzzle Games - 32+ Free Brain Training Games | DapsiGames" />
-        <meta property="og:description" content="Free logic games including sudoku solver, chess tactics, and 29+ more puzzle games." />
+        <title>Logic Games - 32+ Free Logic & Puzzle Games | DapsiGames</title>
+        <meta name="description" content="Free logic games including sudoku solver, chess tactics, brain teasers, and 29+ more critical thinking games." />
+        <meta name="keywords" content="logic games, puzzle games, brain teasers, critical thinking games, problem solving games, educational games" />
+        <meta property="og:title" content="Logic Games - 32+ Free Logic & Puzzle Games | DapsiGames" />
+        <meta property="og:description" content="Free logic games including sudoku solver, chess tactics, and 29+ more critical thinking games." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dapsigames.com/logic-games" />
+        <link rel="canonical" href="https://dapsiwow.com/logic-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-logic-games">
@@ -76,39 +57,40 @@ const LogicGames = () => {
                     className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-green-200 transition-all duration-200"
                     data-testid="input-search-logic-games"
                   />
-                  <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-xl flex items-center pointer-events-none">
-                    <Search className="w-5 h-5" aria-hidden="true" />
+                  <div className="absolute right-4 top-4">
+                    <Search className="w-6 h-6 text-neutral-400" />
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Games Section */}
+          {/* Games Grid */}
           <section className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {/* Results Info */}
               <div className="mb-8">
-                <p className="text-neutral-600 text-center" data-testid="text-results-count">
-                  Showing {filteredTools.length} logic games
-                  {searchQuery && ` matching "${searchQuery}"`}
+                <h2 className="text-2xl font-bold text-neutral-800 mb-4">
+                  {searchQuery ? `Search Results (${filteredGames.length})` : `All Logic Games (${logicGames.length})`}
+                </h2>
+                <p className="text-neutral-600">
+                  {searchQuery 
+                    ? `Games matching "${searchQuery}"`
+                    : 'Challenge your mind with puzzles and brain teasers that develop logical reasoning'
+                  }
                 </p>
               </div>
 
-              {/* Games Grid */}
-              {filteredTools.length > 0 ? (
+              {filteredGames.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-logic-games">
-                  {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                  {filteredGames.map((game) => (
+                    <ToolCard key={game.id} tool={game} />
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16" data-testid="empty-state-no-tools">
-                  <Search className="w-16 h-16 text-neutral-300 mb-4 mx-auto" />
-                  <h3 className="text-2xl font-bold text-neutral-600 mb-2">No logic games found</h3>
-                  <p className="text-neutral-500">
-                    Try adjusting your search query.
-                  </p>
+                <div className="text-center py-16">
+                  <Puzzle className="w-16 h-16 text-neutral-300 mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-neutral-600 mb-2">No logic games found</h3>
+                  <p className="text-neutral-500">Try adjusting your search terms</p>
                 </div>
               )}
 
@@ -134,71 +116,68 @@ const LogicGames = () => {
                   <div className="text-center p-4 bg-green-50 rounded-xl">
                     <Lightbulb className="w-6 h-6 text-green-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Logic Puzzles</h3>
-                    <p className="text-sm text-neutral-600">Develop reasoning skills</p>
+                    <p className="text-sm text-neutral-600">Deductive reasoning</p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* Why Logic Games Section */}
-          <section className="py-16 bg-gradient-to-br from-green-50 to-green-100">
+          {/* Benefits Section */}
+          <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
-                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
-                  Why Play Logic Games?
-                </h2>
-                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                  Logic games strengthen your analytical thinking, enhance problem-solving abilities, 
-                  and develop the critical thinking skills essential for academic and professional success.
+                <h2 className="text-3xl font-bold text-neutral-800 mb-4">Sharpen Your Mind</h2>
+                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+                  Develop critical thinking and problem-solving skills through challenging logic puzzles
                 </p>
               </div>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Brain className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Critical Thinking</h3>
                   <p className="text-neutral-600">
-                    Develop analytical skills and logical reasoning abilities through challenging puzzles and brain teasers.
+                    Develop analytical skills and logical reasoning through complex puzzles.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Puzzle className="text-white" size={24} />
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Lightbulb className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Problem Solving</h3>
                   <p className="text-neutral-600">
-                    Master systematic approaches to breaking down complex problems into manageable steps.
+                    Learn to approach challenges systematically and find creative solutions.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Puzzle className="text-white" size={24} />
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-white" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Strategic Planning</h3>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Strategic Thinking</h3>
                   <p className="text-neutral-600">
-                    Learn to think ahead, consider multiple possibilities, and make optimal decisions under constraints.
+                    Plan ahead and think multiple steps in advance to solve complex puzzles.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Lightbulb className="text-white" size={24} />
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Award className="text-white" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Creative Solutions</h3>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Mental Agility</h3>
                   <p className="text-neutral-600">
-                    Discover innovative approaches and develop lateral thinking skills for unique problem solving.
+                    Improve mental flexibility and quick thinking through varied challenges.
                   </p>
                 </div>
               </div>
             </div>
           </section>
         </main>
-        
+
         <Footer />
       </div>
     </>
