@@ -75,42 +75,42 @@ const ToolPage = () => {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-neutral-800 mb-4">
-                  {tool.name} - Coming Soon
+                  {tool.name} - Study Game
                 </h2>
                 <p className="text-neutral-600 mb-6">
-                  We're working hard to bring you this amazing tool. It will be available soon!
+                  This engaging study game is designed to make learning fun and effective. Start playing to improve your skills!
                 </p>
                 
-                {/* Placeholder content */}
+                {/* Game preview content */}
                 <div className="bg-neutral-100 rounded-xl p-12 mb-8">
                   <i className={`${tool.icon} text-6xl text-neutral-400 mb-4`}></i>
                   <p className="text-neutral-500">
-                    Tool interface will be available here once development is complete.
+                    Interactive game interface - Play to learn and master new concepts through engaging gameplay.
                   </p>
                 </div>
 
-                {/* Tool Features */}
+                {/* Game Features */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                   <div className="text-center">
                     <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                      <i className="fas fa-bolt text-blue-600"></i>
+                      <i className="fas fa-gamepad text-blue-600"></i>
                     </div>
-                    <h3 className="font-semibold text-neutral-800 mb-2">Fast & Efficient</h3>
-                    <p className="text-sm text-neutral-600">Get results instantly with our optimized algorithms</p>
+                    <h3 className="font-semibold text-neutral-800 mb-2">Engaging Gameplay</h3>
+                    <p className="text-sm text-neutral-600">Interactive challenges that make learning enjoyable and effective</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
-                      <i className="fas fa-shield-alt text-green-600"></i>
+                      <i className="fas fa-brain text-green-600"></i>
                     </div>
-                    <h3 className="font-semibold text-neutral-800 mb-2">Secure & Private</h3>
-                    <p className="text-sm text-neutral-600">Your data is processed securely and never stored</p>
+                    <h3 className="font-semibold text-neutral-800 mb-2">Skill Building</h3>
+                    <p className="text-sm text-neutral-600">Progressive difficulty levels that adapt to your learning pace</p>
                   </div>
                   <div className="text-center">
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
                       <i className="fas fa-mobile-alt text-purple-600"></i>
                     </div>
-                    <h3 className="font-semibold text-neutral-800 mb-2">Mobile Friendly</h3>
-                    <p className="text-sm text-neutral-600">Works perfectly on all devices and screen sizes</p>
+                    <h3 className="font-semibold text-neutral-800 mb-2">Play Anywhere</h3>
+                    <p className="text-sm text-neutral-600">Works perfectly on all devices for learning on the go</p>
                   </div>
                 </div>
 

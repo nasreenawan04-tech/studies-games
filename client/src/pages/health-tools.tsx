@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Heart, Search, Beaker, Atom, Microscope, Telescope } from 'lucide-react';
+import { Heart, Search, Beaker, Atom, Microscope, Telescope, Activity, Zap, Target } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
@@ -34,17 +34,17 @@ const HealthTools = () => {
     <>
       <Helmet>
         <title>Science Games - 25+ Free Educational Science Games | Study Games Hub</title>
-        <meta name="description" content="Free science games including chemistry lab, physics simulator, biology quiz, astronomy adventure, and 21+ more interactive science learning games. No sign-up required." />
-        <meta name="keywords" content="science games, chemistry games, physics games, biology games, astronomy games, educational science games" />
+        <meta name="description" content="Free science games including periodic table quest, physics playground, biology explorer, and 22+ more interactive learning games." />
+        <meta name="keywords" content="science games, chemistry games, physics games, biology games, earth science games, educational games" />
         <meta property="og:title" content="Science Games - 25+ Free Educational Science Games | Study Games Hub" />
-        <meta property="og:description" content="Free science games including chemistry lab, physics simulator, biology quiz, and 21+ more interactive science learning games." />
+        <meta property="og:description" content="Free science games including periodic table quest, physics playground, and 22+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/science-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-science-games">
         <Header />
-        
+
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
           <section className="bg-gradient-to-r from-pink-600 via-rose-500 to-red-700 text-white py-16">
@@ -56,9 +56,9 @@ const HealthTools = () => {
                 Science Games
               </h1>
               <p className="text-xl text-pink-100 mb-8 max-w-3xl mx-auto">
-                30+ interactive science games to explore chemistry, physics, biology, and astronomy
+                25+ interactive science games covering physics, chemistry, biology, and earth sciences
               </p>
-              
+
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto">
                 <div className="relative">
@@ -134,8 +134,65 @@ const HealthTools = () => {
               </div>
             </div>
           </section>
+
+          {/* Why Science Games Section */}
+          <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
+                  Why Play Our Science Games?
+                </h2>
+                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                  Our interactive science games make complex scientific concepts accessible and engaging 
+                  through hands-on virtual experiments and immersive learning experiences.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Heart className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Love for Science</h3>
+                  <p className="text-neutral-600">
+                    Develop a passion for scientific discovery through engaging and interactive gameplay.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Activity className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Hands-On Learning</h3>
+                  <p className="text-neutral-600">
+                    Conduct virtual experiments safely while learning fundamental scientific principles.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Zap className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Quick Understanding</h3>
+                  <p className="text-neutral-600">
+                    Grasp complex concepts quickly through visual simulations and interactive demonstrations.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Scientific Thinking</h3>
+                  <p className="text-neutral-600">
+                    Develop critical thinking and analytical skills essential for scientific reasoning.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
-        
+
         <Footer />
       </div>
     </>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Pen, Search, Type, CheckCircle, Shield, FileText } from 'lucide-react';
+import { Pen, Search, Type, CheckCircle, Shield, FileText, PenTool, Zap, Target } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
@@ -34,17 +34,17 @@ const TextTools = () => {
     <>
       <Helmet>
         <title>Language Games - 32+ Free Educational Language Games | Study Games Hub</title>
-        <meta name="description" content="Free language games including vocabulary builder, spelling bee, grammar challenge, reading comprehension, and 28+ more interactive language learning games. No sign-up required." />
-        <meta name="keywords" content="language games, vocabulary games, spelling games, grammar games, reading games, educational language games" />
+        <meta name="description" content="Free language games including vocabulary builder, spelling bee champion, grammar guardian, and 29+ more educational games." />
+        <meta name="keywords" content="language games, vocabulary games, spelling games, grammar games, reading games, writing games" />
         <meta property="og:title" content="Language Games - 32+ Free Educational Language Games | Study Games Hub" />
-        <meta property="og:description" content="Free language games including vocabulary builder, spelling bee, grammar challenge, and 28+ more interactive language learning games." />
+        <meta property="og:description" content="Free language games including vocabulary builder, spelling bee champion, and 29+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/language-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-language-games">
         <Header />
-        
+
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
           <section className="bg-gradient-to-r from-yellow-600 via-orange-500 to-red-600 text-white py-16">
@@ -56,9 +56,9 @@ const TextTools = () => {
                 Language Games
               </h1>
               <p className="text-xl text-yellow-100 mb-8 max-w-3xl mx-auto">
-                30+ interactive language games to improve vocabulary, grammar, and reading skills
+                32+ interactive language games to improve vocabulary, grammar, and reading skills
               </p>
-              
+
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto">
                 <div className="relative">
@@ -134,8 +134,65 @@ const TextTools = () => {
               </div>
             </div>
           </section>
+
+          {/* Why Language Games Section */}
+          <section className="py-16 bg-gradient-to-br from-green-50 to-emerald-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
+                  Why Play Our Language Games?
+                </h2>
+                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                  Our interactive language games help students, learners, and language enthusiasts 
+                  build vocabulary, improve grammar, and enhance reading and writing skills through engaging gameplay.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <PenTool className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Writing Skills</h3>
+                  <p className="text-neutral-600">
+                    Improve writing abilities through interactive grammar and composition games.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <FileText className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Vocabulary Building</h3>
+                  <p className="text-neutral-600">
+                    Expand your vocabulary through word association games and contextual learning.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Zap className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Quick Learning</h3>
+                  <p className="text-neutral-600">
+                    Learn efficiently with bite-sized games that provide immediate feedback and progress tracking.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Skill Mastery</h3>
+                  <p className="text-neutral-600">
+                    Achieve language proficiency through progressive challenges and adaptive learning paths.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
-        
+
         <Footer />
       </div>
     </>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Calculator, Search, Plus, X, Divide } from 'lucide-react';
+import { Calculator, Search, Plus, X, Divide, TrendingUp, DollarSign, Target, Gamepad2 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
@@ -34,20 +34,20 @@ const FinanceTools = () => {
     <>
       <Helmet>
         <title>Math Games - 36+ Free Educational Math Games | Study Games Hub</title>
-        <meta name="description" content="Free math games including addition race, multiplication master, algebra adventure, geometry quest, and 32+ more interactive math learning games. No sign-up required." />
-        <meta name="keywords" content="math games, educational games, addition games, multiplication games, algebra games, geometry games, math learning games" />
+        <meta name="description" content="Free math games including addition race, multiplication master, fraction frenzy, and 33+ more interactive learning games." />
+        <meta name="keywords" content="math games, educational games, addition games, multiplication games, fraction games, algebra games, geometry games" />
         <meta property="og:title" content="Math Games - 36+ Free Educational Math Games | Study Games Hub" />
-        <meta property="og:description" content="Free math games including addition race, multiplication master, algebra adventure, and 32+ more interactive math learning games." />
+        <meta property="og:description" content="Free math games including addition race, multiplication master, and 33+ more educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://dapsiwow.com/math-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-math-games">
         <Header />
-        
+
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-blue-600 via-blue-500 to-indigo-700 text-white py-16">
+          <section className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 text-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Calculator className="w-12 h-12 text-white" />
@@ -56,9 +56,9 @@ const FinanceTools = () => {
                 Math Games
               </h1>
               <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                36+ interactive math games to make learning mathematics fun and engaging
+                36+ interactive math games covering arithmetic, algebra, geometry, and advanced mathematics
               </p>
-              
+
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto">
                 <div className="relative">
@@ -134,8 +134,64 @@ const FinanceTools = () => {
               </div>
             </div>
           </section>
+          {/* Why Math Games Section */}
+          <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
+                  Why Play Our Math Games?
+                </h2>
+                <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
+                  Our interactive math games make learning mathematics engaging and fun while building 
+                  strong foundational skills through progressive challenges and immediate feedback.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Calculator className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Master Concepts</h3>
+                  <p className="text-neutral-600">
+                    Build strong math foundations through interactive games that reinforce key concepts.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <TrendingUp className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Progressive Learning</h3>
+                  <p className="text-neutral-600">
+                    Advance through difficulty levels that adapt to your skill level and learning pace.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Gamepad2 className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Engaging Gameplay</h3>
+                  <p className="text-neutral-600">
+                    Turn math practice into fun adventures with gamified learning experiences.
+                  </p>
+                </div>
+
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <Target className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Achieve Success</h3>
+                  <p className="text-neutral-600">
+                    Track your progress and celebrate achievements as you master math skills.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
-        
+
         <Footer />
       </div>
     </>
