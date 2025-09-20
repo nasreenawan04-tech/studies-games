@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
         <Header />
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20">
+        <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6">
@@ -34,19 +34,19 @@ export default function PrivacyPolicy() {
               </p>
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-green-600 mb-2">0</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">0</div>
                   <div className="text-neutral-600 font-medium">Data Sold</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">100%</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">100%</div>
                   <div className="text-neutral-600 font-medium">Transparent</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">No</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">No</div>
                   <div className="text-neutral-600 font-medium">Registration</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">Local</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">Local</div>
                   <div className="text-neutral-600 font-medium">Processing</div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Shield className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <UserX className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Registration</h3>
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <EyeOff className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Tracking</h3>
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-yellow-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Handshake className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Transparent</h3>
@@ -111,7 +111,7 @@ export default function PrivacyPolicy() {
         </section>
 
         {/* Information We Collect */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-yellow-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-lg">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
                   <Laptop className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
@@ -181,8 +181,8 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 shadow-lg">
-                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-8 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-6">
                   <Lock className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">HTTPS Encryption</h3>
@@ -191,8 +191,8 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-2xl p-8 shadow-lg">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+              <div className="bg-gradient-to-br from-blue-100 to-yellow-100 rounded-2xl p-8 shadow-lg">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mb-6">
                   <Trash2 className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Automatic Deletion</h3>
@@ -205,7 +205,7 @@ export default function PrivacyPolicy() {
         </section>
 
         {/* Detailed Information Collection */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gradient-to-br from-yellow-50 to-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
@@ -543,7 +543,7 @@ export default function PrivacyPolicy() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <section className="py-20 bg-gradient-to-br from-blue-50 via-yellow-50 to-blue-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="bg-white rounded-3xl p-12 shadow-xl max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-neutral-800 mb-6">Questions About Our Privacy Policy?</h2>

@@ -155,7 +155,7 @@ const HelpCenter = () => {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20">
+          <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6" data-testid="text-page-title">
@@ -187,15 +187,15 @@ const HelpCenter = () => {
                     <div className="text-neutral-600 font-medium">Support Available</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-green-600 mb-2">1000+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">1000+</div>
                     <div className="text-neutral-600 font-medium">Help Articles</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">150+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">150+</div>
                     <div className="text-neutral-600 font-medium">Tools Covered</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">99.9%</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">99.9%</div>
                     <div className="text-neutral-600 font-medium">Problem Resolved</div>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ const HelpCenter = () => {
           </section>
 
           {/* Help Categories */}
-          <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+          <section className="py-20 bg-gradient-to-br from-blue-50 to-yellow-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
@@ -310,7 +310,7 @@ const HelpCenter = () => {
           </section>
 
           {/* Contact Support */}
-          <section className="py-20 text-gray-800" style={{backgroundColor: '#eef2ff'}}>
+          <section className="py-20 bg-gradient-to-br from-blue-50 via-yellow-50 to-blue-100 text-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6">Still need help?</h2>

@@ -21,7 +21,7 @@ const AboutUs = () => {
         <Header />
         
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20">
+        <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6">
@@ -37,15 +37,15 @@ const AboutUs = () => {
                   <div className="text-neutral-600 font-medium">Happy Users</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-green-600 mb-2">150+</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">150+</div>
                   <div className="text-neutral-600 font-medium">Free Tools</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">99.9%</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">99.9%</div>
                   <div className="text-neutral-600 font-medium">Uptime</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">24/7</div>
+                  <div className="text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">24/7</div>
                   <div className="text-neutral-600 font-medium">Available</div>
                 </div>
               </div>
@@ -58,7 +58,7 @@ const AboutUs = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-8">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-8">
                   <Rocket className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h2 className="text-4xl font-bold text-neutral-800 mb-6">Our Mission</h2>
@@ -72,7 +72,7 @@ const AboutUs = () => {
                   professionals, entrepreneurs, and anyone who needs them - completely free, forever.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-3xl p-12 shadow-inner">
+              <div className="bg-gradient-to-br from-blue-50 to-yellow-100 rounded-3xl p-12 shadow-inner">
                 <div className="space-y-8">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
@@ -84,7 +84,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
                       <Heart className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
@@ -93,7 +93,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                       <Shield className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
@@ -108,7 +108,7 @@ const AboutUs = () => {
         </section>
 
         {/* What We Offer Section */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-20 bg-gradient-to-br from-blue-50 to-yellow-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
@@ -136,10 +136,8 @@ const AboutUs = () => {
                 </ul>
               </div>
 
-
-
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-6">
                   <Type className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Text Tools</h3>
@@ -154,9 +152,8 @@ const AboutUs = () => {
                 </ul>
               </div>
 
-
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mb-6">
                   <Activity className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Health Tools</h3>
@@ -199,7 +196,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <UserCheck className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
@@ -210,7 +207,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-blue-600 to-yellow-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Smile className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">User-Friendly</h3>
@@ -221,7 +218,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-yellow-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Reliable</h3>
@@ -235,7 +232,7 @@ const AboutUs = () => {
         </section>
 
         {/* Community & Impact Section */}
-        <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <section className="py-20 bg-gradient-to-br from-blue-50 via-yellow-50 to-blue-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
@@ -254,12 +251,12 @@ const AboutUs = () => {
                 <p className="text-neutral-600">Tools used to complete millions of tasks and projects worldwide</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-green-600 mb-4">195</div>
+                <div className="text-4xl lg:text-5xl font-bold text-yellow-600 mb-4">195</div>
                 <h4 className="text-lg font-semibold text-neutral-800 mb-2">Countries Served</h4>
                 <p className="text-neutral-600">Users from almost every country trust our platform daily</p>
               </div>
               <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <div className="text-4xl lg:text-5xl font-bold text-purple-600 mb-4">15TB+</div>
+                <div className="text-4xl lg:text-5xl font-bold text-blue-500 mb-4">15TB+</div>
                 <h4 className="text-lg font-semibold text-neutral-800 mb-2">Data Processed</h4>
                 <p className="text-neutral-600">Files and data securely processed through our tools</p>
               </div>

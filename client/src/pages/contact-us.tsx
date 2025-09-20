@@ -93,7 +93,7 @@ const ContactUs = () => {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20">
+          <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6" data-testid="text-page-title">
@@ -186,7 +186,7 @@ const ContactUs = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-green-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center"
+                      className="w-full bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors flex items-center justify-center"
                       data-testid="button-submit-contact"
                     >
                       {isSubmitting ? (
@@ -210,8 +210,8 @@ const ContactUs = () => {
                     <h2 className="text-2xl font-bold text-neutral-800 mb-6">Get in touch</h2>
                     <div className="space-y-6">
                       <div className="flex items-start">
-                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                          <Mail className="text-green-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                          <Mail className="text-blue-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Email</h3>
@@ -220,8 +220,8 @@ const ContactUs = () => {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                          <Clock className="text-blue-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
+                          <Clock className="text-yellow-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Response Time</h3>
@@ -230,13 +230,13 @@ const ContactUs = () => {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
-                          <HelpCircle className="text-purple-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                          <HelpCircle className="text-blue-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Quick Help</h3>
                           <p className="text-neutral-600">
-                            <a href="/help" className="text-purple-600 hover:underline">
+                            <a href="/help" className="text-blue-600 hover:underline">
                               Check our Help Center
                             </a>
                           </p>
@@ -245,7 +245,7 @@ const ContactUs = () => {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-2xl p-8">
+                  <div className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-neutral-800 mb-4">We're here to help!</h3>
                     <p className="text-neutral-600 mb-4">
                       Whether you have a question, need technical support, or want to suggest a new tool, 
@@ -253,15 +253,15 @@ const ContactUs = () => {
                     </p>
                     <ul className="text-sm text-neutral-600 space-y-2">
                       <li className="flex items-center">
-                        <Check className="text-green-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         24-hour response time
                       </li>
                       <li className="flex items-center">
-                        <Check className="text-green-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         Friendly support team
                       </li>
                       <li className="flex items-center">
-                        <Check className="text-green-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         We value your feedback
                       </li>
                     </ul>
