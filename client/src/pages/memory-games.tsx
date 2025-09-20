@@ -48,7 +48,7 @@ const MemoryGames = () => {
 
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white py-16">
+          <section className="bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Brain className="w-12 h-12 text-white" />
@@ -68,7 +68,7 @@ const MemoryGames = () => {
                     placeholder="Search memory games..."
                     value={searchQuery}
                     onChange={handleSearchChange}
-                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-200 transition-all duration-200"
+                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 transition-all duration-200"
                     data-testid="input-search-memory-games"
                   />
                   <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-xl flex items-center pointer-events-none">
@@ -109,26 +109,26 @@ const MemoryGames = () => {
 
               {/* Popular Games Section */}
               <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Memory Games</h2>
+                <h2 className="text-2xl font-bold text-neutral-800 mb-8 text-center">Popular Memory Games</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-4 bg-purple-50 rounded-xl">
-                    <Brain className="w-6 h-6 text-purple-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Memory Palace Builder</h3>
+                  <div className="text-center p-6 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors cursor-pointer group">
+                    <Brain className="w-8 h-8 text-purple-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Memory Palace Builder</h3>
                     <p className="text-sm text-neutral-600">Build memory palaces for recall</p>
                   </div>
-                  <div className="text-center p-4 bg-indigo-50 rounded-xl">
-                    <Target className="w-6 h-6 text-indigo-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Sequence Master</h3>
+                  <div className="text-center p-6 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors cursor-pointer group">
+                    <Target className="w-8 h-8 text-indigo-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Sequence Master</h3>
                     <p className="text-sm text-neutral-600">Remember complex sequences</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-xl">
-                    <Zap className="w-6 h-6 text-blue-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Pattern Recall</h3>
+                  <div className="text-center p-6 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer group">
+                    <Zap className="w-8 h-8 text-blue-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Pattern Recall</h3>
                     <p className="text-sm text-neutral-600">Memorize visual patterns</p>
                   </div>
-                  <div className="text-center p-4 bg-pink-50 rounded-xl">
-                    <Gamepad2 className="w-6 h-6 text-pink-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Dual N-Back Training</h3>
+                  <div className="text-center p-6 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors cursor-pointer group">
+                    <Gamepad2 className="w-8 h-8 text-pink-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Dual N-Back Training</h3>
                     <p className="text-sm text-neutral-600">Improve working memory</p>
                   </div>
                 </div>
@@ -150,42 +150,42 @@ const MemoryGames = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Brain className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Cognitive Enhancement</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Strengthen working memory, improve focus, and enhance cognitive flexibility through targeted exercises.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Target className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Better Focus</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Develop sustained attention and concentration skills that transfer to academic and professional tasks.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Faster Recall</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Train your brain to retrieve information more quickly and accurately through memory techniques.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Gamepad2 className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Fun Learning</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Enjoy engaging gameplay while building real cognitive skills that benefit daily life.
                   </p>
                 </div>
