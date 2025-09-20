@@ -48,7 +48,7 @@ const LogicGames = () => {
         
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-700 text-white py-20">
+          <section className="bg-gradient-to-r from-orange-600 via-amber-500 to-red-600 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Target className="w-12 h-12 text-white" />
@@ -56,7 +56,7 @@ const LogicGames = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" data-testid="text-page-title">
                 Logic Games
               </h1>
-              <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
                 32+ interactive logic games to improve critical thinking, problem-solving, and reasoning skills
               </p>
               
@@ -71,7 +71,7 @@ const LogicGames = () => {
                     className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-emerald-200 transition-all duration-200"
                     data-testid="input-search-logic-games"
                   />
-                  <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl flex items-center pointer-events-none">
+                  <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-orange-500 to-red-600 text-white rounded-xl flex items-center pointer-events-none">
                     <Search className="w-5 h-5" aria-hidden="true" />
                   </div>
                 </div>
