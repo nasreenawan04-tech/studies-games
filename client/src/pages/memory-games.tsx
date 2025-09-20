@@ -5,8 +5,7 @@ import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
-import EnhancedSearchFilters from '@/components/EnhancedSearchFilters';
-import { tools, getToolsByCategory } from '@/data/tools';
+import { getToolsByCategory } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 import { Brain, Target, Zap, Gamepad2 } from 'lucide-react';
 
@@ -86,21 +85,7 @@ const MemoryGames = () => {
             </div>
           </section>
 
-          {/* Search and Filters */}
-          <section className="py-8 bg-white border-b border-neutral-200">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <EnhancedSearchFilters
-                searchQuery={searchQuery}
-                setSearchQuery={setSearchQuery}
-                sortBy={sortBy}
-                setSortBy={setSortBy}
-                selectedCategory="memory"
-                setSelectedCategory={() => {}}
-                showCategoryFilter={false}
-                placeholder="Search memory games..."
-              />
-            </div>
-          </section>
+          
 
           {/* Games Grid */}
           <section className="py-12">
