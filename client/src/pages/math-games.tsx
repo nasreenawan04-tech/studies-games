@@ -8,7 +8,7 @@ import ToolCard from '@/components/ToolCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 
-const FinanceTools = () => {
+const MathGames = () => {
   const [location] = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredTools, setFilteredTools] = useState(tools.filter(tool => tool.category === 'math'));
@@ -198,4 +198,4 @@ const FinanceTools = () => {
   );
 };
 
-export default FinanceTools;
+export default MathGames;

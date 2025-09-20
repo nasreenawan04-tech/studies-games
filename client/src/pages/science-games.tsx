@@ -8,7 +8,7 @@ import ToolCard from '@/components/ToolCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 
-const HealthTools = () => {
+const ScienceGames = () => {
   const [location, setLocation] = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredTools, setFilteredTools] = useState(tools.filter(tool => tool.category === 'science'));
@@ -199,4 +199,4 @@ const HealthTools = () => {
   );
 };
 
-export default HealthTools;
+export default ScienceGames;
