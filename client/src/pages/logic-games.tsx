@@ -48,7 +48,7 @@ const LogicGames = () => {
         
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-700 text-white py-20">
+          <section className="bg-gradient-to-r from-violet-600 via-purple-500 to-indigo-700 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Target className="w-12 h-12 text-white" />
