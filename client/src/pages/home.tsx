@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Study Games Hub: 150+ Free Educational Games for Learning</title>
+        <title>DapsiGames: 150+ Free Educational Games for Learning</title>
         <meta name="description" content="Transform your learning with engaging study games across math, science, language, memory, and logic. Play 150+ educational games designed to make studying fun and effective. No registration required!" />
-        <meta name="keywords" content="Study Games Hub, educational games, learning games, math games, science games, language games, memory games, logic puzzles, brain training, free study games, educational activities" />
-        <meta property="og:title" content="Study Games Hub: 150+ Free Educational Games for Learning" />
+        <meta name="keywords" content="DapsiGames, educational games, learning games, math games, science games, language games, memory games, logic puzzles, brain training, free study games, educational activities" />
+        <meta property="og:title" content="DapsiGames: 150+ Free Educational Games for Learning" />
         <meta property="og:description" content="Transform your learning with engaging study games across math, science, language, memory, and logic. Play 150+ educational games designed to make studying fun and effective." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://dapsiwow.com/" />
@@ -22,7 +22,7 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Study Games Hub",
+            "name": "DapsiGames",
             "description": "Educational gaming platform offering 150+ free study games across math, science, language, memory, and logic",
             "url": "https://dapsiwow.com/",
             "potentialAction": {
@@ -99,7 +99,7 @@ const Home = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Study Games Hub",
+            "name": "DapsiGames",
             "url": "https://dapsiwow.com/",
             "logo": "https://dapsiwow.com/logo.svg",
             "description": "Educational gaming platform offering 150+ free study games across math, science, language, memory training, and logic puzzles designed to make learning engaging and effective.",
@@ -131,7 +131,7 @@ const Home = () => {
                 "name": "Are all 150+ study games really free to play?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! Every single game on Study Games Hub is completely free with no hidden costs, subscriptions, or premium upgrades. This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles. We believe educational games should be accessible to all learners."
+                  "text": "Yes! Every single game on DapsiGames is completely free with no hidden costs, subscriptions, or premium upgrades. This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles. We believe educational games should be accessible to all learners."
                 }
               },
               {
@@ -219,15 +219,15 @@ const Home = () => {
           {/* User-specific sections - shown if user has favorites */}
           <FavoritesSection />
 
-          {/* What is Study Games Hub Section */}
+          {/* What is DapsiGames Section */}
           <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  What is Study Games Hub?
+                  What is DapsiGames?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                  Study Games Hub is your ultimate educational gaming platform featuring 150+ engaging study games completely free to play. 
+                  DapsiGames is your ultimate educational gaming platform featuring 150+ engaging study games completely free to play. 
                   No registration required, no hidden fees, no software downloads - just fun educational games that make learning effective 
                   and enjoyable across all devices.
                 </p>
@@ -269,7 +269,7 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  Why Choose Study Games Hub?
+                  Why Choose DapsiGames?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
                   We've created the most engaging collection of educational games to help you learn smarter, not harder. 
