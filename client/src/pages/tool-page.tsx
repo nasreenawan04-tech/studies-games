@@ -141,3 +141,101 @@ const ToolPage = () => {
 };
 
 export default ToolPage;
+import { useEffect, useState } from 'react';
+import { useRoute } from 'wouter';
+import { Helmet } from 'react-helmet-async';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import { tools } from '@/data/tools';
+import { ArrowLeft, Play } from 'lucide-react';
+import { Link } from 'wouter';
+
+const ToolPage = () => {
+  const [match, params] = useRoute('/games/:toolId');
+  const [tool, setTool] = useState(null);
+
+  useEffect(() => {
+    if (params?.toolId) {
+      const foundTool = tools.find(t => t.id === params.toolId);
+      setTool(foundTool);
+    }
+  }, [params?.toolId]);
+
+  if (!tool) {
+    return (
+      <>
+        <Header />
+        <main className="flex-1 min-h-screen bg-neutral-50 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-neutral-800 mb-4">Game Not Found</h1>
+            <p className="text-neutral-600 mb-6">The game you're looking for doesn't exist.</p>
+            <Link href="/games" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+              <ArrowLeft size={20} />
+              Back to Games
+            </Link>
+          </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  return (
+    <>
+      <Helmet>
+        <title>{tool.name} - Free Educational Game | DapsiGames</title>
+        <meta name="description" content={tool.description} />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        
+        <main className="flex-1 bg-neutral-50">
+          {/* Hero Section */}
+          <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center">
+                <div className="text-6xl mb-4">{tool.icon}</div>
+                <h1 className="text-4xl sm:text-5xl font-bold mb-4">{tool.name}</h1>
+                <p className="text-xl text-blue-100 mb-8">{tool.description}</p>
+                
+                <button className="inline-flex items-center gap-3 bg-white text-blue-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-blue-50 transition-colors shadow-lg">
+                  <Play size={24} />
+                  Start Playing
+                </button>
+              </div>
+            </div>
+          </section>
+
+          {/* Game Content */}
+          <section className="py-16">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <h2 className="text-2xl font-bold text-neutral-800 mb-6">Game Instructions</h2>
+                <div className="bg-blue-50 rounded-xl p-6 text-center">
+                  <div className="text-4xl mb-4">🎮</div>
+                  <h3 className="text-xl font-semibold text-neutral-800 mb-2">Game Coming Soon!</h3>
+                  <p className="text-neutral-600">
+                    This educational game is currently in development. Check back soon for an engaging learning experience!
+                  </p>
+                </div>
+              </div>
+
+              {/* Back to Games */}
+              <div className="text-center">
+                <Link href="/games" className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium">
+                  <ArrowLeft size={20} />
+                  Back to All Games
+                </Link>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default ToolPage;

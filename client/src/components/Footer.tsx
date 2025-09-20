@@ -16,14 +16,14 @@ const Footer = () => {
                 alt="DapsiWow Logo"
                 className="w-8 h-8 object-contain filter drop-shadow-sm"
               />
-              <span className="text-xl font-bold">DapsiWow</span>
+              <span className="text-xl font-bold">DapsiGames</span>
             </div>
             <p className="text-neutral-300 leading-relaxed">
               Free educational games to make learning fun and effective. No sign-up required, completely free forever.
             </p>
           </div>
 
-          {/* Popular Tools */}
+          {/* Popular Games */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Popular Games</h3>
             <ul className="space-y-3 text-neutral-300">
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="border-t border-neutral-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-neutral-400 text-center md:text-left mb-4 md:mb-0">
-              <p>© {currentYear} DapsiWow.com. All rights reserved. Made with ❤️ for productivity.</p>
+              <p>© {currentYear} DapsiGames.com. All rights reserved. Made with ❤️ for learning.</p>
             </div>
             <div className="text-neutral-400 text-center md:text-right">
               <p className="flex items-center justify-center md:justify-end">

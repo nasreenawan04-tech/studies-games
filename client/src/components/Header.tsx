@@ -41,7 +41,7 @@ const Header = () => {
           {/* Logo Section */}
           <Link href="/" className="flex items-center" data-testid="link-home">
             <Logo className="h-8 w-8 mr-3" />
-            <span className="text-xl font-bold text-neutral-800" data-testid="text-site-name">
+            <span className="text-xl font-bold text-neutral-800 dark:text-neutral-100" data-testid="text-site-name">
               DapsiGames
             </span>
           </Link>
