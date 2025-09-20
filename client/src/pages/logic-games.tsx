@@ -1,35 +1,34 @@
 
 import { Helmet } from 'react-helmet-async';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
-import { getToolsByCategory } from '@/data/tools';
+import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
-import { Target, Puzzle, Brain, Lightbulb } from 'lucide-react';
+import { Target, Puzzle, Brain, Lightbulb, Search, Plus, X, Divide } from 'lucide-react';
 
 const LogicGames = () => {
+  const [location] = useLocation();
   const [searchQuery, setSearchQuery] = useState('');
-  const [sortBy, setSortBy] = useState('name');
-  const [, setLocation] = useLocation();
+  const [filteredTools, setFilteredTools] = useState(tools.filter(tool => tool.category === 'logic'));
 
-  const logicGames = getToolsByCategory('logic');
-  const filteredGames = searchAndFilterTools(searchQuery, 'logic');
+  // Parse URL parameters
+  useEffect(() => {
+    const urlParams = new URLSearchParams(location.split('?')[1] || '');
+    const searchParam = urlParams.get('search') || '';
+    setSearchQuery(searchParam);
+  }, [location]);
 
-  const sortedGames = [...filteredGames].sort((a, b) => {
-    switch (sortBy) {
-      case 'name':
-        return a.name.localeCompare(b.name);
-      case 'popular':
-        return (b.isPopular ? 1 : 0) - (a.isPopular ? 1 : 0);
-      default:
-        return 0;
-    }
-  });
+  // Filter games based on search
+  useEffect(() => {
+    const filtered = searchAndFilterTools(searchQuery, 'logic');
+    setFilteredTools(filtered);
+  }, [searchQuery]);
 
-  const handleViewAllGames = () => {
-    setLocation('/games');
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
   };
 
   return (
@@ -44,20 +43,20 @@ const LogicGames = () => {
         <link rel="canonical" href="https://dapsiwow.com/logic-games" />
       </Helmet>
 
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col" data-testid="page-logic-games">
         <Header />
         
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
-          <section className="bg-gradient-to-r from-indigo-600 via-purple-500 to-blue-700 text-white py-16">
+          <section className="bg-gradient-to-r from-emerald-600 via-teal-500 to-cyan-700 text-white py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <Target className="w-12 h-12 text-white" />
               </div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" data-testid="text-page-title">
                 Logic Games
               </h1>
-              <p className="text-xl text-indigo-100 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
                 32+ interactive logic games to improve critical thinking, problem-solving, and reasoning skills
               </p>
               
@@ -68,53 +67,72 @@ const LogicGames = () => {
                     type="text"
                     placeholder="Search logic games..."
                     value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-indigo-200 transition-all duration-200"
+                    onChange={handleSearchChange}
+                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-emerald-200 transition-all duration-200"
                     data-testid="input-search-logic-games"
                   />
-                  <button 
-                    type="button"
-                    className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-indigo-500 to-blue-600 text-white rounded-xl hover:from-indigo-600 hover:to-blue-700 transition-all duration-200 shadow-md hover:shadow-lg"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                  </button>
+                  <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-xl flex items-center pointer-events-none">
+                    <Search className="w-5 h-5" aria-hidden="true" />
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
-          
-
-          {/* Games Grid */}
-          <section className="py-12">
+          {/* Games Section */}
+          <section className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center justify-between mb-8">
-                <h2 className="text-2xl lg:text-3xl font-bold text-neutral-800">
-                  All Logic Games ({sortedGames.length})
-                </h2>
+              {/* Results Info */}
+              <div className="mb-8">
+                <p className="text-neutral-600 text-center" data-testid="text-results-count">
+                  Showing {filteredTools.length} logic games
+                  {searchQuery && ` matching "${searchQuery}"`}
+                </p>
               </div>
-              
-              {sortedGames.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {sortedGames.map((game) => (
-                    <ToolCard key={game.id} tool={game} />
+
+              {/* Games Grid */}
+              {filteredTools.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-logic-games">
+                  {filteredTools.map((tool) => (
+                    <ToolCard key={tool.id} tool={tool} />
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16">
-                  <Target size={64} className="mx-auto text-neutral-400 mb-4" />
-                  <h3 className="text-xl font-semibold text-neutral-600 mb-2">No games found</h3>
-                  <p className="text-neutral-500 mb-6">Try adjusting your search terms or browse all games.</p>
-                  <button
-                    onClick={handleViewAllGames}
-                    className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200"
-                  >
-                    Browse All Games
-                  </button>
+                <div className="text-center py-16" data-testid="empty-state-no-tools">
+                  <Search className="w-16 h-16 text-neutral-300 mb-4 mx-auto" />
+                  <h3 className="text-2xl font-bold text-neutral-600 mb-2">No logic games found</h3>
+                  <p className="text-neutral-500">
+                    Try adjusting your search query.
+                  </p>
                 </div>
               )}
+
+              {/* Popular Games Section */}
+              <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
+                <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Logic Games</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div className="text-center p-4 bg-emerald-50 rounded-xl">
+                    <Target className="w-6 h-6 text-emerald-600 mb-2 mx-auto" />
+                    <h3 className="font-semibold text-neutral-800">Sudoku Solver</h3>
+                    <p className="text-sm text-neutral-600">Master sudoku puzzles with hints</p>
+                  </div>
+                  <div className="text-center p-4 bg-teal-50 rounded-xl">
+                    <Puzzle className="w-6 h-6 text-teal-600 mb-2 mx-auto" />
+                    <h3 className="font-semibold text-neutral-800">Chess Tactics</h3>
+                    <p className="text-sm text-neutral-600">Improve chess strategy</p>
+                  </div>
+                  <div className="text-center p-4 bg-cyan-50 rounded-xl">
+                    <Brain className="w-6 h-6 text-cyan-600 mb-2 mx-auto" />
+                    <h3 className="font-semibold text-neutral-800">Brain Teasers</h3>
+                    <p className="text-sm text-neutral-600">Challenge your mind</p>
+                  </div>
+                  <div className="text-center p-4 bg-blue-50 rounded-xl">
+                    <Lightbulb className="w-6 h-6 text-blue-600 mb-2 mx-auto" />
+                    <h3 className="font-semibold text-neutral-800">Logic Puzzles</h3>
+                    <p className="text-sm text-neutral-600">Develop reasoning skills</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
