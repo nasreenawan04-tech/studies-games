@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Calculator, Search, Plus, X, Divide, TrendingUp, DollarSign, Target, Gamepad2 } from 'lucide-react';
+import { Sigma, Search, Plus, X, Divide, TrendingUp, DollarSign, Target, Gamepad2 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
@@ -50,7 +50,7 @@ const FinanceTools = () => {
           <section className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 text-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Calculator className="w-12 h-12 text-white" />
+                <Sigma className="w-12 h-12 text-white" />
               </div>
               <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
                 Math Games
@@ -126,7 +126,7 @@ const FinanceTools = () => {
                     <p className="text-sm text-neutral-600">Learn fractions through games</p>
                   </div>
                   <div className="text-center p-4 bg-orange-50 rounded-xl">
-                    <Calculator className="w-6 h-6 text-orange-600 mb-2 mx-auto" />
+                    <Sigma className="w-6 h-6 text-orange-600 mb-2 mx-auto" />
                     <h3 className="font-semibold text-neutral-800">Algebra Adventure</h3>
                     <p className="text-sm text-neutral-600">Solve algebraic equations</p>
                   </div>
@@ -150,7 +150,7 @@ const FinanceTools = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Calculator className="text-white" size={24} />
+                    <Sigma className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Master Concepts</h3>
                   <p className="text-neutral-600">

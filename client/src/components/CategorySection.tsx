@@ -1,6 +1,6 @@
 import { useLocation } from 'wouter';
 import { getCategoryStats } from '@/data/tools';
-import { Calculator, PenTool, HeartPulse, ArrowRight, Brain, FlaskConical, BookOpen, Target, Gamepad2 } from 'lucide-react';
+import { Sigma, PenTool, HeartPulse, ArrowRight, Brain, FlaskConical, BookOpen, Puzzle, Gamepad2 } from 'lucide-react';
 
 const CategorySection = () => {
   const [, setLocation] = useLocation();
@@ -11,7 +11,7 @@ const CategorySection = () => {
       key: 'math',
       name: '36+ Math Games',
       description: 'Addition Race, Multiplication Master, Fraction Frenzy, Algebra Adventure',
-      icon: Calculator,
+      icon: Sigma,
       color: 'from-blue-500 via-blue-600 to-indigo-700',
       textColor: 'text-blue-600 hover:bg-blue-50',
       count: stats.math,
@@ -51,7 +51,7 @@ const CategorySection = () => {
       key: 'logic',
       name: '32+ Logic & Puzzles',
       description: 'Critical thinking challenges, brain teasers, and problem-solving',
-      icon: Target,
+      icon: Puzzle,
       color: 'from-green-500 to-green-600',
       textColor: 'text-green-600',
       count: stats.logic,

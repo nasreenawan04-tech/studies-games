@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Pen, Search, Type, CheckCircle, Shield, FileText, PenTool, Zap, Target } from 'lucide-react';
+import { BookOpen, Search, Type, CheckCircle, Shield, FileText, PenTool, Zap, Target } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ToolCard from '@/components/ToolCard';
@@ -50,7 +50,7 @@ const TextTools = () => {
           <section className="bg-gradient-to-r from-yellow-600 via-orange-500 to-red-600 text-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Pen className="w-12 h-12 text-white" />
+                <BookOpen className="w-12 h-12 text-white" />
               </div>
               <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
                 Language Games
