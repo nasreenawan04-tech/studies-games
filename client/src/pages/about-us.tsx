@@ -57,7 +57,7 @@ const AboutUs = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-8" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-8">
                   <Rocket className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h2 className="text-4xl font-bold text-neutral-800 mb-6">Our Mission</h2>
@@ -74,7 +74,7 @@ const AboutUs = () => {
               <div className="bg-gradient-to-br from-blue-50 to-yellow-100 rounded-3xl p-12 shadow-inner">
                 <div className="space-y-8">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#2563EB' }}>
+                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
                       <Users className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
@@ -83,7 +83,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#F59E0B' }}>
+                    <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center">
                       <Heart className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
@@ -92,7 +92,7 @@ const AboutUs = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#6B7280' }}>
+                    <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
                       <Shield className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     </div>
                     <div>
@@ -121,7 +121,7 @@ const AboutUs = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
                   <Calculator className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Math Games</h3>
@@ -136,7 +136,7 @@ const AboutUs = () => {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-yellow-600 rounded-2xl flex items-center justify-center mb-6">
                   <Type className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Language Games</h3>
@@ -152,7 +152,7 @@ const AboutUs = () => {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6">
                   <Activity className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Science Games</h3>
@@ -168,7 +168,7 @@ const AboutUs = () => {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6">
                   <Brain className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Memory Games</h3>
@@ -184,7 +184,7 @@ const AboutUs = () => {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: '#2563EB' }}>
+                <div className="w-16 h-16 bg-green-600 rounded-2xl flex items-center justify-center mb-6">
                   <Target className="text-white" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Logic & Puzzles</h3>
@@ -216,7 +216,7 @@ const AboutUs = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#F59E0B' }}>
+                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Gift className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Free Forever</h3>
@@ -227,7 +227,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
+                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <UserCheck className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
@@ -238,7 +238,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>
+                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Smile className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">User-Friendly</h3>
@@ -249,7 +249,7 @@ const AboutUs = () => {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>
+                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <CheckCircle className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Educationally Sound</h3>

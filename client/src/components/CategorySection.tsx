@@ -79,18 +79,6 @@ const CategorySection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {categoryData.map((category) => {
             const IconComponent = category.icon;
-            const getIconColor = (key: string) => {
-              switch (key) {
-                case 'math':
-                case 'science':
-                case 'language':
-                case 'memory':
-                case 'logic':
-                  return '#2563EB'; // Blue for educational icons
-                default:
-                  return '#2563EB';
-              }
-            };
             return (
               <Link
                 key={category.key}
@@ -99,7 +87,7 @@ const CategorySection = () => {
                 data-testid={`card-category-${category.key}`}
               >
                 <div className={`${category.bgColor} rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-gray-200 cursor-pointer`}>
-                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-lg" style={{ backgroundColor: getIconColor(category.key) }}>
+                  <div className={`w-16 h-16 ${category.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-lg`}>
                     <IconComponent className="text-white" size={24} />
                   </div>
 

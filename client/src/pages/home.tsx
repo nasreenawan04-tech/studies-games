@@ -316,7 +316,7 @@ const Home = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#F59E0B' }}>
+                  <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Instant Play</h4>
@@ -327,7 +327,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
+                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Shield className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Safe & Private</h4>
@@ -338,7 +338,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>
+                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Smartphone className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Play Anywhere</h4>
@@ -349,7 +349,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#2563EB' }}>
+                  <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Globe className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Learn Globally</h4>

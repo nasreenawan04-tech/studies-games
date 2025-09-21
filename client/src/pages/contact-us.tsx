@@ -210,7 +210,7 @@ const ContactUs = () => {
                     <div className="space-y-6">
                       <div className="flex items-start">
                         <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                          <Mail style={{ color: '#2563EB' }} size={20} aria-hidden="true" />
+                          <Mail className="text-blue-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Email</h3>
@@ -220,7 +220,7 @@ const ContactUs = () => {
 
                       <div className="flex items-start">
                         <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mr-4">
-                          <Clock style={{ color: '#F59E0B' }} size={20} aria-hidden="true" />
+                          <Clock className="text-yellow-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Response Time</h3>
@@ -229,8 +229,8 @@ const ContactUs = () => {
                       </div>
 
                       <div className="flex items-start">
-                        <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mr-4">
-                          <HelpCircle style={{ color: '#6B7280' }} size={20} aria-hidden="true" />
+                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                          <HelpCircle className="text-blue-600" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Quick Help</h3>

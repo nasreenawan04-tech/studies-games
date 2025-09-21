@@ -68,7 +68,7 @@ export default function TermsOfService() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#F59E0B' }}>
+                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Gift className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Always Free</h3>
@@ -78,7 +78,7 @@ export default function TermsOfService() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>
+                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Handshake className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Fair Use</h3>
@@ -88,7 +88,7 @@ export default function TermsOfService() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
+                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Scale className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Fine Print</h3>
@@ -98,7 +98,7 @@ export default function TermsOfService() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
+                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                   <Shield className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Mutual Respect</h3>
