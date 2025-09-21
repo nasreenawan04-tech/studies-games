@@ -1,7 +1,7 @@
 {
   "name": "DapsiGames - Free Educational Games",
   "short_name": "DapsiGames",
-  "description": "150+ free educational games for learning",
+  "description": "Educational gaming platform with 150+ free study games across math, science, language, memory, and logic.",
   "icons": [
     {
       "src": "/apple-touch-icon.png",

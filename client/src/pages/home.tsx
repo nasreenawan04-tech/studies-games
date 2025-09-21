@@ -17,17 +17,17 @@ const Home = () => {
         <meta property="og:title" content="DapsiGames: 150+ Free Study Games for Learning" />
         <meta property="og:description" content="Transform your studying with engaging educational games across math, science, language, memory, and logic. Play 150+ study games designed to make learning fun and effective." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dapsiwow.com/" />
+        <meta property="og:url" content="https://dapsigames.com/" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "DapsiGames",
             "description": "Educational gaming platform offering 150+ free study games across math, science, language, memory, and logic",
-            "url": "https://dapsiwow.com/",
+            "url": "https://dapsigames.com/",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://dapsiwow.com/games?search={search_term_string}",
+              "target": "https://dapsigames.com/games?search={search_term_string}",
               "query-input": "required name=search_term_string"
             },
             "mainEntity": {
@@ -41,10 +41,10 @@ const Home = () => {
                   "position": 1,
                   "item": {
                     "@type": "CollectionPage",
-                    "@id": "https://dapsiwow.com/math-games",
+                    "@id": "https://dapsigames.com/math-games",
                     "name": "Math Games",
                     "description": "Interactive math games covering arithmetic, algebra, geometry, and advanced mathematics",
-                    "url": "https://dapsiwow.com/math-games"
+                    "url": "https://dapsigames.com/math-games"
                   }
                 },
                 {
@@ -52,10 +52,10 @@ const Home = () => {
                   "position": 2,
                   "item": {
                     "@type": "CollectionPage",
-                    "@id": "https://dapsiwow.com/science-games",
+                    "@id": "https://dapsigames.com/science-games",
                     "name": "Science Games",
                     "description": "Educational science games exploring physics, chemistry, biology, and earth sciences",
-                    "url": "https://dapsiwow.com/science-games"
+                    "url": "https://dapsigames.com/science-games"
                   }
                 },
                 {
@@ -63,10 +63,10 @@ const Home = () => {
                   "position": 3,
                   "item": {
                     "@type": "CollectionPage",
-                    "@id": "https://dapsiwow.com/language-games",
+                    "@id": "https://dapsigames.com/language-games",
                     "name": "Language Games",
                     "description": "Language learning games for vocabulary, grammar, reading, and writing skills",
-                    "url": "https://dapsiwow.com/language-games"
+                    "url": "https://dapsigames.com/language-games"
                   }
                 },
                 {
@@ -74,10 +74,10 @@ const Home = () => {
                   "position": 4,
                   "item": {
                     "@type": "CollectionPage",
-                    "@id": "https://dapsiwow.com/memory-games",
+                    "@id": "https://dapsigames.com/memory-games",
                     "name": "Memory Games",
                     "description": "Brain training games to improve memory, focus, and cognitive abilities",
-                    "url": "https://dapsiwow.com/memory-games"
+                    "url": "https://dapsigames.com/memory-games"
                   }
                 },
                 {
@@ -85,10 +85,10 @@ const Home = () => {
                   "position": 5,
                   "item": {
                     "@type": "CollectionPage",
-                    "@id": "https://dapsiwow.com/logic-games",
+                    "@id": "https://dapsigames.com/logic-games",
                     "name": "Logic & Puzzles",
                     "description": "Logic puzzles and brain teasers to develop critical thinking and problem-solving",
-                    "url": "https://dapsiwow.com/logic-games"
+                    "url": "https://dapsigames.com/logic-games"
                   }
                 }
               ]
@@ -100,14 +100,14 @@ const Home = () => {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "DapsiGames",
-            "url": "https://dapsiwow.com/",
-            "logo": "https://dapsiwow.com/logo.svg",
+            "url": "https://dapsigames.com/",
+            "logo": "https://dapsigames.com/logo.svg",
             "description": "Educational gaming platform offering 150+ free study games across math, science, language, memory training, and logic puzzles designed to make learning engaging and effective.",
             "foundingDate": "2025",
             "slogan": "Learn Through Play - 150+ Free Educational Games",
             "knowsAbout": [
               "Educational Games",
-              "Math Learning Games", 
+              "Math Learning Games",
               "Science Educational Games",
               "Language Learning Games",
               "Memory Training Games",
@@ -116,8 +116,8 @@ const Home = () => {
               "Study Activities"
             ],
             "sameAs": [
-              "https://dapsiwow.com/about",
-              "https://dapsiwow.com/contact"
+              "https://dapsigames.com/about",
+              "https://dapsigames.com/contact"
             ]
           })}
         </script>
@@ -227,8 +227,8 @@ const Home = () => {
                   What is DapsiGames Study Hub?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                  DapsiGames is your ultimate study games platform featuring 150+ engaging educational games completely free to play. 
-                  No registration required, no hidden fees, no software downloads - just fun study games that make learning effective 
+                  DapsiGames is your ultimate study games platform featuring 150+ engaging educational games completely free to play.
+                  No registration required, no hidden fees, no software downloads - just fun study games that make learning effective
                   and enjoyable across all devices.
                 </p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -272,8 +272,8 @@ const Home = () => {
                   Why Choose DapsiGames Study Hub?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  We've created the most engaging collection of study games to help you learn smarter, not harder. 
-                  From interactive math challenges to virtual science labs and brain training exercises, we've got you covered with 
+                  We've created the most engaging collection of study games to help you learn smarter, not harder.
+                  From interactive math challenges to virtual science labs and brain training exercises, we've got you covered with
                   study games that make learning fun and effective.
                 </p>
               </div>
@@ -284,11 +284,11 @@ const Home = () => {
                     Study Games, Zero Cost
                   </h3>
                   <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-                    Access high-quality study games designed by learning experts and game developers. Our platform offers engaging 
+                    Access high-quality study games designed by learning experts and game developers. Our platform offers engaging
                     learning experiences that rival expensive educational software, but completely free and accessible through your web browser.
                   </p>
                   <p className="text-lg text-neutral-600 leading-relaxed">
-                    Whether you're a student mastering math concepts, a teacher looking for classroom activities, or a parent supporting learning at home - 
+                    Whether you're a student mastering math concepts, a teacher looking for classroom activities, or a parent supporting learning at home -
                     our study games deliver effective education without the expensive price tag.
                   </p>
                 </div>
@@ -321,7 +321,7 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Instant Play</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    Our games load instantly without waiting for downloads, installations, or lengthy setup times. Start learning 
+                    Our games load instantly without waiting for downloads, installations, or lengthy setup times. Start learning
                     immediately with games optimized for speed and performance across all devices.
                   </p>
                 </div>
@@ -332,7 +332,7 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Safe & Private</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    Your learning progress stays private. We don't store your game data or personal information. All game progress 
+                    Your learning progress stays private. We don't store your game data or personal information. All game progress
                     and learning analytics remain secure and private to your device.
                   </p>
                 </div>
@@ -343,7 +343,7 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Play Anywhere</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    Play our educational games on any device - desktop, laptop, tablet, or smartphone. Responsive design ensures 
+                    Play our educational games on any device - desktop, laptop, tablet, or smartphone. Responsive design ensures
                     perfect gameplay experience across all screen sizes and browsers.
                   </p>
                 </div>
@@ -354,7 +354,7 @@ const Home = () => {
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Learn Globally</h4>
                   <p className="text-neutral-600 leading-relaxed">
-                    Educational content designed for learners worldwide. Games support multiple learning styles and adapt to different 
+                    Educational content designed for learners worldwide. Games support multiple learning styles and adapt to different
                     skill levels. Available 24/7 from anywhere with internet access.
                   </p>
                 </div>
@@ -378,7 +378,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Addition Race</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Race against time to solve addition problems and improve mental math speed. Features progressive 
+                    Race against time to solve addition problems and improve mental math speed. Features progressive
                     difficulty levels, speed tracking, and instant feedback for effective learning.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -387,8 +387,8 @@ const Home = () => {
                     <li>• Instant feedback system</li>
                     <li>• Achievement badges</li>
                   </ul>
-                  <a 
-                    href="/games/addition-race" 
+                  <a
+                    href="/games/addition-race"
                     className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Addition Race
@@ -399,7 +399,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Periodic Table Quest</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Explore chemical elements through interactive adventures and virtual chemistry experiments. 
+                    Explore chemical elements through interactive adventures and virtual chemistry experiments.
                     Learn element properties, atomic structures, and chemical reactions in an engaging game format.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -408,8 +408,8 @@ const Home = () => {
                     <li>• Atomic structure visualization</li>
                     <li>• Chemical reaction simulator</li>
                   </ul>
-                  <a 
-                    href="/games/periodic-table-quest" 
+                  <a
+                    href="/games/periodic-table-quest"
                     className="inline-flex items-center text-pink-600 font-semibold hover:text-pink-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Periodic Table Quest
@@ -420,7 +420,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Vocabulary Builder</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Learn new words through interactive games, quizzes, and spaced repetition. Build your vocabulary 
+                    Learn new words through interactive games, quizzes, and spaced repetition. Build your vocabulary
                     with engaging word challenges, contextual learning, and personalized difficulty adaptation.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -429,8 +429,8 @@ const Home = () => {
                     <li>• Adaptive difficulty system</li>
                     <li>• Progress tracking</li>
                   </ul>
-                  <a 
-                    href="/games/vocabulary-builder" 
+                  <a
+                    href="/games/vocabulary-builder"
                     className="inline-flex items-center text-yellow-600 font-semibold hover:text-yellow-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Vocabulary Builder
@@ -441,7 +441,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Memory Palace Builder</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Build memory palaces to enhance recall and memorization skills. Learn ancient memory techniques 
+                    Build memory palaces to enhance recall and memorization skills. Learn ancient memory techniques
                     through interactive construction and practice with immediate feedback and progress tracking.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -450,8 +450,8 @@ const Home = () => {
                     <li>• Progress tracking dashboard</li>
                     <li>• Recall testing exercises</li>
                   </ul>
-                  <a 
-                    href="/games/memory-palace" 
+                  <a
+                    href="/games/memory-palace"
                     className="inline-flex items-center text-green-600 font-semibold hover:text-green-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Memory Palace Builder
@@ -462,7 +462,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Sudoku Solver</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Master sudoku puzzles with hints, solving techniques, and progressive difficulty levels. 
+                    Master sudoku puzzles with hints, solving techniques, and progressive difficulty levels.
                     Develop logical reasoning skills through strategic number placement and pattern recognition.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -471,8 +471,8 @@ const Home = () => {
                     <li>• Strategy explanations</li>
                     <li>• Daily puzzle challenges</li>
                   </ul>
-                  <a 
-                    href="/games/sudoku-solver" 
+                  <a
+                    href="/games/sudoku-solver"
                     className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Sudoku Solver
@@ -483,7 +483,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Business Loan Calculator</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Calculate business loan payments with origination fees, processing costs, and 
+                    Calculate business loan payments with origination fees, processing costs, and
                     effective APR. Compare SBA loans, term loans, and equipment financing options.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -492,8 +492,8 @@ const Home = () => {
                     <li>• Payment schedule options</li>
                     <li>• Total cost comparisons</li>
                   </ul>
-                  <a 
-                    href="/games/business-loan-calculator" 
+                  <a
+                    href="/games/business-loan-calculator"
                     className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Business Math Game
@@ -504,7 +504,7 @@ const Home = () => {
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Health Science Explorer</h3>
                   <p className="text-neutral-600 mb-4 leading-relaxed">
-                    Learn about cardiovascular health through interactive science games. Explore how 
+                    Learn about cardiovascular health through interactive science games. Explore how
                     lifestyle factors affect health through engaging educational gameplay.
                   </p>
                   <ul className="text-sm text-neutral-500 space-y-1 mb-6">
@@ -513,8 +513,8 @@ const Home = () => {
                     <li>• Educational health content</li>
                     <li>• Science-based learning</li>
                   </ul>
-                  <a 
-                    href="/games/cholesterol-risk-calculator" 
+                  <a
+                    href="/games/cholesterol-risk-calculator"
                     className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Health Science Game
@@ -527,8 +527,8 @@ const Home = () => {
                 <p className="text-neutral-600 mb-6">
                   Discover more educational games in our complete collection
                 </p>
-                <a 
-                  href="/games" 
+                <a
+                  href="/games"
                   className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 gap-2"
                 >
                   View All 150+ Study Games
@@ -559,7 +559,7 @@ const Home = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-neutral-800 mb-4">Choose Your Game</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Browse our categories or use the search bar to find exactly what you need. 
+                    Browse our categories or use the search bar to find exactly what you need.
                     From math games to logic puzzles, we have games for every subject.
                   </p>
                 </div>
@@ -572,7 +572,7 @@ const Home = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-neutral-800 mb-4">Start Playing</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Our games are designed to be user-friendly with clear instructions and interactive gameplay. 
+                    Our games are designed to be user-friendly with clear instructions and interactive gameplay.
                     Just jump in and start learning!
                   </p>
                 </div>
@@ -583,7 +583,7 @@ const Home = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-neutral-800 mb-4">Learn & Improve</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Track your progress, master new skills, and achieve your learning goals with our engaging 
+                    Track your progress, master new skills, and achieve your learning goals with our engaging
                     educational games. Practice makes perfect!
                   </p>
                 </div>
@@ -599,8 +599,8 @@ const Home = () => {
                   Trusted by Learners Worldwide
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Join millions of students, educators, and lifelong learners who rely on DapsiGames' 
-                  collection of engaging educational games for fun and effective learning. Our platform delivers 
+                  Join millions of students, educators, and lifelong learners who rely on DapsiGames'
+                  collection of engaging educational games for fun and effective learning. Our platform delivers
                   consistent, enjoyable experiences that users trust for academic success.
                 </p>
               </div>
@@ -720,19 +720,19 @@ const Home = () => {
                         Start Learning Today
                       </h4>
                       <p className="text-neutral-700 mb-6 leading-relaxed text-center">
-                        Join millions of learners who engage with DapsiGames for fun and effective education. 
+                        Join millions of learners who engage with DapsiGames for fun and effective education.
                         No registration required - just click and start playing any game instantly.
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-                        <a 
-                          href="/math-games" 
+                        <a
+                          href="/math-games"
                           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-200 shadow-lg text-center hover:shadow-xl transform hover:-translate-y-0.5"
                           data-testid="link-finance-tools"
                         >
                           Explore Math Games
                         </a>
-                        <a 
-                          href="/science-games" 
+                        <a
+                          href="/science-games"
                           className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-200 text-center hover:shadow-lg transform hover:-translate-y-0.5"
                           data-testid="link-health-tools"
                         >
@@ -796,8 +796,8 @@ const Home = () => {
                       Are all 150+ study games really free to play?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Yes! Every single game on DapsiGames is completely free with no hidden costs, subscriptions, or premium upgrades. 
-                      This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles. 
+                      Yes! Every single game on DapsiGames is completely free with no hidden costs, subscriptions, or premium upgrades.
+                      This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles.
                       We believe educational games should be accessible to all learners.
                     </p>
                   </div>
@@ -807,7 +807,7 @@ const Home = () => {
                       How do the math games help improve learning?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/math-games" className="text-blue-600 hover:text-blue-800 underline">math games</a> use proven educational techniques like spaced repetition, progressive difficulty, and immediate feedback to reinforce learning. 
+                      Our <a href="/math-games" className="text-blue-600 hover:text-blue-800 underline">math games</a> use proven educational techniques like spaced repetition, progressive difficulty, and immediate feedback to reinforce learning.
                       Games cover arithmetic, algebra, geometry, statistics, and calculus through interactive challenges that make math concepts engaging and memorable. Explore all <a href="/math-games" className="text-blue-600 hover:text-blue-800 underline">math games</a>.
                     </p>
                   </div>
@@ -817,7 +817,7 @@ const Home = () => {
                       What makes your science games engaging?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/science-games" className="text-blue-600 hover:text-blue-800 underline">science games</a> cover physics experiments, chemistry lab simulations, biology explorations, astronomy adventures, earth science investigations, and environmental studies. 
+                      Our <a href="/science-games" className="text-blue-600 hover:text-blue-800 underline">science games</a> cover physics experiments, chemistry lab simulations, biology explorations, astronomy adventures, earth science investigations, and environmental studies.
                       Students can safely conduct virtual experiments and explore scientific concepts through hands-on interactive gameplay. Find more <a href="/science-games" className="text-blue-600 hover:text-blue-800 underline">science games</a>.
                     </p>
                   </div>
@@ -827,7 +827,7 @@ const Home = () => {
                       Which language games improve vocabulary and reading skills?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      We provide <a href="/language-games" className="text-blue-600 hover:text-blue-800 underline">language games</a> that use storytelling, word association, spelling challenges, grammar adventures, and reading comprehension quests to build vocabulary, improve writing skills, and enhance reading fluency. 
+                      We provide <a href="/language-games" className="text-blue-600 hover:text-blue-800 underline">language games</a> that use storytelling, word association, spelling challenges, grammar adventures, and reading comprehension quests to build vocabulary, improve writing skills, and enhance reading fluency.
                       All <a href="/language-games" className="text-blue-600 hover:text-blue-800 underline">language games</a> adapt to different skill levels and provide personalized learning paths.
                     </p>
                   </div>
@@ -837,7 +837,7 @@ const Home = () => {
                       Can memory games improve cognitive abilities?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/memory-games" className="text-blue-600 hover:text-blue-800 underline">memory games</a> are based on cognitive science research and include working memory exercises, spatial memory challenges, pattern recognition training, and mnemonic device practice. 
+                      Our <a href="/memory-games" className="text-blue-600 hover:text-blue-800 underline">memory games</a> are based on cognitive science research and include working memory exercises, spatial memory challenges, pattern recognition training, and mnemonic device practice.
                       Regular play can improve focus, attention span, and memory recall abilities. Explore our <a href="/memory-games" className="text-blue-600 hover:text-blue-800 underline">memory games</a>.
                     </p>
                   </div>
@@ -849,8 +849,8 @@ const Home = () => {
                       Do I need to sign up or download anything to play?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      No registration, downloads, or installations required! Simply visit any game page and start playing immediately. 
-                      All games work directly in your web browser on any device. Your privacy is protected since we don't collect 
+                      No registration, downloads, or installations required! Simply visit any game page and start playing immediately.
+                      All games work directly in your web browser on any device. Your privacy is protected since we don't collect
                       personal information or require accounts.
                     </p>
                   </div>
@@ -860,8 +860,8 @@ const Home = () => {
                       Do the games work on mobile phones and tablets?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Absolutely! All our study games are mobile-optimized and work seamlessly on smartphones, tablets, laptops, and desktops. 
-                      The responsive design ensures buttons are easy to tap, forms are simple to fill out, and results display perfectly 
+                      Absolutely! All our study games are mobile-optimized and work seamlessly on smartphones, tablets, laptops, and desktops.
+                      The responsive design ensures buttons are easy to tap, forms are simple to fill out, and results display perfectly
                       on any screen size.
                     </p>
                   </div>
@@ -871,7 +871,7 @@ const Home = () => {
                       Is my learning progress and game data secure?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Yes! All game progress and learning data remain completely private and secure. Games process locally in your browser - we don't store your scores, answers, or personal learning data on our servers. 
+                      Yes! All game progress and learning data remain completely private and secure. Games process locally in your browser - we don't store your scores, answers, or personal learning data on our servers.
                       Your educational journey remains private and protected. Read our <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a> for details.
                     </p>
                   </div>
@@ -881,7 +881,7 @@ const Home = () => {
                       Can teachers use these games in classrooms?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Absolutely! Our educational games are perfect for classroom use, homeschooling, tutoring sessions, and educational institutions. 
+                      Absolutely! Our educational games are perfect for classroom use, homeschooling, tutoring sessions, and educational institutions.
                       Teachers regularly use our games to supplement lessons, engage students, and provide interactive learning experiences that make studying fun and effective.
                     </p>
                   </div>
@@ -891,8 +891,8 @@ const Home = () => {
                       How can I request new games or report issues?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Contact us through our support page for help, game requests, or to report issues. We actively listen 
-                      to user feedback and regularly add new games based on demand. Our goal is to continuously improve and 
+                      Contact us through our support page for help, game requests, or to report issues. We actively listen
+                      to user feedback and regularly add new games based on demand. Our goal is to continuously improve and
                       expand our collection to meet your learning needs.
                     </p>
                   </div>

@@ -13,7 +13,7 @@ const HeroSection = () => {
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const query = e.target.value;
     setSearchQuery(query);
-    
+
     if (query.trim()) {
       const results = searchTools(query);
       setSearchResults(results.slice(0, 8));
@@ -60,7 +60,7 @@ const HeroSection = () => {
         <p className="text-xl lg:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
           Transform your studying with engaging educational games across math, science, language, memory, and logic. No sign-up required.
         </p>
-        
+
         {/* Search Bar */}
         <div className="max-w-2xl mx-auto mb-16 relative">
           <form onSubmit={handleSearch} className="relative">
@@ -108,7 +108,7 @@ const HeroSection = () => {
                       </div>
                     </button>
                   ))}
-                  
+
                   {searchQuery.trim() && (
                     <div className="px-4 py-3 border-t border-gray-200">
                       <button
@@ -136,7 +136,7 @@ const HeroSection = () => {
             </div>
           )}
         </div>
-        
+
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center" data-testid="stat-active-players">

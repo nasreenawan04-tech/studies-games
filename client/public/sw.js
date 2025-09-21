@@ -1,6 +1,6 @@
-const CACHE_NAME = 'dapsiwow-v1';
-const STATIC_CACHE = 'dapsiwow-static-v1';
-const API_CACHE = 'dapsiwow-api-v1';
+const CACHE_NAME = 'dapsigames-v1';
+const STATIC_CACHE = 'dapsigames-static-v1';
+const API_CACHE = 'dapsigames-api-v1';
 
 // Assets to cache on install
 const STATIC_ASSETS = [

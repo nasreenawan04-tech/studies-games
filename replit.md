@@ -1,10 +1,10 @@
-# DapsiWow - Free Online Tools Platform
+# DapsiGames - Free Educational Games Platform
 
 ## Overview
 
-DapsiWow is a comprehensive web platform providing 180+ free online tools across three main categories: finance, text processing, and health. The application is built as a client-side React application with no backend dependencies, focusing on providing instant, accessible tools without requiring user registration or sign-ups.
+DapsiGames is a comprehensive web platform providing 150+ free educational games across five main categories: math, science, language, memory, and logic. The application is built as a client-side React application with no backend dependencies, focusing on providing instant, accessible educational games without requiring user registration or sign-ups.
 
-The platform emphasizes user privacy, speed, and accessibility while offering professional-grade calculators, converters, and utilities that would typically require paid software or services.
+The platform emphasizes user privacy, speed, and accessibility while offering engaging educational games that make learning fun and effective across all subjects and skill levels.
 
 ## User Preferences
 

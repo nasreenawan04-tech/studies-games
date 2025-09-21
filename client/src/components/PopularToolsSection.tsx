@@ -39,7 +39,7 @@ const PopularToolsSection = () => {
             Free educational games to make learning fun. No limits, no sign-up required.
           </p>
         </div>
-        
+
         {/* Tab Filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-12" data-testid="tabs-game-filter">
           {tabs.map((tab) => (
@@ -57,14 +57,14 @@ const PopularToolsSection = () => {
             </button>
           ))}
         </div>
-        
+
         {/* Games Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12" data-testid="grid-popular-games">
           {filteredTools.map((tool) => (
             <ToolCard key={tool.id} tool={tool} />
           ))}
         </div>
-        
+
         <div className="text-center">
           <button
             onClick={handleViewAllGames}
