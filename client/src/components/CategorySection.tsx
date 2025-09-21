@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'wouter';
 import { getCategoryStats, categories } from '@/data/tools';
@@ -6,14 +5,14 @@ import { Calculator, FlaskConical, BookOpen, Brain, Puzzle, ChevronRight } from 
 
 const CategorySection = () => {
   const stats = getCategoryStats();
-  
+
   const categoryData = [
     {
       key: 'math',
       title: categories.math,
       description: 'Interactive math games covering arithmetic, algebra, geometry, and calculus',
       icon: Calculator,
-      color: 'from-secondary to-secondary/90',
+      color: 'bg-secondary',
       bgColor: 'bg-secondary/10',
       textColor: 'text-secondary',
       count: stats.math,
@@ -24,7 +23,7 @@ const CategorySection = () => {
       title: categories.science,
       description: 'Virtual labs and simulations for physics, chemistry, biology, and earth sciences',
       icon: FlaskConical,
-      color: 'from-primary to-primary/90',
+      color: 'bg-primary',
       bgColor: 'bg-primary/10',
       textColor: 'text-primary',
       count: stats.science,
@@ -35,7 +34,7 @@ const CategorySection = () => {
       title: categories.language,
       description: 'Vocabulary builders, grammar adventures, and reading comprehension challenges',
       icon: BookOpen,
-      color: 'from-accent to-yellow-500',
+      color: 'bg-accent',
       bgColor: 'bg-accent/20',
       textColor: 'text-accent-foreground',
       count: stats.language,
@@ -46,7 +45,7 @@ const CategorySection = () => {
       title: categories.memory,
       description: 'Brain training exercises to improve focus, attention, and cognitive abilities',
       icon: Brain,
-      color: 'from-secondary to-secondary/90',
+      color: 'bg-secondary',
       bgColor: 'bg-secondary/10',
       textColor: 'text-secondary',
       count: stats.memory,
@@ -57,7 +56,7 @@ const CategorySection = () => {
       title: categories.logic,
       description: 'Critical thinking challenges, brain teasers, and problem-solving games',
       icon: Puzzle,
-      color: 'from-primary to-primary/90',
+      color: 'bg-primary',
       bgColor: 'bg-primary/10',
       textColor: 'text-primary',
       count: stats.logic,
@@ -88,10 +87,10 @@ const CategorySection = () => {
                 data-testid={`card-category-${category.key}`}
               >
                 <div className={`${category.bgColor} rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-transparent hover:border-gray-200 cursor-pointer`}>
-                  <div className={`w-16 h-16 bg-gradient-to-r ${category.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-lg`}>
+                  <div className={`w-16 h-16 ${category.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform duration-300 shadow-lg`}>
                     <IconComponent className="text-white" size={24} />
                   </div>
-                  
+
                   <div className="flex items-center justify-between mb-3">
                     <h3 className="text-2xl font-bold text-neutral-800" data-testid={`text-category-title-${category.key}`}>
                       {category.title}
@@ -100,11 +99,11 @@ const CategorySection = () => {
                       {category.count} games
                     </div>
                   </div>
-                  
+
                   <p className="text-neutral-600 mb-6 leading-relaxed" data-testid={`text-category-description-${category.key}`}>
                     {category.description}
                   </p>
-                  
+
                   <div className="flex items-center text-neutral-700 group-hover:text-neutral-900 font-medium transition-colors">
                     <span>Explore {category.title}</span>
                     <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
