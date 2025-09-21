@@ -7,15 +7,15 @@ export default function TermsOfService() {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - DapsiWow Online Tools | User Agreement & Guidelines</title>
-        <meta name="description" content="Comprehensive Terms of Service for DapsiWow's 150+ free online tools. Understand usage rights, responsibilities, and legal guidelines for safe, responsible tool usage." />
-        <meta name="keywords" content="terms of service, user agreement, terms and conditions, usage guidelines, legal terms, online tools terms, free tools agreement, user responsibilities, service rules, acceptable use policy" />
-        <meta property="og:title" content="Terms of Service - DapsiWow Online Tools | User Agreement & Guidelines" />
-        <meta property="og:description" content="Complete terms and conditions for using DapsiWow's free online tools safely and responsibly." />
+        <title>Terms of Service - DapsiGames Educational Platform | User Agreement & Guidelines</title>
+        <meta name="description" content="Comprehensive Terms of Service for DapsiGames' 150+ free educational games. Understand usage rights, responsibilities, and legal guidelines for safe, responsible game usage." />
+        <meta name="keywords" content="terms of service, user agreement, terms and conditions, usage guidelines, legal terms, educational games terms, free games agreement, user responsibilities, service rules, acceptable use policy" />
+        <meta property="og:title" content="Terms of Service - DapsiGames Educational Platform | User Agreement & Guidelines" />
+        <meta property="og:description" content="Complete terms and conditions for using DapsiGames' free educational games safely and responsibly." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/terms" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="DapsiWow" />
+        <meta name="author" content="DapsiGames" />
       </Helmet>
 
       <div className="min-h-screen bg-white">
@@ -29,7 +29,7 @@ export default function TermsOfService() {
                 Terms of <span className="text-blue-600">Service</span>
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                Simple, fair guidelines for using DapsiWow's 150+ free online tools. 
+                Simple, fair guidelines for using DapsiGames' 150+ free educational games. 
                 We believe in transparency and straightforward terms.
               </p>
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Always Free</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  All our tools are completely free to use for personal and commercial purposes. No subscriptions or hidden costs.
+                  All our educational games are completely free to use for personal and educational purposes. No subscriptions or hidden costs.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Fair Use</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  Use our tools responsibly and ethically. We trust our users to be good digital citizens.
+                  Play our games responsibly and ethically. We trust our learners to be good digital citizens.
                 </p>
               </div>
 
@@ -131,7 +131,7 @@ export default function TermsOfService() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-neutral-800 mb-2">Use Responsibly</h4>
-                      <p className="text-neutral-600 text-sm">Use our tools for legitimate, legal purposes only. Be respectful of our platform and other users.</p>
+                      <p className="text-neutral-600 text-sm">Use our games for legitimate, legal purposes only. Be respectful of our platform and other users.</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -140,7 +140,7 @@ export default function TermsOfService() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-neutral-800 mb-2">Commercial Use OK</h4>
-                      <p className="text-neutral-600 text-sm">Feel free to use our tools for business and commercial projects without restrictions.</p>
+                      <p className="text-neutral-600 text-sm">Feel free to use our games for educational and classroom projects without restrictions.</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -149,7 +149,7 @@ export default function TermsOfService() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-neutral-800 mb-2">No Abuse</h4>
-                      <p className="text-neutral-600 text-sm">Don't attempt to reverse engineer, copy, or misuse our tools in harmful ways.</p>
+                      <p className="text-neutral-600 text-sm">Don't attempt to reverse engineer, copy, or misuse our games in harmful ways.</p>
                     </div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function TermsOfService() {
                 <ul className="space-y-4">
                   <li className="flex items-start space-x-3">
                     <Check className="text-green-600 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
-                    <span className="text-neutral-600">Free access to all 150+ tools without restrictions</span>
+                    <span className="text-neutral-600">Free access to all 150+ educational games without restrictions</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Check className="text-green-600 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
@@ -187,7 +187,7 @@ export default function TermsOfService() {
                   </li>
                   <li className="flex items-start space-x-3">
                     <Check className="text-green-600 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
-                    <span className="text-neutral-600">Use tools for personal and commercial purposes</span>
+                    <span className="text-neutral-600">Use games for personal and educational purposes</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <Check className="text-green-600 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
@@ -229,10 +229,10 @@ export default function TermsOfService() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                What DapsiWow Provides
+                What DapsiGames Provides
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                Understanding our service helps you make the most of our 150+ free online tools.
+                Understanding our service helps you make the most of our 150+ free educational games.
               </p>
             </div>
 
@@ -243,7 +243,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">150+ Free Tools</h3>
                 <p className="text-neutral-600 mb-4">
-                  Access to a comprehensive collection of online utilities including finance calculators, document processors, text tools, and health calculators.
+                  Access to a comprehensive collection of educational games including math games, science experiments, language activities, and memory training.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
                   <li>• Financial calculators and converters</li>
@@ -258,7 +258,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Secure Processing</h3>
                 <p className="text-neutral-600 mb-4">
-                  Your files and data are processed securely, with most operations happening locally in your browser for maximum privacy.
+                  Your learning data is processed securely, with most operations happening locally in your browser for maximum privacy.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
                   <li>• Local browser processing</li>
@@ -274,7 +274,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">24/7 Availability</h3>
                 <p className="text-neutral-600 mb-4">
-                  Our tools are available around the clock with high uptime and reliable performance across all devices and browsers.
+                  Our games are available around the clock with high uptime and reliable performance across all devices and browsers.
                 </p>
                 <ul className="text-sm text-neutral-500 space-y-1">
                   <li>• 99.9% uptime guarantee</li>
@@ -311,7 +311,7 @@ export default function TermsOfService() {
                       <ThumbsUp className="text-green-600 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                       <div>
                         <h4 className="font-semibold text-neutral-800">Personal Projects</h4>
-                        <p className="text-neutral-600 text-sm">Use our tools for personal documents, calculations, and creative projects</p>
+                        <p className="text-neutral-600 text-sm">Use our games for personal learning, skill development, and educational projects</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
@@ -398,14 +398,14 @@ export default function TermsOfService() {
                     <Info className="text-blue-500 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     <div>
                       <h4 className="font-semibold text-neutral-800">Your Content Remains Yours</h4>
-                      <p className="text-neutral-600 text-sm">You retain all rights to content you create or process using our tools</p>
+                      <p className="text-neutral-600 text-sm">You retain all rights to content you create or process using our games</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Info className="text-blue-500 mt-1" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     <div>
                       <h4 className="font-semibold text-neutral-800">Our Platform Protection</h4>
-                      <p className="text-neutral-600 text-sm">DapsiWow's code, design, and branding are protected by intellectual property laws</p>
+                      <p className="text-neutral-600 text-sm">DapsiGames' code, design, and branding are protected by intellectual property laws</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
@@ -432,7 +432,7 @@ export default function TermsOfService() {
                   <div className="border-b border-neutral-200 pb-4">
                     <h4 className="font-semibold text-neutral-800 mb-2">Our Platform</h4>
                     <ul className="text-sm text-neutral-600 space-y-1">
-                      <li>• Free license to use our tools</li>
+                      <li>• Free license to use our games</li>
                       <li>• No downloading or copying our code</li>
                       <li>• Respect our trademarks and branding</li>
                       <li>• Don't create competing services</li>
@@ -475,7 +475,7 @@ export default function TermsOfService() {
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-2">"As-Is" Service</h4>
                     <p className="text-neutral-600 text-sm">
-                      Our tools are provided as-is without warranties. While we strive for accuracy and reliability, 
+                      Our games are provided as-is without warranties. While we strive for accuracy and reliability, 
                       we cannot guarantee perfect results for every use case.
                     </p>
                   </div>
@@ -505,7 +505,7 @@ export default function TermsOfService() {
                   <div>
                     <h4 className="font-semibold text-neutral-800 mb-2">Financial Responsibility</h4>
                     <p className="text-neutral-600 text-sm">
-                      DapsiWow is not liable for decisions made based on tool results. Always verify important 
+                      DapsiGames is not liable for decisions made based on game results. Always verify important 
                       calculations with qualified professionals.
                     </p>
                   </div>
@@ -580,7 +580,7 @@ export default function TermsOfService() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">User-Initiated Termination</h3>
                 <p className="text-neutral-600 mb-4">
-                  You can stop using our services at any time. Since we don't require accounts, simply stop accessing our tools.
+                  You can stop using our services at any time. Since we don't require accounts, simply stop accessing our games.
                 </p>
                 <div className="text-sm text-neutral-500 space-y-1 text-left">
                   <div>• No account deletion needed</div>
@@ -638,7 +638,7 @@ export default function TermsOfService() {
                       Service Improvements
                     </h4>
                     <p className="text-neutral-600 text-sm">
-                      Adding new tools, features, or capabilities to better serve our users.
+                      Adding new games, features, or capabilities to better serve our learners.
                     </p>
                   </div>
                   <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -671,7 +671,7 @@ export default function TermsOfService() {
             <div className="bg-white rounded-3xl p-12 shadow-xl max-w-4xl mx-auto">
               <h2 className="text-3xl font-bold text-neutral-800 mb-6">Questions About Our Terms?</h2>
               <p className="text-lg text-neutral-600 mb-8">
-                We're here to help clarify any questions you might have about using our platform and tools. 
+                We're here to help clarify any questions you might have about using our platform and games. 
                 Our team is committed to providing clear, helpful guidance.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-8">

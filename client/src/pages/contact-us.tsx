@@ -38,7 +38,7 @@ const ContactUs = () => {
       if (!serviceId || !templateId || !publicKey) {
         toast({
           title: "Configuration Error",
-          description: "Email service is not properly configured. Please contact us directly at saifkhan09@dapsiwow.com",
+          description: "Email service is not properly configured. Please contact us directly at support@dapsigames.com",
           variant: "destructive"
         });
         return;
@@ -68,7 +68,7 @@ const ContactUs = () => {
       console.error('Error sending message:', error);
       toast({
         title: "Failed to Send Message",
-        description: "Sorry, there was an error sending your message. Please try again or contact us directly at saifkhan09@dapsiwow.com",
+        description: "Sorry, there was an error sending your message. Please try again or contact us directly at support@dapsigames.com",
         variant: "destructive"
       });
     } finally {
@@ -79,11 +79,11 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Get in Touch with DapsiWow</title>
-        <meta name="description" content="Contact DapsiWow for support, feedback, or suggestions. We're here to help you make the most of our free online tools." />
-        <meta name="keywords" content="contact dapsiwow, support, feedback, suggestions, help" />
-        <meta property="og:title" content="Contact Us - Get in Touch with DapsiWow" />
-        <meta property="og:description" content="Contact DapsiWow for support, feedback, or suggestions. We're here to help you make the most of our free online tools." />
+        <title>Contact Us - Get in Touch with DapsiGames</title>
+        <meta name="description" content="Contact DapsiGames for support, feedback, or suggestions. We're here to help you make the most of our free educational games." />
+        <meta name="keywords" content="contact dapsigames, support, feedback, suggestions, help" />
+        <meta property="og:title" content="Contact Us - Get in Touch with DapsiGames" />
+        <meta property="og:description" content="Contact DapsiGames for support, feedback, or suggestions. We're here to help you make the most of our free educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/contact" />
       </Helmet>
@@ -97,10 +97,10 @@ const ContactUs = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6" data-testid="text-page-title">
-                  Contact <span className="text-blue-600">DapsiWow</span>
+                  Contact <span className="text-blue-600">DapsiGames</span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                  We'd love to hear from you. Send us a message about our educational games and we'll respond as soon as possible.
                 </p>
               </div>
             </div>
@@ -215,7 +215,7 @@ const ContactUs = () => {
                         </div>
                         <div>
                           <h3 className="font-semibold text-neutral-800">Email</h3>
-                          <p className="text-neutral-600" data-testid="text-contact-email">saifkhan09@dapsiwow.com</p>
+                          <p className="text-neutral-600" data-testid="text-contact-email">support@dapsigames.com</p>
                         </div>
                       </div>
 
@@ -248,7 +248,7 @@ const ContactUs = () => {
                   <div className="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-neutral-800 mb-4">We're here to help!</h3>
                     <p className="text-neutral-600 mb-4">
-                      Whether you have a question, need technical support, or want to suggest a new tool, 
+                      Whether you have a question, need technical support, or want to suggest a new educational game, 
                       we're always happy to hear from you.
                     </p>
                     <ul className="text-sm text-neutral-600 space-y-2">

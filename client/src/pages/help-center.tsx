@@ -15,21 +15,21 @@ const HelpCenter = () => {
       name: 'Getting Started',
       icon: 'PlayCircle',
       color: 'from-blue-500 to-blue-600',
-      description: 'New to DapsiWow? Start here to learn the basics'
+      description: 'New to DapsiGames? Start here to learn the basics'
     },
     {
-      id: 'finance-tools',
-      name: 'Finance Tools',
+      id: 'math-games',
+      name: 'Math Games',
       icon: 'Calculator',
       color: 'from-green-500 to-green-600',
-      description: 'Help with calculators and financial tools'
+      description: 'Help with math games and arithmetic challenges'
     },
     {
-      id: 'file-tools',
-      name: 'File Tools',
+      id: 'study-games',
+      name: 'Study Games',
       icon: 'FileText',
       color: 'from-red-500 to-red-600',
-      description: 'Document and file processing'
+      description: 'Science, language, memory, and logic games'
     },
     {
       id: 'technical',
@@ -47,10 +47,10 @@ const HelpCenter = () => {
     },
     {
       id: 'business',
-      name: 'Business Use',
+      name: 'Educators & Classrooms',
       icon: 'Briefcase',
       color: 'from-orange-500 to-orange-600',
-      description: 'Using DapsiWow for commercial purposes'
+      description: 'Using DapsiGames in educational settings'
     }
   ];
 
@@ -71,62 +71,62 @@ const HelpCenter = () => {
 
   const faqs = [
     {
-      question: "How do I get started with DapsiWow?",
-      answer: "Simply visit our homepage and start using any of our 150+ tools immediately. No registration or downloads required - just click on any tool and begin working!",
+      question: "How do I get started with DapsiGames?",
+      answer: "Simply visit our homepage and start playing any of our 150+ educational games immediately. No registration or downloads required - just click on any game and begin learning!",
       category: 'getting-started'
     },
     {
-      question: "Are all tools completely free to use?",
-      answer: "Yes! All 150+ tools on DapsiWow are completely free with no hidden costs, subscriptions, or premium tiers. We believe powerful tools should be accessible to everyone.",
+      question: "Are all games completely free to use?",
+      answer: "Yes! All 150+ educational games on DapsiGames are completely free with no hidden costs, subscriptions, or premium tiers. We believe quality education should be accessible to everyone.",
       category: 'getting-started'
     },
     {
       question: "Do I need to create an account?",
-      answer: "No account creation is necessary. All tools are accessible immediately without any registration process. This helps protect your privacy and saves you time.",
+      answer: "No account creation is necessary. All games are accessible immediately without any registration process. This helps protect your privacy and saves you time.",
       category: 'account'
     },
     {
-      question: "How accurate are the financial calculators?",
-      answer: "Our financial calculators use industry-standard formulas and are regularly tested for accuracy. However, results should be used as estimates and you should consult professionals for important financial decisions.",
-      category: 'finance-tools'
+      question: "How educational are the math games?",
+      answer: "Our math games are designed by educational experts and aligned with curriculum standards. They provide engaging practice for arithmetic, algebra, geometry, and problem-solving skills across all grade levels.",
+      category: 'math-games'
     },
     {
-      question: "What file formats are supported?",
-      answer: "We support all major file formats including Word, Excel, PowerPoint, JPG, PNG, WebP, MP4, and many more. Each tool specifies its supported formats.",
-      category: 'file-tools'
+      question: "What subjects are covered in the study games?",
+      answer: "We cover all major academic subjects including math, science, language arts, memory training, and logic puzzles. Each game is designed for specific learning objectives and skill levels.",
+      category: 'study-games'
     },
     {
       question: "Is my data safe and private?",
-      answer: "Absolutely! Most tools process data locally in your browser. We don't store your files or personal information, and all processing is done securely on your device.",
+      answer: "Absolutely! Most games process data locally in your browser. We don't store your files or personal information, and all processing is done securely on your device.",
       category: 'account'
     },
     {
-      question: "Can I use these tools for commercial purposes?",
-      answer: "Yes! You can use all our tools for both personal and commercial projects without any restrictions or additional licensing fees.",
+      question: "Can I use these games in my classroom?",
+      answer: "Yes! You can use all our educational games in classrooms, tutoring sessions, and educational projects without any restrictions or additional licensing fees.",
       category: 'business'
     },
     {
-      question: "Why is a tool not working properly?",
+      question: "Why is a game not working properly?",
       answer: "Try refreshing the page, checking your internet connection, or using a different browser. If problems persist, contact our support team with details about your issue.",
       category: 'technical'
     },
     {
-      question: "Are the tools mobile-friendly?",
-      answer: "Yes! All our tools are designed with responsive interfaces that work seamlessly on desktop, tablet, and mobile devices.",
+      question: "Are the games mobile-friendly?",
+      answer: "Yes! All our educational games are designed with responsive interfaces that work seamlessly on desktop, tablet, and mobile devices.",
       category: 'technical'
     },
     {
-      question: "How often are new tools added?",
-      answer: "We regularly update our collection with new tools based on user feedback, emerging needs, and technological advances. Follow us for updates on new releases!",
+      question: "How often are new games added?",
+      answer: "We regularly update our collection with new educational games based on user feedback, curriculum needs, and educational trends. Follow us for updates on new releases!",
       category: 'getting-started'
     }
   ];
 
   const popularTopics = [
-    { title: "How to format text documents", category: "text-tools", views: "15.2k" },
-    { title: "Using the Loan Calculator", category: "finance-tools", views: "12.8k" },
+    { title: "How to start with math games", category: "math-games", views: "15.2k" },
+    { title: "Using memory training games", category: "study-games", views: "12.8k" },
     { title: "Privacy and Data Security", category: "account", views: "9.4k" },
-    { title: "Commercial Use Guidelines", category: "business", views: "7.1k" },
+    { title: "Classroom Use Guidelines", category: "business", views: "7.1k" },
     { title: "Troubleshooting Common Issues", category: "technical", views: "6.9k" }
   ];
 
@@ -141,11 +141,11 @@ const HelpCenter = () => {
   return (
     <>
       <Helmet>
-        <title>Help Center - DapsiWow Support & FAQ</title>
-        <meta name="description" content="Get comprehensive support for DapsiWow's 150+ free online tools. Find answers, tutorials, and expert help for all your productivity needs." />
-        <meta name="keywords" content="help center, FAQ, support, dapsiwow help, online tools support, tutorials, guides" />
-        <meta property="og:title" content="Help Center - DapsiWow Support & FAQ" />
-        <meta property="og:description" content="Get comprehensive support for DapsiWow's free online tools and find answers to all your questions." />
+        <title>Help Center - DapsiGames Support & FAQ</title>
+        <meta name="description" content="Get comprehensive support for DapsiGames' 150+ free educational games. Find answers, tutorials, and expert help for all your learning needs." />
+        <meta name="keywords" content="help center, FAQ, support, dapsigames help, study games support, tutorials, guides" />
+        <meta property="og:title" content="Help Center - DapsiGames Support & FAQ" />
+        <meta property="og:description" content="Get comprehensive support for DapsiGames' free educational games and find answers to all your questions." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/help" />
       </Helmet>
@@ -162,7 +162,7 @@ const HelpCenter = () => {
                   How can we <span className="text-blue-600">help</span> you?
                 </h1>
                 <p className="text-xl lg:text-2xl text-neutral-600 mb-10 max-w-4xl mx-auto leading-relaxed">
-                  Get instant support for all 150+ tools, find detailed guides, and discover tips to make the most of DapsiWow
+                  Get instant support for all 150+ educational games, find detailed guides, and discover tips to make the most of DapsiGames
                 </p>
                 
                 {/* Search Bar */}
@@ -170,7 +170,7 @@ const HelpCenter = () => {
                   <div className="relative">
                     <input
                       type="text"
-                      placeholder="Search for help topics, tools, or questions..."
+                      placeholder="Search for help topics, games, or questions..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full px-6 py-4 pl-14 text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 text-lg"
@@ -192,7 +192,7 @@ const HelpCenter = () => {
                   </div>
                   <div className="text-center">
                     <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">150+</div>
-                    <div className="text-neutral-600 font-medium">Tools Covered</div>
+                    <div className="text-neutral-600 font-medium">Games Covered</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">99.9%</div>
@@ -211,7 +211,7 @@ const HelpCenter = () => {
                   Browse by Category
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Find help for specific tool categories and common use cases
+                  Find help for specific game categories and common use cases
                 </p>
               </div>
 
@@ -315,7 +315,7 @@ const HelpCenter = () => {
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6">Still need help?</h2>
                 <p className="text-xl text-gray-700 mb-10">
-                  Can't find what you're looking for? Our dedicated support team is here to help you succeed with DapsiWow.
+                  Can't find what you're looking for? Our dedicated support team is here to help you learn and succeed with DapsiGames.
                 </p>
                 
                 <div className="mb-12">

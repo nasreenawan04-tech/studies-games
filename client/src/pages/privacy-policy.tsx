@@ -7,15 +7,15 @@ export default function PrivacyPolicy() {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - DapsiWow Online Tools | Data Protection & Security</title>
-        <meta name="description" content="Comprehensive privacy policy for DapsiWow's 150+ free online tools. Learn how we protect your data, ensure privacy, and maintain GDPR compliance with transparent practices." />
-        <meta name="keywords" content="privacy policy, data protection, GDPR compliance, online tools privacy, secure file processing, no data collection, local processing, user privacy rights, data security, transparent privacy practices" />
-        <meta property="og:title" content="Privacy Policy - DapsiWow Online Tools | Data Protection & Security" />
-        <meta property="og:description" content="Comprehensive privacy policy covering data protection, user rights, and security measures for DapsiWow's free online tools." />
+        <title>Privacy Policy - DapsiGames Educational Platform | Data Protection & Security</title>
+        <meta name="description" content="Comprehensive privacy policy for DapsiGames' 150+ free educational games. Learn how we protect your data, ensure privacy, and maintain GDPR compliance with transparent practices." />
+        <meta name="keywords" content="privacy policy, data protection, GDPR compliance, educational games privacy, secure learning, no data collection, local processing, user privacy rights, data security, transparent privacy practices" />
+        <meta property="og:title" content="Privacy Policy - DapsiGames Educational Platform | Data Protection & Security" />
+        <meta property="og:description" content="Comprehensive privacy policy covering data protection, user rights, and security measures for DapsiGames' free educational games." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="/privacy" />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="DapsiWow" />
+        <meta name="author" content="DapsiGames" />
       </Helmet>
 
       <div className="min-h-screen bg-white">
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
               </h1>
               <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
                 Your privacy matters to us. Learn how we protect your information and maintain transparency 
-                in everything we do at DapsiWow.
+                in everything we do at DapsiGames.
               </p>
               <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
                 <div className="text-center">
@@ -62,7 +62,7 @@ export default function PrivacyPolicy() {
                 Our Privacy Principles
               </h2>
               <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                We built DapsiWow with privacy as a core principle, not an afterthought.
+                We built DapsiGames with privacy as a core principle, not an afterthought.
               </p>
             </div>
 
@@ -73,7 +73,7 @@ export default function PrivacyPolicy() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  Most tools process data locally in your browser. We don't store your personal files or information on our servers.
+                  Most games process data locally in your browser. We don't store your personal information or learning progress on our servers.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function PrivacyPolicy() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Registration</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  Use all our tools without creating an account. No email addresses, passwords, or personal information required.
+                  Play all our educational games without creating an account. No email addresses, passwords, or personal information required.
                 </p>
               </div>
 
@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Tracking</h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  We don't track your usage across websites or build profiles about you. Your activity remains private.
+                  We don't track your learning progress across websites or build profiles about you. Your education remains private.
                 </p>
               </div>
 
@@ -338,7 +338,7 @@ export default function PrivacyPolicy() {
                   </div>
                   <div className="bg-white rounded-xl p-4 shadow-sm">
                     <h4 className="font-semibold text-neutral-800 mb-2">No Cross-Site Tracking</h4>
-                    <p className="text-neutral-600 text-sm">Our cookies only work on DapsiWow and don't track you across other websites.</p>
+                    <p className="text-neutral-600 text-sm">Our cookies only work on DapsiGames and don't track you across other websites.</p>
                   </div>
                 </div>
               </div>
