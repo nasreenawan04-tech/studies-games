@@ -166,10 +166,9 @@ const LanguageGames = () => {
             </div>
           </div>
         </section>
-      </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </>
   );
 };
