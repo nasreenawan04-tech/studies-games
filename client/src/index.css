@@ -14,7 +14,7 @@
   --primary-foreground: #FFFFFF;
   --secondary: #007AFF; /* Bright Blue */
   --secondary-foreground: #FFFFFF;
-  --muted: #F1F3F4;
+  --muted: #F3F4F6;
   --muted-foreground: #6B7280;
   --accent: #FFD60A; /* Yellow */
   --accent-foreground: #1C1C1E;
@@ -127,4 +127,12 @@
 
 .gradient-accent {
   background: linear-gradient(135deg, #FFD60A 0%, #FF3B30 100%);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #FF3B30 0%, #FF5B4A 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #007AFF 0%, #339FFF 100%);
 }
