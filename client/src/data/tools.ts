@@ -69,6 +69,15 @@ const toolsData: Tool[] = [
     icon: '%',
     href: '/games/percentage-puzzle'
   },
+  {
+    id: 'math-speed-challenge',
+    name: 'Math Speed Challenge',
+    description: 'Test your mental math skills in this fast-paced arithmetic challenge game',
+    category: 'math',
+    icon: '⚡',
+    isPopular: true,
+    href: '/games/math-speed-challenge'
+  },
 
   // Science Games
   {
