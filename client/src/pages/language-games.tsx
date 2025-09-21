@@ -40,7 +40,7 @@ const LanguageGames = () => {
         <meta property="og:title" content="Language Games - 32+ Free Language Learning Games | DapsiGames" />
         <meta property="og:description" content="Free language games including vocabulary builder, grammar challenge, and 29+ more educational games." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dapsiwow.com/language-games" />
+        <link rel="canonical" href="https://dapsigames.com/language-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-language-games">

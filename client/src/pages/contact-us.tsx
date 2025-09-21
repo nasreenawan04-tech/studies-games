@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -27,13 +26,13 @@ const ContactUs = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     try {
       // EmailJS configuration - get from environment variables
       const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-      
+
       // Check if EmailJS is properly configured
       if (!serviceId || !templateId || !publicKey) {
         toast({
@@ -43,7 +42,7 @@ const ContactUs = () => {
         });
         return;
       }
-      
+
       // Template parameters for EmailJS
       const templateParams = {
         from_name: formData.name,
@@ -54,16 +53,16 @@ const ContactUs = () => {
       };
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
-      
+
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for your message! We'll get back to you within 24 hours.",
         variant: "default"
       });
-      
+
       // Reset form
       setFormData({ name: '', email: '', subject: '', message: '' });
-      
+
     } catch (error) {
       console.error('Error sending message:', error);
       toast({
@@ -90,7 +89,7 @@ const ContactUs = () => {
 
       <div className="min-h-screen flex flex-col" data-testid="page-contact-us">
         <Header />
-        
+
         <main className="flex-1">
           {/* Hero Section */}
           <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
@@ -271,7 +270,7 @@ const ContactUs = () => {
             </div>
           </section>
         </main>
-        
+
         <Footer />
       </div>
     </>

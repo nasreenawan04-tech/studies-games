@@ -39,7 +39,7 @@ const MathGames = () => {
         <meta property="og:title" content="Math Games - 36+ Free Educational Math Games | DapsiGames" />
         <meta property="og:description" content="Free math games including addition race, multiplication master, and 33+ more educational games." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dapsiwow.com/math-games" />
+        <link rel="canonical" href="https://dapsigames.com/math-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-math-games">

@@ -39,7 +39,7 @@ const ScienceGames = () => {
         <meta property="og:title" content="Science Games - 25+ Free Educational Science Games | DapsiGames" />
         <meta property="og:description" content="Free science games including periodic table quest, physics playground, and 22+ more educational games." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://dapsiwow.com/science-games" />
+        <link rel="canonical" href="https://dapsigames.com/science-games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-science-games">
