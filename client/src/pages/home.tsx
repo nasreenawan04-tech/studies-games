@@ -480,7 +480,26 @@ const Home = () => {
                   </a>
                 </div>
 
-                
+                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
+                  <h3 className="text-xl font-bold text-neutral-800 mb-4">Business Loan Calculator</h3>
+                  <p className="text-neutral-600 mb-4 leading-relaxed">
+                    Calculate business loan payments with origination fees, processing costs, and
+                    effective APR. Compare SBA loans, term loans, and equipment financing options.
+                  </p>
+                  <ul className="text-sm text-neutral-500 space-y-1 mb-6">
+                    <li>• SBA loan calculations</li>
+                    <li>• Fee structure analysis</li>
+                    <li>• Payment schedule options</li>
+                    <li>• Total cost comparisons</li>
+                  </ul>
+                  <a
+                    href="/games/business-loan-calculator"
+                    className="inline-flex items-center text-purple-600 font-semibold hover:text-purple-700 transition-colors group-hover:gap-2 gap-1"
+                  >
+                    Play Business Math Game
+                    <span className="transition-transform group-hover:translate-x-1">→</span>
+                  </a>
+                </div>
 
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 group border border-neutral-100">
                   <h3 className="text-xl font-bold text-neutral-800 mb-4">Health Science Explorer</h3>
