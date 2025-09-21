@@ -62,40 +62,40 @@ export default {
           ring: "var(--sidebar-ring)",
         },
         neutral: {
-          50: "var(--neutral-50)",
-          100: "var(--neutral-100)",
-          600: "var(--neutral-600)",
-          800: "var(--neutral-800)",
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          600: "#6B7280",
+          800: "#1C1C1E",
         },
         blue: {
-          500: "var(--blue-500)",
-          600: "var(--blue-600)",
+          500: "#007AFF",
+          600: "#0056CC",
         },
         purple: {
-          500: "var(--purple-500)",
-          600: "var(--purple-600)",
+          500: "#8B5CF6",
+          600: "#7C3AED",
         },
         red: {
           50: "#FEF2F2",
-          500: "var(--red-500)",
-          600: "var(--red-600)",
+          500: "#FF3B30",
+          600: "#DC2626",
           900: "#7F1D1D",
         },
         green: {
-          500: "var(--green-500)",
-          600: "var(--green-600)",
+          500: "#10B981",
+          600: "#059669",
         },
         yellow: {
-          500: "var(--yellow-500)",
+          500: "#FFD60A",
         },
         orange: {
-          500: "var(--orange-500)",
+          500: "#F97316",
         },
         pink: {
-          500: "var(--pink-500)",
+          500: "#EC4899",
         },
         indigo: {
-          600: "var(--indigo-600)",
+          600: "#4F46E5",
         },
       },
       fontFamily: {
