@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <img
                 src={logoImage}
-                alt="DapsiWow Logo"
+                alt="DapsiGames Logo"
                 className="w-8 h-8 object-contain filter drop-shadow-sm"
               />
               <span className="text-xl font-bold">DapsiGames</span>
