@@ -35,7 +35,7 @@
   --sidebar-accent: #FFD60A;
   --sidebar-accent-foreground: #1C1C1E;
   --sidebar-border: #E5E7EB;
-  --sidebar-ring: #007AFF;
+  --sidebar-ring: #007AFF;</old_str>
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
@@ -113,6 +113,70 @@
   }
 }
 
+@layer utilities {
+  /* Brand Color Utilities */
+  .text-brand-primary {
+    color: #FF3B30;
+  }
+  
+  .text-brand-secondary {
+    color: #007AFF;
+  }
+  
+  .text-brand-accent {
+    color: #FFD60A;
+  }
+  
+  .bg-brand-primary {
+    background-color: #FF3B30;
+  }
+  
+  .bg-brand-secondary {
+    background-color: #007AFF;
+  }
+  
+  .bg-brand-accent {
+    background-color: #FFD60A;
+  }
+  
+  .border-brand-primary {
+    border-color: #FF3B30;
+  }
+  
+  .border-brand-secondary {
+    border-color: #007AFF;
+  }
+  
+  .border-brand-accent {
+    border-color: #FFD60A;
+  }
+  
+  /* Hover variants */
+  .hover\:text-brand-primary:hover {
+    color: #FF3B30;
+  }
+  
+  .hover\:text-brand-secondary:hover {
+    color: #007AFF;
+  }
+  
+  .hover\:text-brand-accent:hover {
+    color: #FFD60A;
+  }
+  
+  .hover\:bg-brand-primary:hover {
+    background-color: #FF3B30;
+  }
+  
+  .hover\:bg-brand-secondary:hover {
+    background-color: #007AFF;
+  }
+  
+  .hover\:bg-brand-accent:hover {
+    background-color: #FFD60A;
+  }
+}
+
 .gradient-blue-purple {
   background: linear-gradient(135deg, #007AFF 0%, #FF3B30 100%);
 }
@@ -135,4 +199,21 @@
 
 .gradient-secondary {
   background: linear-gradient(135deg, #007AFF 0%, #339FFF 100%);
+}
+
+/* Additional brand-specific gradients */
+.gradient-brand-primary {
+  background: linear-gradient(135deg, #FF3B30 0%, #FF6B60 100%);
+}
+
+.gradient-brand-secondary {
+  background: linear-gradient(135deg, #007AFF 0%, #40A9FF 100%);
+}
+
+.gradient-brand-accent {
+  background: linear-gradient(135deg, #FFD60A 0%, #FFE135 100%);
+}
+
+.gradient-brand-hero {
+  background: linear-gradient(135deg, #FF3B30 0%, #007AFF 50%, #FFD60A 100%);
 }

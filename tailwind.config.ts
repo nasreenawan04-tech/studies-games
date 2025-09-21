@@ -96,7 +96,7 @@ export default {
         },
         indigo: {
           600: "#4F46E5",
-        },
+        },</old_str>
       },
       fontFamily: {
         sans: ["var(--font-sans)"],

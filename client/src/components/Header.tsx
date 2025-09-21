@@ -60,7 +60,7 @@ const Header = () => {
                 href={link.href}
                 className={`text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-medium whitespace-nowrap ${
                   location === link.href ? 'text-primary dark:text-primary' : ''
-                }`}
+                }`}</old_str>
                 data-testid={`link-${link.label.toLowerCase().replace(' ', '-')}`}
               >
                 {link.label}
@@ -117,8 +117,8 @@ const Header = () => {
                   href={link.href}
                   className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
                     location === link.href 
-                      ? 'text-primary dark:text-primary bg-red-50 dark:bg-red-900/20' 
-                      : 'text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary hover:bg-neutral-50 dark:hover:bg-neutral-800'
+                      ? 'text-primary dark:text-primary bg-primary/5 dark:bg-primary/10' 
+                      : 'text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary hover:bg-neutral-50 dark:hover:bg-neutral-800'</old_str>
                   }`}
                   onClick={handleLinkClick}
                   data-testid={`mobile-link-${link.label.toLowerCase().replace(' ', '-')}`}
