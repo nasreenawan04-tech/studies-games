@@ -101,7 +101,7 @@ const HeroSection = () => {
                           <div className="text-sm text-gray-500 truncate">{tool.description}</div>
                         </div>
                         {tool.isPopular && (
-                          <div className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full flex-shrink-0">
+                          <div className="bg-accent/20 text-accent-foreground text-xs px-2 py-1 rounded-full flex-shrink-0">
                             Popular
                           </div>
                         )}

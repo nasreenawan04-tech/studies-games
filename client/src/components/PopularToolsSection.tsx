@@ -48,7 +48,7 @@ const PopularToolsSection = () => {
               onClick={() => setActiveTab(tab.key)}
               className={`px-6 py-3 rounded-xl font-semibold transition-colors ${
                 activeTab === tab.key
-                  ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-md'
+                  ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-md'
                   : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200'
               }`}
               data-testid={`button-tab-${tab.key}`}
@@ -68,7 +68,7 @@ const PopularToolsSection = () => {
         <div className="text-center">
           <button
             onClick={handleViewAllGames}
-            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             data-testid="button-view-all-games"
           >
             View All 30+ Study Games
