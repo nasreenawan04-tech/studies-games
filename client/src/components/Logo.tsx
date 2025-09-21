@@ -1,4 +1,4 @@
-import logoImage from '@assets/dapsigames-logo.png';
+import logoImage from '@assets/logo.png';
 
 interface LogoProps {
   className?: string;

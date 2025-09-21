@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import logoImage from '@assets/dapsigames-logo.png';
+import logoImage from '@assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
