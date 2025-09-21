@@ -58,8 +58,8 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-neutral-600 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-200 font-medium whitespace-nowrap ${
-                  location === link.href ? 'text-blue-500 dark:text-blue-400' : ''
+                className={`text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-medium whitespace-nowrap ${
+                  location === link.href ? 'text-primary dark:text-primary' : ''
                 }`}
                 data-testid={`link-${link.label.toLowerCase().replace(' ', '-')}`}
               >
@@ -72,7 +72,7 @@ const Header = () => {
           <div className="flex items-center space-x-1 sm:space-x-2">
             {/* Search */}
             <button
-              className="p-2 text-neutral-600 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800"
+              className="p-2 text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary transition-colors rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800"
               onClick={() => setIsSearchOpen(true)}
               data-testid="button-search"
               aria-label="Search tools"
@@ -83,7 +83,7 @@ const Header = () => {
 
             {/* Mobile Menu */}
             <button
-              className="lg:hidden p-2 text-neutral-600 dark:text-neutral-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800"
+              className="lg:hidden p-2 text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary transition-colors rounded-lg hover:bg-neutral-100 dark:hover:bg-neutral-800"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               data-testid="button-mobile-menu"
               aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
@@ -117,8 +117,8 @@ const Header = () => {
                   href={link.href}
                   className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
                     location === link.href 
-                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' 
-                      : 'text-neutral-600 dark:text-neutral-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-neutral-50 dark:hover:bg-neutral-800'
+                      ? 'text-primary dark:text-primary bg-red-50 dark:bg-red-900/20' 
+                      : 'text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary hover:bg-neutral-50 dark:hover:bg-neutral-800'
                   }`}
                   onClick={handleLinkClick}
                   data-testid={`mobile-link-${link.label.toLowerCase().replace(' ', '-')}`}
@@ -148,7 +148,7 @@ const Header = () => {
                   placeholder="Search for study games..."
                   value={searchQuery}
                   onChange={(e) => handleSearch(e.target.value)}
-                  className="w-full py-2 sm:py-3 px-3 sm:px-4 pr-10 sm:pr-12 text-base sm:text-lg border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+                  className="w-full py-2 sm:py-3 px-3 sm:px-4 pr-10 sm:pr-12 text-base sm:text-lg border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary dark:focus:ring-secondary"
                   autoFocus
                   data-testid="search-modal-input"
                   aria-label="Search for tools"

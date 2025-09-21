@@ -30,9 +30,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Popular Games</h3>
             <ul className="space-y-3 text-neutral-300">
-              <li><Link href="/games/addition-race" className="hover:text-white transition-colors" data-testid="link-addition-race">Addition Race</Link></li>
-              <li><Link href="/games/vocabulary-builder" className="hover:text-white transition-colors" data-testid="link-vocabulary-builder">Vocabulary Builder</Link></li>
-              <li><Link href="/games/periodic-table-quest" className="hover:text-white transition-colors" data-testid="link-periodic-table-quest">Periodic Table Quest</Link></li>
+              <li><Link href="/games/addition-race" className="hover:text-accent transition-colors" data-testid="link-addition-race">Addition Race</Link></li>
+              <li><Link href="/games/vocabulary-builder" className="hover:text-accent transition-colors" data-testid="link-vocabulary-builder">Vocabulary Builder</Link></li>
+              <li><Link href="/games/periodic-table-quest" className="hover:text-accent transition-colors" data-testid="link-periodic-table-quest">Periodic Table Quest</Link></li>
             </ul>
           </div>
 
@@ -40,11 +40,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Game Categories</h3>
             <ul className="space-y-3 text-neutral-300">
-              <li><Link href="/math-games" className="hover:text-white transition-colors" data-testid="link-math-games">Math Games</Link></li>
-              <li><Link href="/science-games" className="hover:text-white transition-colors" data-testid="link-science-games">Science Games</Link></li>
-              <li><Link href="/language-games" className="hover:text-white transition-colors" data-testid="link-language-games">Language Games</Link></li>
-              <li><Link href="/memory-games" className="hover:text-white transition-colors" data-testid="link-memory-games">Memory Games</Link></li>
-              <li><Link href="/logic-games" className="hover:text-white transition-colors" data-testid="link-logic-games">Logic Games</Link></li>
+              <li><Link href="/math-games" className="hover:text-accent transition-colors" data-testid="link-math-games">Math Games</Link></li>
+              <li><Link href="/science-games" className="hover:text-accent transition-colors" data-testid="link-science-games">Science Games</Link></li>
+              <li><Link href="/language-games" className="hover:text-accent transition-colors" data-testid="link-language-games">Language Games</Link></li>
+              <li><Link href="/memory-games" className="hover:text-accent transition-colors" data-testid="link-memory-games">Memory Games</Link></li>
+              <li><Link href="/logic-games" className="hover:text-accent transition-colors" data-testid="link-logic-games">Logic Games</Link></li>
             </ul>
           </div>
 
@@ -52,11 +52,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Company</h3>
             <ul className="space-y-3 text-neutral-300">
-              <li><Link href="/about" className="hover:text-white transition-colors" data-testid="link-about-us">About Us</Link></li>
-              <li><Link href="/help" className="hover:text-white transition-colors" data-testid="link-help-center">Help Center</Link></li>
-              <li><Link href="/contact" className="hover:text-white transition-colors" data-testid="link-contact-us">Contact Us</Link></li>
-              <li><Link href="/privacy" className="hover:text-white transition-colors" data-testid="link-privacy-policy">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-white transition-colors" data-testid="link-terms-of-service">Terms of Service</Link></li>
+              <li><Link href="/about" className="hover:text-accent transition-colors" data-testid="link-about-us">About Us</Link></li>
+              <li><Link href="/help" className="hover:text-accent transition-colors" data-testid="link-help-center">Help Center</Link></li>
+              <li><Link href="/contact" className="hover:text-accent transition-colors" data-testid="link-contact-us">Contact Us</Link></li>
+              <li><Link href="/privacy" className="hover:text-accent transition-colors" data-testid="link-privacy-policy">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-accent transition-colors" data-testid="link-terms-of-service">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
             <div className="text-neutral-400 text-center md:text-right">
               <p className="flex items-center justify-center md:justify-end">
-                <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                <span className="w-2 h-2 bg-accent rounded-full mr-2 animate-pulse"></span>
                 <span className="font-semibold mx-1" data-testid="text-daily-game-count">8,247</span> games played today
               </p>
             </div>

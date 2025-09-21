@@ -76,8 +76,10 @@ export default {
           600: "var(--purple-600)",
         },
         red: {
+          50: "#FEF2F2",
           500: "var(--red-500)",
           600: "var(--red-600)",
+          900: "#7F1D1D",
         },
         green: {
           500: "var(--green-500)",
