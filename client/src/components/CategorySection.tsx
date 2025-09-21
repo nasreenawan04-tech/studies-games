@@ -13,9 +13,9 @@ const CategorySection = () => {
       title: categories.math,
       description: 'Interactive math games covering arithmetic, algebra, geometry, and calculus',
       icon: Calculator,
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-secondary to-secondary/90',
       bgColor: 'bg-blue-50',
-      textColor: 'text-blue-600',
+      textColor: 'text-secondary',
       count: stats.math,
       href: '/math-games'
     },
@@ -24,9 +24,9 @@ const CategorySection = () => {
       title: categories.science,
       description: 'Virtual labs and simulations for physics, chemistry, biology, and earth sciences',
       icon: FlaskConical,
-      color: 'from-pink-500 to-pink-600',
-      bgColor: 'bg-pink-50',
-      textColor: 'text-pink-600',
+      color: 'from-primary to-primary/90',
+      bgColor: 'bg-red-50',
+      textColor: 'text-primary',
       count: stats.science,
       href: '/science-games'
     },
@@ -35,7 +35,7 @@ const CategorySection = () => {
       title: categories.language,
       description: 'Vocabulary builders, grammar adventures, and reading comprehension challenges',
       icon: BookOpen,
-      color: 'from-yellow-500 to-orange-600',
+      color: 'from-accent to-yellow-500',
       bgColor: 'bg-yellow-50',
       textColor: 'text-yellow-600',
       count: stats.language,
@@ -118,7 +118,7 @@ const CategorySection = () => {
         <div className="text-center">
           <Link
             href="/games"
-            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             data-testid="button-view-all-categories"
           >
             Browse All Study Games

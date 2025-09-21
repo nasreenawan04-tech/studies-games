@@ -9,17 +9,17 @@ interface ToolCardProps {
 }
 
 const categoryColors = {
-  math: 'bg-blue-100 text-blue-600',
-  science: 'bg-pink-100 text-pink-600',
+  math: 'bg-blue-100 text-secondary',
+  science: 'bg-red-50 text-primary',
   language: 'bg-yellow-100 text-yellow-600',
   memory: 'bg-purple-100 text-purple-600',
   logic: 'bg-green-100 text-green-600'
 };
 
 const iconColors = {
-  math: 'from-blue-500 to-purple-600',
-  science: 'from-pink-500 to-rose-600',
-  language: 'from-yellow-500 to-orange-600',
+  math: 'from-secondary to-secondary/80',
+  science: 'from-primary to-primary/80',
+  language: 'from-accent to-yellow-500',
   memory: 'from-purple-500 to-indigo-600',
   logic: 'from-green-500 to-emerald-600'
 };

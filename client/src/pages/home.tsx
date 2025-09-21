@@ -295,11 +295,11 @@ const Home = () => {
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-inner">
                   <div className="grid grid-cols-2 gap-6 text-center">
                     <div>
-                      <div className="text-4xl font-bold text-blue-600 mb-2">150+</div>
+                      <div className="text-4xl font-bold text-secondary mb-2">150+</div>
                       <div className="text-neutral-700 font-medium">Free Games</div>
                     </div>
                     <div>
-                      <div className="text-4xl font-bold text-green-600 mb-2">0</div>
+                      <div className="text-4xl font-bold text-primary mb-2">0</div>
                       <div className="text-neutral-700 font-medium">Registration Required</div>
                     </div>
                     <div>
@@ -316,7 +316,7 @@ const Home = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Instant Play</h4>
@@ -389,7 +389,7 @@ const Home = () => {
                   </ul>
                   <a
                     href="/games/addition-race"
-                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group-hover:gap-2 gap-1"
+                    className="inline-flex items-center text-secondary font-semibold hover:text-secondary/90 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Addition Race
                     <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -431,7 +431,7 @@ const Home = () => {
                   </ul>
                   <a
                     href="/games/vocabulary-builder"
-                    className="inline-flex items-center text-yellow-600 font-semibold hover:text-yellow-700 transition-colors group-hover:gap-2 gap-1"
+                    className="inline-flex items-center text-accent font-semibold hover:text-accent/90 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Vocabulary Builder
                     <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -515,7 +515,7 @@ const Home = () => {
                   </ul>
                   <a
                     href="/games/cholesterol-risk-calculator"
-                    className="inline-flex items-center text-red-600 font-semibold hover:text-red-700 transition-colors group-hover:gap-2 gap-1"
+                    className="inline-flex items-center text-primary font-semibold hover:text-primary/90 transition-colors group-hover:gap-2 gap-1"
                   >
                     Play Health Science Game
                     <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -529,7 +529,7 @@ const Home = () => {
                 </p>
                 <a
                   href="/games"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 gap-2"
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 gap-2"
                 >
                   View All 150+ Study Games
                   <Zap size={20} />
@@ -553,7 +553,7 @@ const Home = () => {
               <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
                 <div className="text-center">
                   <div className="relative">
-                    <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                       <span className="text-2xl font-bold text-white">1</span>
                     </div>
                   </div>
@@ -607,22 +607,22 @@ const Home = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group" data-testid="stat-calculations">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-secondary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <Calculator className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">25M+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-secondary mb-2">25M+</div>
                     <div className="text-neutral-800 font-semibold text-lg mb-1">Calculations Completed</div>
                     <div className="text-sm text-neutral-500">Accurate results delivered daily</div>
                   </div>
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100 group" data-testid="stat-tools">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <PenTool className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-green-600 mb-2">180+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">180+</div>
                     <div className="text-neutral-800 font-semibold text-lg mb-1">Professional Tools</div>
                     <div className="text-sm text-neutral-500">Continuously expanding collection</div>
                   </div>
@@ -665,7 +665,7 @@ const Home = () => {
                   <div>
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200" data-testid="use-case-financial">
-                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-gradient-to-r from-secondary to-secondary rounded-xl flex items-center justify-center flex-shrink-0">
                           <BookOpen className="text-white" size={20} />
                         </div>
                         <div>
@@ -701,7 +701,7 @@ const Home = () => {
                       </div>
 
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-50 to-green-100 border border-green-200" data-testid="use-case-students">
-                        <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-gradient-to-r from-primary to-primary rounded-xl flex items-center justify-center flex-shrink-0">
                           <Brain className="text-white" size={20} />
                         </div>
                         <div>
@@ -726,14 +726,14 @@ const Home = () => {
                       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                         <a
                           href="/math-games"
-                          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all duration-200 shadow-lg text-center hover:shadow-xl transform hover:-translate-y-0.5"
+                          className="inline-block bg-secondary text-white px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-all duration-200 shadow-lg text-center hover:shadow-xl transform hover:-translate-y-0.5"
                           data-testid="link-finance-tools"
                         >
                           Explore Math Games
                         </a>
                         <a
                           href="/science-games"
-                          className="inline-block bg-white text-blue-600 border-2 border-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-200 text-center hover:shadow-lg transform hover:-translate-y-0.5"
+                          className="inline-block bg-white text-secondary border-2 border-secondary px-6 py-3 rounded-xl font-semibold hover:bg-secondary/10 transition-all duration-200 text-center hover:shadow-lg transform hover:-translate-y-0.5"
                           data-testid="link-health-tools"
                         >
                           Try Science Games
@@ -741,7 +741,7 @@ const Home = () => {
                       </div>
                       <div className="text-center">
                         <p className="text-sm text-neutral-600">
-                          Or explore all <a href="/games" className="text-blue-600 hover:text-blue-800 underline font-semibold">150+ educational games</a>
+                          Or explore all <a href="/games" className="text-secondary hover:text-secondary/90 underline font-semibold">150+ educational games</a>
                         </p>
                       </div>
                     </div>
@@ -807,8 +807,8 @@ const Home = () => {
                       How do the math games help improve learning?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/math-games" className="text-blue-600 hover:text-blue-800 underline">math games</a> use proven educational techniques like spaced repetition, progressive difficulty, and immediate feedback to reinforce learning.
-                      Games cover arithmetic, algebra, geometry, statistics, and calculus through interactive challenges that make math concepts engaging and memorable. Explore all <a href="/math-games" className="text-blue-600 hover:text-blue-800 underline">math games</a>.
+                      Our <a href="/math-games" className="text-secondary hover:text-secondary/90 underline">math games</a> use proven educational techniques like spaced repetition, progressive difficulty, and immediate feedback to reinforce learning.
+                      Games cover arithmetic, algebra, geometry, statistics, and calculus through interactive challenges that make math concepts engaging and memorable. Explore all <a href="/math-games" className="text-secondary hover:text-secondary/90 underline">math games</a>.
                     </p>
                   </div>
 
@@ -817,8 +817,8 @@ const Home = () => {
                       What makes your science games engaging?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/science-games" className="text-blue-600 hover:text-blue-800 underline">science games</a> cover physics experiments, chemistry lab simulations, biology explorations, astronomy adventures, earth science investigations, and environmental studies.
-                      Students can safely conduct virtual experiments and explore scientific concepts through hands-on interactive gameplay. Find more <a href="/science-games" className="text-blue-600 hover:text-blue-800 underline">science games</a>.
+                      Our <a href="/science-games" className="text-secondary hover:text-secondary/90 underline">science games</a> cover physics experiments, chemistry lab simulations, biology explorations, astronomy adventures, earth science investigations, and environmental studies.
+                      Students can safely conduct virtual experiments and explore scientific concepts through hands-on interactive gameplay. Find more <a href="/science-games" className="text-secondary hover:text-secondary/90 underline">science games</a>.
                     </p>
                   </div>
 
@@ -827,8 +827,8 @@ const Home = () => {
                       Which language games improve vocabulary and reading skills?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      We provide <a href="/language-games" className="text-blue-600 hover:text-blue-800 underline">language games</a> that use storytelling, word association, spelling challenges, grammar adventures, and reading comprehension quests to build vocabulary, improve writing skills, and enhance reading fluency.
-                      All <a href="/language-games" className="text-blue-600 hover:text-blue-800 underline">language games</a> adapt to different skill levels and provide personalized learning paths.
+                      We provide <a href="/language-games" className="text-secondary hover:text-secondary/90 underline">language games</a> that use storytelling, word association, spelling challenges, grammar adventures, and reading comprehension quests to build vocabulary, improve writing skills, and enhance reading fluency.
+                      All <a href="/language-games" className="text-secondary hover:text-secondary/90 underline">language games</a> adapt to different skill levels and provide personalized learning paths.
                     </p>
                   </div>
 
@@ -837,8 +837,8 @@ const Home = () => {
                       Can memory games improve cognitive abilities?
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/memory-games" className="text-blue-600 hover:text-blue-800 underline">memory games</a> are based on cognitive science research and include working memory exercises, spatial memory challenges, pattern recognition training, and mnemonic device practice.
-                      Regular play can improve focus, attention span, and memory recall abilities. Explore our <a href="/memory-games" className="text-blue-600 hover:text-blue-800 underline">memory games</a>.
+                      Our <a href="/memory-games" className="text-secondary hover:text-secondary/90 underline">memory games</a> are based on cognitive science research and include working memory exercises, spatial memory challenges, pattern recognition training, and mnemonic device practice.
+                      Regular play can improve focus, attention span, and memory recall abilities. Explore our <a href="/memory-games" className="text-secondary hover:text-secondary/90 underline">memory games</a>.
                     </p>
                   </div>
                 </div>
@@ -872,7 +872,7 @@ const Home = () => {
                     </h3>
                     <p className="text-neutral-600 leading-relaxed">
                       Yes! All game progress and learning data remain completely private and secure. Games process locally in your browser - we don't store your scores, answers, or personal learning data on our servers.
-                      Your educational journey remains private and protected. Read our <a href="/privacy-policy" className="text-blue-600 hover:text-blue-800 underline">Privacy Policy</a> for details.
+                      Your educational journey remains private and protected. Read our <a href="/privacy-policy" className="text-secondary hover:text-secondary/90 underline">Privacy Policy</a> for details.
                     </p>
                   </div>
 

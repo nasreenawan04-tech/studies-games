@@ -76,7 +76,7 @@ const HeroSection = () => {
             />
             <button 
               type="submit"
-              className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-md hover:shadow-lg"
+              className="absolute right-2 top-2 bottom-2 px-6 bg-primary text-white rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-md hover:shadow-lg"
               data-testid="button-search-tools"
             >
               <Search size={20} />
@@ -113,7 +113,7 @@ const HeroSection = () => {
                     <div className="px-4 py-3 border-t border-gray-200">
                       <button
                         onClick={handleSearch}
-                        className="w-full text-center text-blue-600 hover:text-blue-700 font-medium text-sm"
+                        className="w-full text-center text-secondary hover:text-secondary/80 font-medium text-sm"
                         data-testid="hero-search-view-all"
                       >
                         View all results for "{searchQuery}" →
@@ -127,7 +127,7 @@ const HeroSection = () => {
                   <p>No tools found matching "{searchQuery}"</p>
                   <button
                     onClick={() => setLocation('/games')}
-                    className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
+                    className="mt-4 text-secondary hover:text-secondary/80 font-medium"
                   >
                     Browse all games →
                   </button>
