@@ -68,7 +68,7 @@ export default function PrivacyPolicy() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
                   <Shield className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Privacy First</h3>
@@ -78,7 +78,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
                   <UserX className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Registration</h3>
@@ -88,7 +88,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#6B7280' }}>
                   <EyeOff className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">No Tracking</h3>
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
               </div>
 
               <div className="text-center">
-                <div className="w-20 h-20 bg-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#22C55E' }}>
                   <Handshake className="text-white" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                 </div>
                 <h3 className="text-xl font-bold text-neutral-800 mb-4">Transparent</h3>

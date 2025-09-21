@@ -225,7 +225,7 @@ const HelpCenter = () => {
                     }`}
                     data-testid={`button-category-${category.id}`}
                   >
-                    <div className={`w-16 h-16 ${category.color.includes('secondary') ? 'bg-orange-600' : category.color.includes('green') ? 'bg-green-600' : category.color.includes('primary') ? 'bg-blue-600' : category.color.includes('purple') ? 'bg-purple-600' : category.color.includes('indigo') ? 'bg-indigo-600' : 'bg-orange-600'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`} style={{ backgroundColor: category.id === 'getting-started' ? '#F59E0B' : category.id === 'math-games' || category.id === 'study-games' ? '#2563EB' : category.id === 'technical' || category.id === 'account' ? '#6B7280' : '#22C55E' }}>
                       <div className="text-white">{renderIcon(category.icon)}</div>
                     </div>
                     <h3 className="text-xl font-bold text-neutral-800 mb-3">{category.name}</h3>
