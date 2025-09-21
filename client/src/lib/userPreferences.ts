@@ -1,9 +1,9 @@
 import { Tool } from '@/data/tools';
 
 // Local storage keys
-const FAVORITES_KEY = 'dapsiwow-favorites';
-const RECENT_TOOLS_KEY = 'dapsiwow-recent';
-const USER_PREFERENCES_KEY = 'dapsiwow-preferences';
+const FAVORITES_KEY = 'dapsigames-favorites';
+const RECENT_TOOLS_KEY = 'dapsigames-recent';
+const USER_PREFERENCES_KEY = 'dapsigames-preferences';
 
 export interface RecentTool {
   tool: Tool;
@@ -16,6 +16,42 @@ export interface UserPreferences {
   showRecentTools?: boolean;
   maxRecentTools?: number;
 }
+
+// Data migration for localStorage keys (one-time migration from DapsiWow to DapsiGames)
+const migrateOldData = () => {
+  try {
+    // Migration keys
+    const OLD_FAVORITES_KEY = 'dapsiwow-favorites';
+    const OLD_RECENT_TOOLS_KEY = 'dapsiwow-recent';
+    const OLD_USER_PREFERENCES_KEY = 'dapsiwow-preferences';
+    
+    // Migrate favorites
+    const oldFavorites = localStorage.getItem(OLD_FAVORITES_KEY);
+    if (oldFavorites && !localStorage.getItem(FAVORITES_KEY)) {
+      localStorage.setItem(FAVORITES_KEY, oldFavorites);
+      localStorage.removeItem(OLD_FAVORITES_KEY);
+    }
+    
+    // Migrate recent tools
+    const oldRecent = localStorage.getItem(OLD_RECENT_TOOLS_KEY);
+    if (oldRecent && !localStorage.getItem(RECENT_TOOLS_KEY)) {
+      localStorage.setItem(RECENT_TOOLS_KEY, oldRecent);
+      localStorage.removeItem(OLD_RECENT_TOOLS_KEY);
+    }
+    
+    // Migrate user preferences
+    const oldPrefs = localStorage.getItem(OLD_USER_PREFERENCES_KEY);
+    if (oldPrefs && !localStorage.getItem(USER_PREFERENCES_KEY)) {
+      localStorage.setItem(USER_PREFERENCES_KEY, oldPrefs);
+      localStorage.removeItem(OLD_USER_PREFERENCES_KEY);
+    }
+  } catch (error) {
+    console.error('Failed to migrate old localStorage data:', error);
+  }
+};
+
+// Run migration on module load
+migrateOldData();
 
 // Favorites Management
 export const getFavorites = (): Tool[] => {

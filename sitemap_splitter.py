@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Sitemap Splitter - Split large sitemap.xml into categorized sitemaps
-Created for DapsiWow.com
+Created for DapsiGames.com
 
 This script reads an existing sitemap.xml file and splits it into multiple
 category-based sitemaps with a sitemap index file.
@@ -16,7 +16,7 @@ from urllib.parse import urlparse
 from typing import Dict, List, Tuple, Set
 
 class SitemapSplitter:
-    def __init__(self, input_file: str = "sitemap.xml", base_url: str = "https://dapsiwow.com"):
+    def __init__(self, input_file: str = "sitemap.xml", base_url: str = "https://dapsigames.com"):
         self.input_file = input_file
         self.base_url = base_url
         self.current_date = datetime.now().strftime("%Y-%m-%d")
@@ -356,12 +356,12 @@ class SitemapSplitter:
 
 def main():
     """Main function to run the sitemap splitter"""
-    print("DapsiWow Sitemap Splitter")
+    print("DapsiGames Sitemap Splitter")
     print("=" * 50)
     
     # You can customize these parameters
     input_sitemap = "sitemap.xml"  # Change this to your existing sitemap file
-    base_url = "https://dapsiwow.com"  # Change this to your domain
+    base_url = "https://dapsigames.com"  # Change this to your domain
     
     # Check if custom input file is provided
     if len(sys.argv) > 1:

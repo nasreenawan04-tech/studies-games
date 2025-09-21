@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Comprehensive Sitemap Generator for DapsiWow Tools
+Comprehensive Sitemap Generator for DapsiGames Tools
 Scans actual tool pages in client/src/pages and generates complete sitemaps
 """
 
@@ -14,7 +14,7 @@ import json
 
 
 class ComprehensiveSitemapGenerator:
-    def __init__(self, base_url: str = "https://dapsiwow.com", pages_dir: str = "client/src/pages", output_dir: str = "client/public"):
+    def __init__(self, base_url: str = "https://dapsigames.com", pages_dir: str = "client/src/pages", output_dir: str = "client/public"):
         self.base_url = base_url.rstrip('/')
         self.pages_dir = pages_dir
         self.output_dir = output_dir
@@ -366,7 +366,7 @@ class ComprehensiveSitemapGenerator:
 
 def main():
     """Main function to run the comprehensive sitemap generator"""
-    print("DapsiWow Comprehensive Sitemap Generator")
+    print("DapsiGames Comprehensive Sitemap Generator")
     print("=" * 60)
     
     generator = ComprehensiveSitemapGenerator()

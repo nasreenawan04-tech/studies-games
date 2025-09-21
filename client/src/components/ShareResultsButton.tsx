@@ -33,7 +33,7 @@ const ShareResultsButton = ({
       // Try to use native Web Share API first (mobile/modern browsers)
       if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
         await navigator.share({
-          title: 'Calculation Results - DapsiWow',
+          title: 'Calculation Results - DapsiGames',
           text: 'Check out my calculation results',
           url: shareableLink,
         });
