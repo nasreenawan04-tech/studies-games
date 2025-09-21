@@ -136,3 +136,38 @@
 .gradient-secondary {
   background: linear-gradient(135deg, #007AFF 0%, #339FFF 100%);
 }
+
+/* Button and interactive element styles */
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.accent-highlight {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.accent-highlight:hover {
+  background: var(--accent);
+  opacity: 0.9;
+}

@@ -12,16 +12,16 @@ const categoryColors = {
   math: 'bg-secondary/10 text-secondary',
   science: 'bg-primary/10 text-primary',
   language: 'bg-accent/20 text-accent-foreground',
-  memory: 'bg-purple-500/10 text-purple-600',
-  logic: 'bg-green-500/10 text-green-600'
+  memory: 'bg-secondary/10 text-secondary',
+  logic: 'bg-primary/10 text-primary'
 };
 
 const iconColors = {
   math: 'from-secondary to-secondary/80',
   science: 'from-primary to-primary/80',
   language: 'from-accent to-yellow-500',
-  memory: 'from-purple-500 to-indigo-600',
-  logic: 'from-green-500 to-emerald-600'
+  memory: 'from-secondary to-secondary/80',
+  logic: 'from-primary to-primary/80'
 };
 
 const ToolCard = ({ tool, onClick }: ToolCardProps) => {

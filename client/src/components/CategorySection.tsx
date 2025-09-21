@@ -46,9 +46,9 @@ const CategorySection = () => {
       title: categories.memory,
       description: 'Brain training exercises to improve focus, attention, and cognitive abilities',
       icon: Brain,
-      color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-500/10',
-      textColor: 'text-purple-600',
+      color: 'from-secondary to-secondary/90',
+      bgColor: 'bg-secondary/10',
+      textColor: 'text-secondary',
       count: stats.memory,
       href: '/memory-games'
     },
@@ -57,9 +57,9 @@ const CategorySection = () => {
       title: categories.logic,
       description: 'Critical thinking challenges, brain teasers, and problem-solving games',
       icon: Puzzle,
-      color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-500/10',
-      textColor: 'text-green-600',
+      color: 'from-primary to-primary/90',
+      bgColor: 'bg-primary/10',
+      textColor: 'text-primary',
       count: stats.logic,
       href: '/logic-games'
     }
