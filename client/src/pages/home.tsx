@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import PopularToolsSection from '@/components/PopularToolsSection';
+import PopularGamesSection from '@/components/PopularGamesSection';
 import CategorySection from '@/components/CategorySection';
 import Footer from '@/components/Footer';
 import FavoritesSection from '@/components/FavoritesSection';
@@ -261,7 +261,7 @@ const Home = () => {
             </div>
           </section>
 
-          <PopularToolsSection />
+          <PopularGamesSection />
           <CategorySection />
 
           {/* About DapsiGames Section */}

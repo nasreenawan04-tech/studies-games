@@ -13,7 +13,7 @@ import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 
 // Lazy load all other pages for better performance
-const AllTools = lazy(() => import("@/pages/all-tools"));
+const AllGames = lazy(() => import("@/pages/all-games"));
 const MathGames = lazy(() => import("@/pages/math-games"));
 const ScienceGames = lazy(() => import("@/pages/science-games"));
 const LanguageGames = lazy(() => import("@/pages/language-games"));
@@ -48,7 +48,7 @@ function Router() {
       <Suspense fallback={<PageLoadingSpinner />}>
         <Switch>
       <Route path="/" component={Home} />
-      <Route path="/games" component={AllTools} />
+      <Route path="/games" component={AllGames} />
       <Route path="/games/math-speed-challenge" component={MathSpeedChallenge} />
       <Route path="/games/math-speed-challenge/play" component={MathSpeedChallengePlay} />
       <Route path="/games/:toolId" component={ToolPage} />

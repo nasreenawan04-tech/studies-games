@@ -1,6 +1,6 @@
 import { Link } from 'wouter';
 import { useRecentTools } from '@/hooks/use-recent-tools';
-import ToolCard from '@/components/ToolCard';
+import GameCard from './GameCard';
 
 const RecentlyUsedSection = () => {
   const { recentTools } = useRecentTools();
@@ -23,9 +23,9 @@ const RecentlyUsedSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {displayedTools.map((recentTool) => (
-            <ToolCard 
+            <GameCard
               key={`recent-${recentTool.tool.id}-${recentTool.timestamp}`}
-              tool={recentTool.tool} 
+              tool={recentTool.tool}
             />
           ))}
         </div>
