@@ -34,7 +34,7 @@ export function BackToTop() {
     <Button
       onClick={scrollToTop}
       size="icon"
-      className="fixed bottom-8 right-8 z-50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600"
+      className="fixed bottom-8 right-8 z-50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-secondary hover:bg-secondary/90 text-white dark:bg-secondary dark:hover:bg-secondary/90"
       data-testid="button-back-to-top"
     >
       <ChevronUp className="h-4 w-4" />

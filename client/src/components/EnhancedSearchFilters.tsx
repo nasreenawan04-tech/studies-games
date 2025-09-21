@@ -60,12 +60,12 @@ const EnhancedSearchFilters = ({ onFiltersChange, className = '' }: SearchFilter
           data-testid="button-toggle-filters"
         >
           <div className="flex items-center space-x-2">
-            <Filter className="text-blue-600 dark:text-blue-400" size={16} />
+            <Filter className="text-secondary dark:text-secondary" size={16} />
             <span className="font-medium text-neutral-800 dark:text-neutral-100">
               Advanced Filters
             </span>
             {hasActiveFilters && (
-              <span className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs px-2 py-1 rounded-full">
+              <span className="bg-secondary/20 dark:bg-secondary/20 text-secondary dark:text-secondary text-xs px-2 py-1 rounded-full">
                 Active
               </span>
             )}
@@ -84,7 +84,7 @@ const EnhancedSearchFilters = ({ onFiltersChange, className = '' }: SearchFilter
             <select
               value={filters.category}
               onChange={(e) => handleFilterChange({ category: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary"
               data-testid="select-category-filter"
             >
               <option value="all">All Categories ({tools.length})</option>
@@ -104,7 +104,7 @@ const EnhancedSearchFilters = ({ onFiltersChange, className = '' }: SearchFilter
             <select
               value={filters.sortBy}
               onChange={(e) => handleFilterChange({ sortBy: e.target.value as any })}
-              className="w-full px-3 py-2 border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary"
               data-testid="select-sort-filter"
             >
               <option value="name">Name (A-Z)</option>
@@ -124,7 +124,7 @@ const EnhancedSearchFilters = ({ onFiltersChange, className = '' }: SearchFilter
                   type="checkbox"
                   checked={filters.showPopularOnly}
                   onChange={(e) => handleFilterChange({ showPopularOnly: e.target.checked })}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="rounded border-gray-300 text-secondary focus:ring-secondary"
                   data-testid="checkbox-popular-only"
                 />
                 <span className="ml-2 text-sm text-neutral-700 dark:text-neutral-300">
@@ -136,7 +136,7 @@ const EnhancedSearchFilters = ({ onFiltersChange, className = '' }: SearchFilter
                   type="checkbox"
                   checked={filters.showFavoritesOnly}
                   onChange={(e) => handleFilterChange({ showFavoritesOnly: e.target.checked })}
-                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                  className="rounded border-gray-300 text-secondary focus:ring-secondary"
                   data-testid="checkbox-favorites-only"
                 />
                 <span className="ml-2 text-sm text-neutral-700 dark:text-neutral-300">

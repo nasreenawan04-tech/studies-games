@@ -14,7 +14,7 @@ const HelpCenter = () => {
       id: 'getting-started',
       name: 'Getting Started',
       icon: 'PlayCircle',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-secondary to-secondary/90',
       description: 'New to DapsiGames? Start here to learn the basics'
     },
     {
@@ -28,7 +28,7 @@ const HelpCenter = () => {
       id: 'study-games',
       name: 'Study Games',
       icon: 'FileText',
-      color: 'from-red-500 to-red-600',
+      color: 'from-primary to-primary/90',
       description: 'Science, language, memory, and logic games'
     },
     {
@@ -155,11 +155,11 @@ const HelpCenter = () => {
         
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
+          <section className="bg-gradient-to-br from-secondary/10 via-secondary/20 to-accent/20 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center">
                 <h1 className="text-5xl lg:text-6xl font-bold text-neutral-800 mb-6" data-testid="text-page-title">
-                  How can we <span className="text-blue-600">help</span> you?
+                  How can we <span className="text-secondary">help</span> you?
                 </h1>
                 <p className="text-xl lg:text-2xl text-neutral-600 mb-10 max-w-4xl mx-auto leading-relaxed">
                   Get instant support for all 150+ educational games, find detailed guides, and discover tips to make the most of DapsiGames
@@ -173,7 +173,7 @@ const HelpCenter = () => {
                       placeholder="Search for help topics, games, or questions..."
                       value={searchQuery}
                       onChange={(e) => setSearchQuery(e.target.value)}
-                      className="w-full px-6 py-4 pl-14 text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-300 focus:ring-opacity-50 text-lg"
+                      className="w-full px-6 py-4 pl-14 text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-secondary/30 focus:ring-opacity-50 text-lg"
                       data-testid="input-search-help"
                     />
                     <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-neutral-400" size={18} aria-hidden="true" style={{ pointerEvents: 'none' }} />
@@ -183,19 +183,19 @@ const HelpCenter = () => {
                 {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">24/7</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-secondary mb-2">24/7</div>
                     <div className="text-neutral-600 font-medium">Support Available</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-yellow-600 mb-2">1000+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-accent-foreground mb-2">1000+</div>
                     <div className="text-neutral-600 font-medium">Help Articles</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-blue-500 mb-2">150+</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-secondary mb-2">150+</div>
                     <div className="text-neutral-600 font-medium">Games Covered</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-yellow-500 mb-2">99.9%</div>
+                    <div className="text-3xl lg:text-4xl font-bold text-accent mb-2">99.9%</div>
                     <div className="text-neutral-600 font-medium">Problem Resolved</div>
                   </div>
                 </div>
@@ -204,7 +204,7 @@ const HelpCenter = () => {
           </section>
 
           {/* Help Categories */}
-          <section className="py-20 bg-gradient-to-br from-blue-50 to-yellow-50">
+          <section className="py-20 bg-gradient-to-br from-secondary/10 to-accent/20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
@@ -221,7 +221,7 @@ const HelpCenter = () => {
                     key={category.id}
                     onClick={() => setActiveCategory(category.id)}
                     className={`bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-left group ${
-                      activeCategory === category.id ? 'ring-4 ring-blue-500 ring-opacity-50' : ''
+                      activeCategory === category.id ? 'ring-4 ring-secondary ring-opacity-50' : ''
                     }`}
                     data-testid={`button-category-${category.id}`}
                   >

@@ -9,11 +9,11 @@ interface ToolCardProps {
 }
 
 const categoryColors = {
-  math: 'bg-blue-100 text-secondary',
-  science: 'bg-red-50 text-primary',
-  language: 'bg-yellow-100 text-yellow-600',
-  memory: 'bg-purple-100 text-purple-600',
-  logic: 'bg-green-100 text-green-600'
+  math: 'bg-secondary/10 text-secondary',
+  science: 'bg-primary/10 text-primary',
+  language: 'bg-accent/20 text-accent-foreground',
+  memory: 'bg-purple-500/10 text-purple-600',
+  logic: 'bg-green-500/10 text-green-600'
 };
 
 const iconColors = {
@@ -64,7 +64,7 @@ const ToolCard = ({ tool, onClick }: ToolCardProps) => {
         </span>
         
         {tool.isPopular && (
-          <div className="bg-yellow-100 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-100 text-xs px-2 py-1 rounded-full flex items-center">
+          <div className="bg-accent/20 text-accent-foreground dark:bg-accent/20 dark:text-accent-foreground text-xs px-2 py-1 rounded-full flex items-center">
             Popular
           </div>
         )}

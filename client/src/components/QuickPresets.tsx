@@ -29,9 +29,9 @@ const QuickPresets = ({ presets, onPresetSelect, className = '' }: QuickPresetsP
   if (presets.length === 0) return null;
 
   return (
-    <div className={`bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4 ${className}`}>
+    <div className={`bg-gradient-to-r from-secondary/10 to-secondary/5 dark:from-secondary/20 dark:to-secondary/10 rounded-lg p-4 ${className}`}>
       <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-100 mb-3 flex items-center">
-        <Wand2 className="text-blue-600 dark:text-blue-400 mr-2" size={20} />
+        <Wand2 className="text-secondary dark:text-secondary mr-2" size={20} />
         Quick Presets
       </h3>
       <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-4">
@@ -44,11 +44,11 @@ const QuickPresets = ({ presets, onPresetSelect, className = '' }: QuickPresetsP
             key={preset.id}
             onClick={() => handlePresetClick(preset)}
             className={`
-              p-3 text-left rounded-lg border border-blue-200 dark:border-blue-700
-              hover:bg-blue-100 dark:hover:bg-blue-800/30 
+              p-3 text-left rounded-lg border border-secondary/30 dark:border-secondary/30
+              hover:bg-secondary/10 dark:hover:bg-secondary/20 
               transition-all duration-200 transform hover:scale-105
               ${selectedPreset === preset.id 
-                ? 'bg-blue-200 dark:bg-blue-700 scale-105' 
+                ? 'bg-secondary/20 dark:bg-secondary/30 scale-105' 
                 : 'bg-white dark:bg-neutral-800'
               }
             `}
@@ -56,7 +56,7 @@ const QuickPresets = ({ presets, onPresetSelect, className = '' }: QuickPresetsP
           >
             <div className="flex items-start space-x-3">
               {preset.icon && (
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <div className="w-8 h-8 bg-secondary rounded-lg flex items-center justify-center flex-shrink-0">
                   <span className="text-white text-lg">{preset.icon}</span>
                 </div>
               )}
