@@ -26,6 +26,7 @@ const TermsOfService = lazy(() => import("@/pages/terms-of-service"));
 const ToolPage = lazy(() => import("@/pages/tool-page"));
 const AboutUs = lazy(() => import("@/pages/about-us"));
 const MathSpeedChallenge = lazy(() => import("@/pages/games/math-speed-challenge"));
+const MathSpeedChallengePlay = lazy(() => import("@/pages/games/math-speed-challenge-play"));
 
 
 
@@ -49,6 +50,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/games" component={AllTools} />
       <Route path="/games/math-speed-challenge" component={MathSpeedChallenge} />
+      <Route path="/games/math-speed-challenge/play" component={MathSpeedChallengePlay} />
       <Route path="/games/:toolId" component={ToolPage} />
 
       {/* Game category routes */}
