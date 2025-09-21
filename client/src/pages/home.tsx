@@ -327,7 +327,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Shield className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Safe & Private</h4>
@@ -338,7 +338,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Smartphone className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Play Anywhere</h4>
@@ -349,7 +349,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Globe className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Learn Globally</h4>
@@ -529,7 +529,7 @@ const Home = () => {
                 </p>
                 <a
                   href="/games"
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-xl hover:from-primary/90 hover:to-secondary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 gap-2"
+                  className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 gap-2"
                 >
                   View All 150+ Study Games
                   <Zap size={20} />
