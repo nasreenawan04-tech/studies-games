@@ -225,7 +225,7 @@ const HelpCenter = () => {
                     }`}
                     data-testid={`button-category-${category.id}`}
                   >
-                    <div className={`w-16 h-16 ${category.color.includes('secondary') ? 'bg-orange-600' : category.color.includes('green') ? 'bg-green-600' : category.color.includes('primary') ? 'bg-blue-600' : category.color.includes('purple') ? 'bg-purple-600' : category.color.includes('indigo') ? 'bg-indigo-600' : 'bg-orange-600'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-16 h-16 ${category.color.includes('secondary') ? 'bg-[#F59E0B]' : category.color.includes('green') ? 'bg-[#22C55E]' : category.color.includes('primary') ? 'bg-[#2563EB]' : category.color.includes('purple') ? 'bg-[#6B7280]' : category.color.includes('indigo') ? 'bg-[#6B7280]' : 'bg-[#F59E0B]'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                       <div className="text-white">{renderIcon(category.icon)}</div>
                     </div>
                     <h3 className="text-xl font-bold text-neutral-800 mb-3">{category.name}</h3>
@@ -244,7 +244,7 @@ const HelpCenter = () => {
                 <div className="lg:col-span-1">
                   <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8">
                     <h3 className="text-2xl font-bold text-neutral-800 mb-6 flex items-center">
-                      <Flame className="text-orange-500 mr-3" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                      <Flame className="text-[#F59E0B] mr-3" size={24} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                       Popular Topics
                     </h3>
                     <div className="space-y-4">
@@ -289,7 +289,7 @@ const HelpCenter = () => {
                       filteredFAQs.map((faq, index) => (
                         <div key={index} className="bg-white rounded-xl shadow-sm border border-neutral-200 p-6 hover:shadow-md transition-shadow duration-200">
                           <h4 className="text-lg font-semibold text-neutral-800 mb-3 flex items-start">
-                            <HelpCircle className="text-blue-500 mr-3 mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                            <HelpCircle className="text-[#2563EB] mr-3 mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                             {faq.question}
                           </h4>
                           <p className="text-neutral-600 leading-relaxed ml-8">
@@ -320,7 +320,7 @@ const HelpCenter = () => {
                 
                 <div className="mb-12">
                   <div className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-md max-w-2xl mx-auto">
-                    <Mail className="text-blue-600 mb-4 mx-auto" size={48} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                    <Mail className="text-[#2563EB] mb-4 mx-auto" size={48} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                     <h3 className="text-xl font-bold mb-3 text-gray-800">Email Support</h3>
                     <p className="text-gray-600 mb-6">Get detailed help via email within 24 hours</p>
                     <a 
@@ -338,21 +338,21 @@ const HelpCenter = () => {
                   <h3 className="text-2xl font-bold mb-4 text-gray-800">Quick Tips</h3>
                   <div className="grid md:grid-cols-3 gap-6 text-left">
                     <div className="flex items-start space-x-3">
-                      <Lightbulb className="text-yellow-500 mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                      <Lightbulb className="text-[#F59E0B] mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                       <div>
                         <h4 className="font-semibold text-gray-800">Try refreshing</h4>
                         <p className="text-sm text-gray-600">Most issues resolve with a simple page refresh</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <Monitor className="text-blue-600 mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                      <Monitor className="text-[#2563EB] mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                       <div>
                         <h4 className="font-semibold text-gray-800">Clear cache</h4>
                         <p className="text-sm text-gray-600">Clear browser cache if tools aren't loading</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
-                      <Smartphone className="text-green-600 mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                      <Smartphone className="text-[#22C55E] mt-1 flex-shrink-0" size={20} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                       <div>
                         <h4 className="font-semibold text-gray-800">Try mobile</h4>
                         <p className="text-sm text-gray-600">All tools work great on mobile devices</p>

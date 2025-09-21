@@ -316,7 +316,7 @@ const Home = () => {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#F59E0B] rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Instant Play</h4>
@@ -327,7 +327,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#6B7280] rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Shield className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Safe & Private</h4>
@@ -338,7 +338,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Smartphone className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Play Anywhere</h4>
@@ -349,7 +349,7 @@ const Home = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-[#22C55E] rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Globe className="text-white" size={24} />
                   </div>
                   <h4 className="text-xl font-bold text-neutral-800 mb-4">Learn Globally</h4>
@@ -607,7 +607,7 @@ const Home = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group" data-testid="stat-calculations">
-                  <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <Calculator className="text-white" size={24} />
                   </div>
                   <div className="text-center">
@@ -618,7 +618,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100 group" data-testid="stat-tools">
-                  <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#22C55E] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <PenTool className="text-white" size={24} />
                   </div>
                   <div className="text-center">
@@ -629,7 +629,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100 group" data-testid="stat-uptime">
-                  <div className="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#6B7280] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <Shield className="text-white" size={24} />
                   </div>
                   <div className="text-center">
@@ -640,7 +640,7 @@ const Home = () => {
                 </div>
 
                 <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100 group" data-testid="stat-security">
-                  <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-[#F59E0B] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
                     <Globe className="text-white" size={24} />
                   </div>
                   <div className="text-center">
@@ -665,7 +665,7 @@ const Home = () => {
                   <div>
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200" data-testid="use-case-financial">
-                        <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-[#2563EB] rounded-xl flex items-center justify-center flex-shrink-0">
                           <BookOpen className="text-white" size={20} />
                         </div>
                         <div>
@@ -677,7 +677,7 @@ const Home = () => {
                       </div>
 
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-pink-50 to-pink-100 border border-pink-200" data-testid="use-case-health">
-                        <div className="w-12 h-12 bg-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-[#22C55E] rounded-xl flex items-center justify-center flex-shrink-0">
                           <FlaskConical className="text-white" size={20} />
                         </div>
                         <div>
@@ -689,7 +689,7 @@ const Home = () => {
                       </div>
 
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200" data-testid="use-case-content">
-                        <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-[#F59E0B] rounded-xl flex items-center justify-center flex-shrink-0">
                           <Target className="text-white" size={20} />
                         </div>
                         <div>
@@ -701,7 +701,7 @@ const Home = () => {
                       </div>
 
                       <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-50 to-green-100 border border-green-200" data-testid="use-case-students">
-                        <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-[#6B7280] rounded-xl flex items-center justify-center flex-shrink-0">
                           <Brain className="text-white" size={20} />
                         </div>
                         <div>
@@ -752,19 +752,19 @@ const Home = () => {
                         <div className="grid grid-cols-3 gap-4 text-center">
                           <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-security">
                             <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                              <Gamepad2 className="text-green-600" size={20} />
+                              <Gamepad2 className="text-[#22C55E]" size={20} />
                             </div>
                             <span className="text-xs font-medium text-neutral-700">Engaging Games</span>
                           </div>
                           <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-speed">
-                            <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
-                              <Zap className="text-yellow-600" size={20} />
+                            <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                              <Zap className="text-[#F59E0B]" size={20} />
                             </div>
                             <span className="text-xs font-medium text-neutral-700">Instant Play</span>
                           </div>
                           <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-devices">
-                            <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                              <Smartphone className="text-purple-600" size={20} />
+                            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                              <Smartphone className="text-[#2563EB]" size={20} />
                             </div>
                             <span className="text-xs font-medium text-neutral-700">All Devices</span>
                           </div>

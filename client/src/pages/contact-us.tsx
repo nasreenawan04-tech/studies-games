@@ -252,15 +252,15 @@ const ContactUs = () => {
                     </p>
                     <ul className="text-sm text-neutral-600 space-y-2">
                       <li className="flex items-center">
-                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-[#22C55E] mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         24-hour response time
                       </li>
                       <li className="flex items-center">
-                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-[#22C55E] mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         Friendly support team
                       </li>
                       <li className="flex items-center">
-                        <Check className="text-blue-500 mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
+                        <Check className="text-[#22C55E] mr-2" size={16} aria-hidden="true" style={{ pointerEvents: 'none' }} />
                         We value your feedback
                       </li>
                     </ul>
