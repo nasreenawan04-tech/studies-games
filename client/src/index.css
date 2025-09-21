@@ -133,32 +133,26 @@
   background: linear-gradient(135deg, #FF3B30 0%, #FF5B4A 100%);
 }
 
-.gradient-secondary {
-  background: linear-gradient(135deg, #007AFF 0%, #339FFF 100%);
-}
-
 /* Button and interactive element styles */
 .btn-primary {
-  background: var(--primary);
-  color: var(--primary-foreground);
+  background: #3b82f6;
+  color: white;
   transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
-  background: var(--primary);
-  opacity: 0.9;
+  background: #2563eb;
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: var(--secondary);
-  color: var(--secondary-foreground);
+  background: #6b7280;
+  color: white;
   transition: all 0.2s ease;
 }
 
 .btn-secondary:hover {
-  background: var(--secondary);
-  opacity: 0.9;
+  background: #4b5563;
   transform: translateY(-1px);
 }
 
