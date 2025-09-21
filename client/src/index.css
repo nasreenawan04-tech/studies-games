@@ -171,3 +171,16 @@
   background: var(--accent);
   opacity: 0.9;
 }
+
+/* Icon background utilities */
+.icon-bg-primary {
+  background-color: var(--primary);
+}
+
+.icon-bg-secondary {
+  background-color: var(--secondary);
+}
+
+.icon-bg-accent {
+  background-color: var(--accent);
+}
