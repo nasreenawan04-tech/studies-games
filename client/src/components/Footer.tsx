@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import logoImage from '@assets/logo.svg';
+import logoImage from '@assets/dapsigames-logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,7 +14,7 @@ const Footer = () => {
               <img
                 src={logoImage}
                 alt="DapsiGames Logo"
-                className="w-8 h-8 object-contain filter drop-shadow-sm"
+                className="w-8 h-8 object-contain"
               />
               <span className="text-xl font-bold">DapsiGames</span>
             </div>

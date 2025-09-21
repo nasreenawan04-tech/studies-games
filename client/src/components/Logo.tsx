@@ -1,4 +1,4 @@
-import { GraduationCap } from 'lucide-react';
+import logoImage from '@assets/dapsigames-logo.png';
 
 interface LogoProps {
   className?: string;
@@ -6,9 +6,11 @@ interface LogoProps {
 
 const Logo = ({ className }: LogoProps) => {
   return (
-    <div className={`bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg ${className || 'w-8 h-8'}`}>
-      <GraduationCap className="w-5 h-5 text-white" />
-    </div>
+    <img
+      src={logoImage}
+      alt="DapsiGames Logo"
+      className={`object-contain ${className || 'w-8 h-8'}`}
+    />
   );
 };
 
