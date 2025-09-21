@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
@@ -30,7 +29,7 @@ const LogicGames = () => {
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newQuery = e.target.value;
     setSearchQuery(newQuery);
-    
+
     // Update URL to reflect search state
     const newUrl = newQuery ? `/logic-games?search=${encodeURIComponent(newQuery)}` : '/logic-games';
     setLocation(newUrl);
@@ -50,7 +49,7 @@ const LogicGames = () => {
 
       <div className="min-h-screen flex flex-col" data-testid="page-logic-games">
         <Header />
-        
+
         <main className="flex-1 bg-neutral-50">
           {/* Hero Section */}
           <section className="bg-gradient-to-r from-green-400 via-green-500 to-green-800 text-white py-20">
@@ -64,7 +63,7 @@ const LogicGames = () => {
               <p className="text-xl text-green-100 mb-8 max-w-3xl mx-auto">
                 32+ interactive logic games to improve critical thinking, problem-solving, and reasoning skills
               </p>
-              
+
               {/* Search Bar */}
               <div className="max-w-2xl mx-auto">
                 <div className="relative">
@@ -153,7 +152,7 @@ const LogicGames = () => {
                   and develop the critical thinking skills essential for academic and professional success.
                 </p>
               </div>
-              
+
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -164,7 +163,7 @@ const LogicGames = () => {
                     Develop analytical skills and logical reasoning abilities through challenging puzzles and brain teasers.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Puzzle className="text-white" size={24} />
@@ -174,7 +173,7 @@ const LogicGames = () => {
                     Master systematic approaches to breaking down complex problems into manageable steps.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Puzzle className="text-white" size={24} />
@@ -184,7 +183,7 @@ const LogicGames = () => {
                     Learn to think ahead, consider multiple possibilities, and make optimal decisions under constraints.
                   </p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
                     <Lightbulb className="text-white" size={24} />
@@ -198,7 +197,7 @@ const LogicGames = () => {
             </div>
           </section>
         </main>
-        
+
         <Footer />
       </div>
     </>

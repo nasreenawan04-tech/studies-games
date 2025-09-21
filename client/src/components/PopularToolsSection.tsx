@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { popularTools, getToolsByCategory, categories } from '@/data/tools';
-import ToolCard from './ToolCard';
+import GameCard from './GameCard';
 
 const PopularToolsSection = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -61,7 +61,7 @@ const PopularToolsSection = () => {
         {/* Games Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12" data-testid="grid-popular-games">
           {filteredTools.map((tool) => (
-            <ToolCard key={tool.id} tool={tool} />
+            <GameCard key={tool.id} tool={tool} />
           ))}
         </div>
 

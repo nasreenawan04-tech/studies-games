@@ -1,13 +1,13 @@
-
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
 import { Brain, Search, Target, Zap, Gamepad2, TrendingUp } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ToolCard from '@/components/ToolCard';
+import GameCard from '@/components/GameCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
+import GameHeroSection from '@/components/GameHeroSection';
 
 const MemoryGames = () => {
   const [location] = useLocation();
@@ -46,41 +46,14 @@ const MemoryGames = () => {
       <div className="min-h-screen flex flex-col" data-testid="page-memory-games">
         <Header />
 
-        <main className="flex-1 bg-neutral-50">
-          {/* Hero Section */}
-          <section className="bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white py-20">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Brain className="w-12 h-12 text-white" />
-              </div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
-                Memory Games
-              </h1>
-              <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
-                25+ interactive memory games to improve focus, attention, and cognitive abilities
-              </p>
+        <GameHeroSection 
+        title="Memory & Brain Training Games"
+        description="Enhance your cognitive abilities with brain training exercises focused on memory, attention, and mental agility. Train your mind while having fun."
+        testId="text-page-title"
+      />
 
-              {/* Search Bar */}
-              <div className="max-w-2xl mx-auto">
-                <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="Search memory games..."
-                    value={searchQuery}
-                    onChange={handleSearchChange}
-                    className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-purple-300 transition-all duration-200"
-                    data-testid="input-search-memory-games"
-                  />
-                  <div className="absolute right-2 top-2 bottom-2 px-6 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-xl flex items-center pointer-events-none">
-                    <Search className="w-5 h-5" aria-hidden="true" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Games Section */}
-          <section className="py-16">
+        {/* Games Section */}
+        <section className="py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Results Info */}
               <div className="mb-8">
@@ -94,7 +67,7 @@ const MemoryGames = () => {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-memory-games">
                   {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                    <GameCard key={tool.id} tool={tool} />
                   ))}
                 </div>
               ) : (

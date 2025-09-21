@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ToolCard from '@/components/ToolCard';
+import GameCard from '@/components/GameCard';
 import { tools, categories } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 import { Search, Calculator, FileText, Heart, Zap, Users, Target, TrendingUp } from 'lucide-react';
@@ -19,7 +19,7 @@ const AllTools = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const searchParam = urlParams.get('search') || '';
     const categoryParam = urlParams.get('category') || 'all';
-    
+
     setSearchQuery(searchParam);
     setSelectedCategory(categoryParam);
   }, [location]);
@@ -68,28 +68,28 @@ const AllTools = () => {
   ];
 
   const quickCategories = [
-    { 
-      key: 'math', 
-      label: 'Math Games', 
-      icon: Calculator, 
+    {
+      key: 'math',
+      label: 'Math Games',
+      icon: Calculator,
       color: 'from-blue-500 to-blue-600',
       bgColor: 'bg-blue-50',
       textColor: 'text-blue-600',
       count: tools.filter(t => t.category === 'math').length
     },
-    { 
-      key: 'science', 
-      label: 'Science Games', 
-      icon: FileText, 
+    {
+      key: 'science',
+      label: 'Science Games',
+      icon: FileText,
       color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50', 
+      bgColor: 'bg-purple-50',
       textColor: 'text-purple-600',
       count: tools.filter(t => t.category === 'science').length
     },
-    { 
-      key: 'language', 
-      label: 'Language Games', 
-      icon: Heart, 
+    {
+      key: 'language',
+      label: 'Language Games',
+      icon: Heart,
       color: 'from-pink-500 to-pink-600',
       bgColor: 'bg-pink-50',
       textColor: 'text-pink-600',
@@ -101,21 +101,21 @@ const AllTools = () => {
     <>
       <Helmet>
         <title>All Study Games - 30+ Free Educational Study Games | Math, Science, Language, Memory & Logic</title>
-        <meta name="description" content="Browse all 30+ free study games including Math Adventures, Science Simulations, Language Learning, Memory Training, and Logic Puzzles. No registration required." />
+        <meta name="description" content="Browse all 30+ study games including Math Adventures, Science Simulations, Language Learning, Memory Training, and Logic Puzzles. No registration required." />
         <meta name="keywords" content="study games, educational games, math games, science games, language games, memory games, logic games" />
         <link rel="canonical" href="/games" />
       </Helmet>
 
       <div className="min-h-screen flex flex-col" data-testid="page-all-tools">
         <Header />
-        
+
         <main className="flex-1 bg-neutral-50">
           {/* Modern Hero Section */}
           <section className="relative bg-gradient-to-br from-blue-600 via-blue-500 to-purple-600 text-white py-20 lg:py-24 overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:20px_20px]" />
             <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-transparent" />
-            
+
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Main Content */}
               <div className="text-center mb-12">
@@ -123,7 +123,7 @@ const AllTools = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl mb-6">
                   <Zap className="w-8 h-8 text-white" />
                 </div>
-                
+
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-testid="text-page-title">
                   Complete Study Games Directory
                 </h1>
@@ -150,7 +150,7 @@ const AllTools = () => {
                     <div className="text-blue-100 text-sm">Free</div>
                   </div>
                 </div>
-                
+
                 {/* Enhanced Search Bar */}
                 <div className="max-w-2xl mx-auto mb-12">
                   <form onSubmit={handleSearch} className="relative">
@@ -175,7 +175,7 @@ const AllTools = () => {
                   </form>
                 </div>
 
-                
+
               </div>
             </div>
           </section>
@@ -217,7 +217,10 @@ const AllTools = () => {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-all-tools">
                   {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                    <GameCard
+                      key={tool.id}
+                      tool={tool}
+                    />
                   ))}
                 </div>
               ) : (
@@ -232,7 +235,7 @@ const AllTools = () => {
             </div>
           </section>
         </main>
-        
+
         <Footer />
       </div>
     </>

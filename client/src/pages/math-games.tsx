@@ -4,9 +4,10 @@ import { useLocation } from 'wouter';
 import { Sigma, Search, Plus, X, Divide, TrendingUp, DollarSign, Target, Gamepad2 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ToolCard from '@/components/ToolCard';
+import GameCard from '@/components/GameCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
+import GameHeroSection from '@/components/GameHeroSection';
 
 const MathGames = () => {
   const [location] = useLocation();
@@ -30,6 +31,8 @@ const MathGames = () => {
     setSearchQuery(e.target.value);
   };
 
+  const mathTools = tools.filter(tool => tool.category === 'math');
+
   return (
     <>
       <Helmet>
@@ -45,22 +48,19 @@ const MathGames = () => {
       <div className="min-h-screen flex flex-col" data-testid="page-math-games">
         <Header />
 
-        <main className="flex-1 bg-neutral-50">
-          {/* Hero Section */}
-          <section className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-600 text-white py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Sigma className="w-12 h-12 text-white" />
-              </div>
-              <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
-                Math Games
-              </h1>
-              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                36+ interactive math games covering arithmetic, algebra, geometry, and advanced mathematics
-              </p>
+        {/* Hero Section */}
+        <GameHeroSection 
+        title="Math Study Games"
+        description="Interactive math games and exercises to strengthen your arithmetic, algebra, geometry, and calculus skills. From basic addition to advanced calculus, make math fun and engaging."
+        testId="text-page-title"
+      />
 
+        {/* Games Section */}
+        <main className="flex-1 bg-neutral-50">
+          <section className="py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Search Bar */}
-              <div className="max-w-2xl mx-auto">
+              <div className="max-w-2xl mx-auto mb-12">
                 <div className="relative">
                   <input
                     type="text"
@@ -75,12 +75,7 @@ const MathGames = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
 
-          {/* Games Section */}
-          <section className="py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Results Info */}
               <div className="mb-8">
                 <p className="text-neutral-600 text-center" data-testid="text-results-count">
@@ -93,7 +88,7 @@ const MathGames = () => {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-math-games">
                   {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                    <GameCard key={tool.id} tool={tool} />
                   ))}
                 </div>
               ) : (
