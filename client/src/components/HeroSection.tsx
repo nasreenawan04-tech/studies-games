@@ -57,7 +57,7 @@ const HeroSection = () => {
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
           Learn Through Play - 150+ Free Study Games
         </h1>
-        <p className="text-xl lg:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
+        <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
           Transform your studying with engaging educational games across math, science, language, memory, and logic. No sign-up required.
         </p>
 
@@ -71,7 +71,7 @@ const HeroSection = () => {
               onChange={handleSearchChange}
               onFocus={handleInputFocus}
               onBlur={handleInputBlur}
-              className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200"
+              className="w-full py-4 px-6 pr-16 text-lg text-neutral-800 bg-white rounded-2xl shadow-lg focus:outline-none focus:ring-4 focus:ring-secondary/30 transition-all duration-200"
               data-testid="input-search-tools"
             />
             <button 
@@ -122,7 +122,7 @@ const HeroSection = () => {
                   )}
                 </div>
               ) : searchQuery.trim() ? (
-                <div className="p-8 text-center text-gray-500">
+                <div className="p-8 text-center text-neutral-500">
                   <Search size={48} className="mx-auto mb-4" />
                   <p>No tools found matching "{searchQuery}"</p>
                   <button
@@ -141,19 +141,19 @@ const HeroSection = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center" data-testid="stat-active-players">
             <div className="text-3xl lg:text-4xl font-bold mb-2">500K+</div>
-            <div className="text-blue-100 text-sm lg:text-base">Active Players</div>
+            <div className="text-white/90 text-sm lg:text-base">Active Players</div>
           </div>
           <div className="text-center" data-testid="stat-games-played">
             <div className="text-3xl lg:text-4xl font-bold mb-2">5M+</div>
-            <div className="text-blue-100 text-sm lg:text-base">Games Played</div>
+            <div className="text-white/90 text-sm lg:text-base">Games Played</div>
           </div>
           <div className="text-center" data-testid="stat-study-games">
             <div className="text-3xl lg:text-4xl font-bold mb-2">150+</div>
-            <div className="text-blue-100 text-sm lg:text-base">Study Games</div>
+            <div className="text-white/90 text-sm lg:text-base">Study Games</div>
           </div>
           <div className="text-center" data-testid="stat-learning-hours">
             <div className="text-3xl lg:text-4xl font-bold mb-2">1M+</div>
-            <div className="text-blue-100 text-sm lg:text-base">Learning Hours</div>
+            <div className="text-white/90 text-sm lg:text-base">Learning Hours</div>
           </div>
         </div>
       </div>

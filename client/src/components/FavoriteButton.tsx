@@ -40,8 +40,8 @@ const FavoriteButton = ({
       className={`
         ${sizeClasses[size]} 
         ${isToolFavorite 
-          ? 'text-yellow-500 hover:text-yellow-600' 
-          : 'text-neutral-400 hover:text-yellow-500'
+          ? 'text-accent hover:text-accent/80' 
+          : 'text-neutral-400 hover:text-accent'
         } 
         transition-colors duration-200 
         ${className}

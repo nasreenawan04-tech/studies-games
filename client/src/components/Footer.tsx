@@ -18,7 +18,7 @@ const Footer = () => {
               />
               <span className="inline-flex items-center rounded-md bg-white px-3 py-1 text-xl font-bold">
                 <span className="text-neutral-900">Dapsi</span>
-                <span className="text-red-500"> Games</span>
+                <span className="text-primary"> Games</span>
               </span>
             </div>
             <p className="text-neutral-300 leading-relaxed">

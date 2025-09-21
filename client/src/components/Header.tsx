@@ -48,7 +48,7 @@ const Header = () => {
             <Logo className="h-7 w-7 sm:h-8 sm:w-8 mr-2 sm:mr-3" />
             <span className="text-lg sm:text-xl font-bold truncate" data-testid="text-site-name">
               <span className="text-neutral-800 dark:text-neutral-100">Dapsi</span>
-              <span className="text-red-500"> Games</span>
+              <span className="text-primary"> Games</span>
             </span>
           </Link>
 

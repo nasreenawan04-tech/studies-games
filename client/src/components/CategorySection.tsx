@@ -14,7 +14,7 @@ const CategorySection = () => {
       description: 'Interactive math games covering arithmetic, algebra, geometry, and calculus',
       icon: Calculator,
       color: 'from-secondary to-secondary/90',
-      bgColor: 'bg-blue-50',
+      bgColor: 'bg-secondary/10',
       textColor: 'text-secondary',
       count: stats.math,
       href: '/math-games'
@@ -25,7 +25,7 @@ const CategorySection = () => {
       description: 'Virtual labs and simulations for physics, chemistry, biology, and earth sciences',
       icon: FlaskConical,
       color: 'from-primary to-primary/90',
-      bgColor: 'bg-red-50',
+      bgColor: 'bg-primary/10',
       textColor: 'text-primary',
       count: stats.science,
       href: '/science-games'
@@ -36,8 +36,8 @@ const CategorySection = () => {
       description: 'Vocabulary builders, grammar adventures, and reading comprehension challenges',
       icon: BookOpen,
       color: 'from-accent to-yellow-500',
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-600',
+      bgColor: 'bg-accent/20',
+      textColor: 'text-accent-foreground',
       count: stats.language,
       href: '/language-games'
     },
@@ -47,7 +47,7 @@ const CategorySection = () => {
       description: 'Brain training exercises to improve focus, attention, and cognitive abilities',
       icon: Brain,
       color: 'from-purple-500 to-purple-600',
-      bgColor: 'bg-purple-50',
+      bgColor: 'bg-purple-500/10',
       textColor: 'text-purple-600',
       count: stats.memory,
       href: '/memory-games'
@@ -58,7 +58,7 @@ const CategorySection = () => {
       description: 'Critical thinking challenges, brain teasers, and problem-solving games',
       icon: Puzzle,
       color: 'from-green-500 to-green-600',
-      bgColor: 'bg-green-50',
+      bgColor: 'bg-green-500/10',
       textColor: 'text-green-600',
       count: stats.logic,
       href: '/logic-games'
