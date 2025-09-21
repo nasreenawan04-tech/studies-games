@@ -13,10 +13,13 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-6">
               <img
                 src={logoImage}
-                alt="DapsiGames Logo"
+                alt="Dapsi Games Logo"
                 className="w-8 h-8 object-contain"
               />
-              <span className="text-xl font-bold">DapsiGames</span>
+              <span className="inline-flex items-center rounded-md bg-white px-3 py-1 text-xl font-bold">
+                <span className="text-neutral-900">Dapsi</span>
+                <span className="text-red-500"> Games</span>
+              </span>
             </div>
             <p className="text-neutral-300 leading-relaxed">
               Your go-to platform for study games. Learn through play - fast, free, and always available.
