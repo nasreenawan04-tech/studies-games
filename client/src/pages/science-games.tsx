@@ -4,7 +4,7 @@ import { useLocation } from 'wouter';
 import { FlaskConical, Search, Beaker, Atom, Microscope, Telescope, Activity, Zap, Target } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ToolCard from '@/components/ToolCard';
+import GameCard from '@/components/GameCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 
@@ -93,7 +93,7 @@ const ScienceGames = () => {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-science-games">
                   {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                    <GameCard key={tool.id} tool={tool} />
                   ))}
                 </div>
               ) : (

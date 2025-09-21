@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ToolCard from '@/components/ToolCard';
+import GameCard from '@/components/GameCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
 import { Puzzle, Target, Brain, Lightbulb, Search, Plus, X, Divide } from 'lucide-react';
@@ -98,7 +98,7 @@ const LogicGames = () => {
               {filteredTools.length > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-testid="grid-logic-games">
                   {filteredTools.map((tool) => (
-                    <ToolCard key={tool.id} tool={tool} />
+                    <GameCard key={tool.id} tool={tool} />
                   ))}
                 </div>
               ) : (
