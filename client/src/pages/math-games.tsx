@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'wouter';
-import { Sigma, Search, Plus, X, Divide, TrendingUp, DollarSign, Target, Gamepad2 } from 'lucide-react';
+import { Sigma, Search, Plus, X, Divide, TrendingUp, Target, Gamepad2 } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GameCard from '@/components/GameCard';
 import { tools } from '@/data/tools';
 import { searchAndFilterTools } from '@/lib/search';
-import GameHeroSection from '@/components/GameHeroSection';
 
 const MathGames = () => {
   const [location] = useLocation();
@@ -31,8 +30,6 @@ const MathGames = () => {
     setSearchQuery(e.target.value);
   };
 
-  const mathTools = tools.filter(tool => tool.category === 'math');
-
   return (
     <>
       <Helmet>
@@ -48,19 +45,22 @@ const MathGames = () => {
       <div className="min-h-screen flex flex-col" data-testid="page-math-games">
         <Header />
 
-        {/* Hero Section */}
-        <GameHeroSection 
-        title="Math Study Games"
-        description="Interactive math games and exercises to strengthen your arithmetic, algebra, geometry, and calculus skills. From basic addition to advanced calculus, make math fun and engaging."
-        testId="text-page-title"
-      />
-
-        {/* Games Section */}
         <main className="flex-1 bg-neutral-50">
-          <section className="py-16">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Hero Section */}
+          <section className="bg-gradient-to-r from-blue-600 via-purple-500 to-indigo-700 text-white py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <div className="w-24 h-24 bg-white bg-opacity-20 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Sigma className="w-12 h-12 text-white" />
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-4" data-testid="text-page-title">
+                Math Games
+              </h1>
+              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                36+ interactive math games covering arithmetic, algebra, geometry, and advanced mathematics
+              </p>
+
               {/* Search Bar */}
-              <div className="max-w-2xl mx-auto mb-12">
+              <div className="max-w-2xl mx-auto">
                 <div className="relative">
                   <input
                     type="text"
@@ -75,7 +75,12 @@ const MathGames = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </section>
 
+          {/* Games Section */}
+          <section className="py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Results Info */}
               <div className="mb-8">
                 <p className="text-neutral-600 text-center" data-testid="text-results-count">
@@ -103,83 +108,84 @@ const MathGames = () => {
 
               {/* Popular Games Section */}
               <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Math Games</h2>
+                <h2 className="text-2xl font-bold text-neutral-800 mb-8 text-center">Popular Math Games</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-4 bg-blue-50 rounded-xl">
-                    <Plus className="w-6 h-6 text-blue-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Addition Race</h3>
-                    <p className="text-sm text-neutral-600">Race through addition problems</p>
+                  <div className="text-center p-6 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer group">
+                    <Plus className="w-8 h-8 text-blue-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Addition Race</h3>
+                    <p className="text-sm text-neutral-600">Speed up your addition skills</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-xl">
-                    <X className="w-6 h-6 text-green-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Multiplication Master</h3>
+                  <div className="text-center p-6 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors cursor-pointer group">
+                    <X className="w-8 h-8 text-purple-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Multiplication Master</h3>
                     <p className="text-sm text-neutral-600">Master multiplication tables</p>
                   </div>
-                  <div className="text-center p-4 bg-purple-50 rounded-xl">
-                    <Divide className="w-6 h-6 text-purple-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Fraction Frenzy</h3>
-                    <p className="text-sm text-neutral-600">Learn fractions through games</p>
+                  <div className="text-center p-6 bg-indigo-50 rounded-xl hover:bg-indigo-100 transition-colors cursor-pointer group">
+                    <Divide className="w-8 h-8 text-indigo-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Fraction Frenzy</h3>
+                    <p className="text-sm text-neutral-600">Learn fractions the fun way</p>
                   </div>
-                  <div className="text-center p-4 bg-orange-50 rounded-xl">
-                    <Sigma className="w-6 h-6 text-orange-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Algebra Adventure</h3>
-                    <p className="text-sm text-neutral-600">Solve algebraic equations</p>
+                  <div className="text-center p-6 bg-cyan-50 rounded-xl hover:bg-cyan-100 transition-colors cursor-pointer group">
+                    <Target className="w-8 h-8 text-cyan-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Algebra Challenge</h3>
+                    <p className="text-sm text-neutral-600">Solve equations step by step</p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+
           {/* Why Math Games Section */}
-          <section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+          <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
                   Why Play Our Math Games?
                 </h2>
                 <p className="text-lg text-neutral-600 max-w-3xl mx-auto">
-                  Our interactive math games make learning mathematics engaging and fun while building 
-                  strong foundational skills through progressive challenges and immediate feedback.
+                  Our interactive math games make learning arithmetic, algebra, and geometry engaging and fun 
+                  through gamified exercises and immediate feedback.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Sigma className="text-white" size={24} />
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
+                    <Plus className="text-white" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Master Concepts</h3>
-                  <p className="text-neutral-600">
-                    Build strong math foundations through interactive games that reinforce key concepts.
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Number Fluency</h3>
+                  <p className="text-neutral-600 leading-relaxed">
+                    Build strong arithmetic foundations through interactive practice and repetition.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <TrendingUp className="text-white" size={24} />
-                  </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Progressive Learning</h3>
-                  <p className="text-neutral-600">
-                    Advance through difficulty levels that adapt to your skill level and learning pace.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Gamepad2 className="text-white" size={24} />
-                  </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Engaging Gameplay</h3>
-                  <p className="text-neutral-600">
-                    Turn math practice into fun adventures with gamified learning experiences.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Target className="text-white" size={24} />
                   </div>
-                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Achieve Success</h3>
-                  <p className="text-neutral-600">
-                    Track your progress and celebrate achievements as you master math skills.
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Problem Solving</h3>
+                  <p className="text-neutral-600 leading-relaxed">
+                    Develop logical thinking and analytical skills through challenging math problems.
+                  </p>
+                </div>
+
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
+                    <TrendingUp className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Academic Success</h3>
+                  <p className="text-neutral-600 leading-relaxed">
+                    Improve math grades and standardized test scores through consistent practice.
+                  </p>
+                </div>
+
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
+                    <Gamepad2 className="text-white" size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-neutral-800 mb-3">Fun Learning</h3>
+                  <p className="text-neutral-600 leading-relaxed">
+                    Enjoy math through engaging games that make learning feel like play.
                   </p>
                 </div>
               </div>
