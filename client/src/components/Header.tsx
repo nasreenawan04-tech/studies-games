@@ -40,15 +40,15 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-neutral-900 shadow-sm border-b border-gray-200 dark:border-neutral-700 transition-colors duration-200" data-testid="header-main">
+    <header className="sticky top-0 z-50 bg-background dark:bg-background shadow-sm border-b border-border dark:border-border transition-colors duration-200" data-testid="header-main">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo Section */}
           <Link href="/" className="flex items-center flex-shrink-0" data-testid="link-home" onClick={handleLinkClick}>
             <Logo className="h-7 w-7 sm:h-8 sm:w-8 mr-2 sm:mr-3" />
             <span className="text-lg sm:text-xl font-bold truncate" data-testid="text-site-name">
-              <span className="text-neutral-800 dark:text-neutral-100">Dapsi</span>
-              <span className="text-red-500"> Games</span>
+              <span className="text-foreground dark:text-foreground">Dapsi</span>
+              <span className="text-primary"> Games</span>
             </span>
           </Link>
 
@@ -58,8 +58,8 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary transition-colors duration-200 font-medium whitespace-nowrap ${
-                  location === link.href ? 'text-primary dark:text-primary' : ''
+                className={`text-muted-foreground hover:text-secondary transition-colors duration-200 font-medium whitespace-nowrap ${
+                  location === link.href ? 'text-primary' : ''
                 }`}
                 data-testid={`link-${link.label.toLowerCase().replace(' ', '-')}`}
               >
@@ -106,7 +106,7 @@ const Header = () => {
           
           {/* Menu Content */}
           <nav
-            className="relative bg-white dark:bg-neutral-900 border-t border-gray-200 dark:border-neutral-700 shadow-lg max-h-screen overflow-y-auto"
+            className="relative bg-background border-t border-border shadow-lg max-h-screen overflow-y-auto"
             data-testid="mobile-menu"
             aria-label="Mobile navigation"
           >
@@ -117,8 +117,8 @@ const Header = () => {
                   href={link.href}
                   className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
                     location === link.href 
-                      ? 'text-primary dark:text-primary bg-red-50 dark:bg-red-900/20' 
-                      : 'text-neutral-600 dark:text-neutral-300 hover:text-secondary dark:hover:text-secondary hover:bg-neutral-50 dark:hover:bg-neutral-800'
+                      ? 'text-primary bg-red-50 dark:bg-primary/10' 
+                      : 'text-muted-foreground hover:text-secondary hover:bg-muted'
                   }`}
                   onClick={handleLinkClick}
                   data-testid={`mobile-link-${link.label.toLowerCase().replace(' ', '-')}`}
@@ -135,7 +135,7 @@ const Header = () => {
       {isSearchOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-start justify-center pt-4 sm:pt-20 px-4">
           <div
-            className="bg-white dark:bg-neutral-900 rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] sm:max-h-96 overflow-hidden"
+            className="bg-background rounded-lg shadow-xl w-full max-w-2xl max-h-[90vh] sm:max-h-96 overflow-hidden"
             role="dialog"
             aria-label="Search tools"
             aria-modal="true"
