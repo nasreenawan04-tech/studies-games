@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet-async';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -19,7 +18,7 @@ const AboutUs = () => {
 
       <div className="min-h-screen bg-white">
         <Header />
-        
+
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-blue-50 via-blue-100 to-yellow-50 py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
