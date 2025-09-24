@@ -7,8 +7,8 @@ const WhyChooseSection = () => {
       icon: Zap,
       title: "Instant Play",
       description: "Jump into learning instantly! No downloads, installations, or waiting. Our games load instantly and work perfectly across all devices.",
-      color: "from-yellow-500 to-orange-500",
-      bgGradient: "from-yellow-50 to-orange-50 dark:from-yellow-950/30 dark:to-orange-900/30",
+      color: "from-yellow-500 to-yellow-600",
+      bgGradient: "from-yellow-50 to-yellow-100 dark:from-yellow-950/30 dark:to-yellow-900/30",
       decorativeEmoji: "⚡",
       gamingIcon: Target
     },
@@ -55,7 +55,7 @@ const WhyChooseSection = () => {
         <div className="absolute top-20 left-10 text-blue-200/10 text-6xl motion-safe:animate-bounce motion-safe:delay-1000">🎮</div>
         <div className="absolute bottom-20 right-16 text-green-200/10 text-5xl motion-safe:animate-pulse motion-safe:delay-500">🏆</div>
         <div className="absolute top-40 right-20 text-yellow-200/10 text-4xl motion-safe:animate-bounce motion-safe:delay-700">⭐</div>
-        <div className="absolute bottom-40 left-20 text-purple-200/10 text-3xl motion-safe:animate-pulse motion-safe:delay-300">🎯</div>
+        <div className="absolute bottom-40 left-20 text-blue-200/10 text-3xl motion-safe:animate-pulse motion-safe:delay-300">🎯</div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,7 +105,7 @@ const WhyChooseSection = () => {
               {/* Gaming CTA */}
               <div className="mt-8 flex gap-4">
                 <Link 
-                  href="/games"
+                  href="/all-games"
                   className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-400 hover:to-green-400 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-gray-800"
                   data-testid="button-start-playing"
                   aria-label="Start playing educational games now"
