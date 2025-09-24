@@ -221,42 +221,56 @@ const Home = () => {
           {/* User-specific sections - shown if user has favorites */}
           <FavoritesSection />
 
-          {/* What is DapsiGames Section */}
-          <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+          {/* About DapsiGames Section */}
+          <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  What is DapsiGames Study Hub?
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                  Professional Educational Platform
                 </h2>
-                <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                  DapsiGames Study Hub transforms learning into an epic gaming adventure with 150+ free educational games that make studying feel like playing!
-                  Level up your knowledge through interactive challenges, hit learning milestones in every subject, and master new skills while having a blast.
-                  No registration, no downloads, no hidden fees - just pure, free study-powered gaming fun across all your devices.
+                <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
+                  DapsiGames is a comprehensive educational platform offering 150+ interactive learning tools designed to enhance academic performance across multiple subjects. 
+                  Our evidence-based approach combines pedagogical best practices with engaging digital experiences to deliver measurable learning outcomes.
                 </p>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                  <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Math Games</h3>
-                    <p className="text-neutral-600 text-sm">Interactive games covering arithmetic, algebra, geometry, and advanced mathematics</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                      <Calculator className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Mathematics</h3>
+                    <p className="text-gray-600">Comprehensive coverage of arithmetic, algebra, geometry, and advanced mathematical concepts through interactive exercises</p>
                   </div>
 
-                  <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Science Games</h3>
-                    <p className="text-neutral-600 text-sm">Virtual labs and simulations for physics, chemistry, biology, and earth sciences</p>
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                      <FlaskConical className="w-6 h-6 text-green-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Science</h3>
+                    <p className="text-gray-600">Virtual laboratories and simulations covering physics, chemistry, biology, and earth sciences</p>
                   </div>
 
-                  <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Language Games</h3>
-                    <p className="text-neutral-600 text-sm">Vocabulary builders, grammar adventures, and reading comprehension challenges</p>
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                      <BookOpen className="w-6 h-6 text-yellow-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Language Arts</h3>
+                    <p className="text-gray-600">Vocabulary development, grammar instruction, and reading comprehension exercises</p>
                   </div>
 
-                  <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Memory Games</h3>
-                    <p className="text-neutral-600 text-sm">Brain training exercises to improve focus, attention, and cognitive abilities</p>
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                      <Brain className="w-6 h-6 text-purple-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Cognitive Training</h3>
+                    <p className="text-gray-600">Memory enhancement, attention training, and cognitive skill development programs</p>
                   </div>
 
-                  <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-2">Logic & Puzzles</h3>
-                    <p className="text-neutral-600 text-sm">Critical thinking challenges, brain teasers, and problem-solving games</p>
+                  <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
+                    <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                      <Target className="w-6 h-6 text-indigo-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Critical Thinking</h3>
+                    <p className="text-gray-600">Logic puzzles, problem-solving exercises, and analytical reasoning challenges</p>
                   </div>
                 </div>
               </div>
@@ -271,52 +285,52 @@ const Home = () => {
           <FeaturedGamesSection />
 
           {/* How It Works Section */}
-          <section className="py-20 bg-white">
+          <section className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  Ready to Start Your Study Gaming Quest?
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                  How Our Platform Works
                 </h2>
-                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Jump into your learning adventure in 3 simple steps. No complex tutorials, no subscriptions, no hidden costs - just pure educational gaming fun!
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Get started with our comprehensive educational platform in three simple steps. No registration required, immediate access to all learning resources.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
                 <div className="text-center">
                   <div className="relative">
-                    <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <span className="text-2xl font-bold text-white">1</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Select Your Adventure</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Browse our game categories or search for your perfect study challenge.
-                    From challenging math games to multi-step logic puzzles, pick your learning quest and get ready to level up!
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Choose Your Subject</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Browse our comprehensive library of educational content organized by subject area.
+                    Select from mathematics, science, language arts, cognitive training, or critical thinking modules.
                   </p>
                 </div>
 
                 <div className="text-center">
                   <div className="relative">
-                    <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                       <span className="text-2xl font-bold text-white">2</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Power Up & Play</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Our study games feature intuitive controls and engaging gameplay mechanics.
-                    Hit 'Play' and dive straight into your educational gaming experience!
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Begin Learning</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Access interactive learning tools with intuitive interfaces designed for optimal user experience.
+                    All resources load instantly in your browser with no downloads or installations required.
                   </p>
                 </div>
 
                 <div className="text-center">
-                  <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <span className="text-2xl font-bold text-white">3</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Level Up Your Brain</h3>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Watch your knowledge stats grow, unlock new skill achievements, and complete learning objectives with our
-                    addictive educational gameplay. Keep practicing to reach mastery level!
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Track Progress</h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    Monitor your learning progress with built-in analytics and performance tracking.
+                    Advance through difficulty levels and unlock new content as you master each concept.
                   </p>
                 </div>
               </div>

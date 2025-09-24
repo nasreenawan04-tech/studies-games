@@ -82,33 +82,32 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
-            <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent">
-              Learn Through Play
+            <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">
+              Advanced Learning Platform
             </span>
             <br />
-            <span className="text-white">150+ Study Games</span>
+            <span className="text-white">150+ Educational Tools</span>
           </h1>
           
           <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
-            Transform studying into an adventure! Master math, science, language, memory, and logic through 
-            <span className="text-yellow-300 font-semibold"> engaging educational games</span> designed to make learning fun and effective.
+            Enhance your academic performance with our comprehensive suite of interactive learning tools. 
+            Master <span className="text-blue-300 font-semibold">mathematics, science, language arts, and critical thinking</span> through evidence-based educational methodologies.
           </p>
 
           {/* Call-to-Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <button
               onClick={() => setLocation('/games')}
-              className="group bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-yellow-400/25 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center gap-3"
+              className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3"
               data-testid="button-start-playing"
             >
-              <Play className="w-6 h-6" />
-              Start Playing Now
-              <Sparkles className="w-5 h-5 group-hover:animate-spin" />
+              <Play className="w-5 h-5" />
+              Access Learning Tools
             </button>
             
             <button
               onClick={() => setLocation('/about')}
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:border-white/50"
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:border-white/50"
               data-testid="button-learn-more"
             >
               Learn More
@@ -191,36 +190,36 @@ const HeroSection = () => {
           )}
         </div>
 
-          {/* Gaming-themed Stats Section */}
+          {/* Professional Stats Section */}
           <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center group" data-testid="stat-active-players">
                 <div className="flex items-center justify-center mb-3">
-                  <Trophy className="w-8 h-8 text-yellow-300 group-hover:animate-bounce" />
+                  <HeartPulse className="w-8 h-8 text-blue-300" />
                 </div>
-                <div className="text-3xl lg:text-4xl font-bold mb-2 text-yellow-300">500K+</div>
-                <div className="text-white/90 text-sm lg:text-base">Active Players</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-blue-300">500K+</div>
+                <div className="text-white/90 text-sm lg:text-base">Active Learners</div>
               </div>
               <div className="text-center group" data-testid="stat-games-played">
                 <div className="flex items-center justify-center mb-3">
-                  <Target className="w-8 h-8 text-green-300 group-hover:animate-pulse" />
+                  <Target className="w-8 h-8 text-green-300" />
                 </div>
                 <div className="text-3xl lg:text-4xl font-bold mb-2 text-green-300">5M+</div>
-                <div className="text-white/90 text-sm lg:text-base">Games Played</div>
+                <div className="text-white/90 text-sm lg:text-base">Sessions Completed</div>
               </div>
               <div className="text-center group" data-testid="stat-study-games">
                 <div className="flex items-center justify-center mb-3">
-                  <Sparkles className="w-8 h-8 text-blue-300 group-hover:animate-spin" />
+                  <BookOpen className="w-8 h-8 text-blue-300" />
                 </div>
                 <div className="text-3xl lg:text-4xl font-bold mb-2 text-blue-300">150+</div>
-                <div className="text-white/90 text-sm lg:text-base">Study Games</div>
+                <div className="text-white/90 text-sm lg:text-base">Learning Tools</div>
               </div>
               <div className="text-center group" data-testid="stat-learning-hours">
                 <div className="flex items-center justify-center mb-3">
-                  <span className="text-3xl animate-pulse">🧠</span>
+                  <Brain className="w-8 h-8 text-purple-300" />
                 </div>
-                <div className="text-3xl lg:text-4xl font-bold mb-2 text-yellow-300">1M+</div>
-                <div className="text-white/90 text-sm lg:text-base">Learning Hours</div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-purple-300">1M+</div>
+                <div className="text-white/90 text-sm lg:text-base">Study Hours</div>
               </div>
             </div>
           </div>
