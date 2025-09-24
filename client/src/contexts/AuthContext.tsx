@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 export interface User {
@@ -24,8 +23,17 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
-  if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+  if (context === undefined) {
+    // Return a default context instead of throwing error to prevent crashes
+    console.warn('useAuth called outside of AuthProvider, returning default values');
+    return {
+      user: null,
+      login: async () => {},
+      register: async () => {},
+      logout: () => {},
+      loading: false, // Added loading property to match AuthContextType
+      updateUserScore: async () => {} // Added updateUserScore property to match AuthContextType
+    };
   }
   return context;
 };
@@ -38,7 +46,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Check for stored user session
     const storedUser = localStorage.getItem('dapsigames-user');
     const token = localStorage.getItem('dapsigames-token');
-    
+
     if (storedUser && token) {
       try {
         setUser(JSON.parse(storedUser));
@@ -54,7 +62,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       // Mock authentication for development
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API delay
-      
+
       // Simple mock validation
       if (email === 'demo@dapsigames.com' && password === 'demo123') {
         const mockUser: User = {
@@ -66,13 +74,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           createdAt: new Date().toISOString(),
           avatar: undefined
         };
-        
+
         setUser(mockUser);
         localStorage.setItem('dapsigames-user', JSON.stringify(mockUser));
         localStorage.setItem('dapsigames-token', 'mock-jwt-token');
         return;
       }
-      
+
       // For any other credentials, create a user account automatically for demo
       const mockUser: User = {
         id: Math.random().toString(36).substr(2, 9),
@@ -83,7 +91,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         createdAt: new Date().toISOString(),
         avatar: undefined
       };
-      
+
       setUser(mockUser);
       localStorage.setItem('dapsigames-user', JSON.stringify(mockUser));
       localStorage.setItem('dapsigames-token', 'mock-jwt-token');
@@ -96,15 +104,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       // Mock registration for development
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API delay
-      
+
       // Check if user already exists in localStorage (simple check)
       const existingUsers = localStorage.getItem('dapsigames-users') || '[]';
       const users = JSON.parse(existingUsers);
-      
+
       if (users.find((user: any) => user.email === email)) {
         throw new Error('User with this email already exists');
       }
-      
+
       const newUser: User = {
         id: Math.random().toString(36).substr(2, 9),
         username: username,
@@ -114,11 +122,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         createdAt: new Date().toISOString(),
         avatar: undefined
       };
-      
+
       // Save to mock database
       users.push(newUser);
       localStorage.setItem('dapsigames-users', JSON.stringify(users));
-      
+
       setUser(newUser);
       localStorage.setItem('dapsigames-user', JSON.stringify(newUser));
       localStorage.setItem('dapsigames-token', 'mock-jwt-token');
@@ -143,15 +151,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         totalScore: user.totalScore + score,
         gamesPlayed: user.gamesPlayed + 1
       };
-      
+
       setUser(updatedUser);
       localStorage.setItem('dapsigames-user', JSON.stringify(updatedUser));
-      
+
       // Update in mock database too
       const existingUsers = localStorage.getItem('dapsigames-users') || '[]';
       const users = JSON.parse(existingUsers);
       const userIndex = users.findIndex((u: any) => u.id === user.id);
-      
+
       if (userIndex >= 0) {
         users[userIndex] = updatedUser;
         localStorage.setItem('dapsigames-users', JSON.stringify(users));

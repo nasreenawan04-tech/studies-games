@@ -75,15 +75,15 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <AuthProvider>
-        <ThemeProvider defaultTheme="light" storageKey="dapsigames-ui-theme">
+      <ThemeProvider defaultTheme="light" storageKey="dapsigames-ui-theme">
+        <AuthProvider>
           <TooltipProvider>
             <Toaster />
             <Router />
             <BackToTop />
           </TooltipProvider>
-        </ThemeProvider>
-      </AuthProvider>
+        </AuthProvider>
+      </ThemeProvider>
     </QueryClientProvider>
   );
 }

@@ -223,3 +223,83 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 };
 
 export default Leaderboard;
+import React from 'react';
+import { Trophy, Medal, Crown } from 'lucide-react';
+
+interface LeaderboardProps {
+  limit?: number;
+  showTitle?: boolean;
+}
+
+const Leaderboard: React.FC<LeaderboardProps> = ({ limit = 10, showTitle = true }) => {
+  // Mock leaderboard data
+  const leaderboardData = [
+    { id: 1, username: 'MathWizard2024', score: 15420, rank: 1 },
+    { id: 2, username: 'ScienceExplorer', score: 14890, rank: 2 },
+    { id: 3, username: 'WordMaster', score: 14320, rank: 3 },
+    { id: 4, username: 'BrainTrainer', score: 13950, rank: 4 },
+    { id: 5, username: 'LogicMaster', score: 13480, rank: 5 },
+    { id: 6, username: 'QuizChampion', score: 12990, rank: 6 },
+    { id: 7, username: 'StudyHero', score: 12750, rank: 7 },
+    { id: 8, username: 'DemoPlayer', score: 12500, rank: 8 },
+    { id: 9, username: 'LearnMaster', score: 12250, rank: 9 },
+    { id: 10, username: 'GamePro', score: 12000, rank: 10 }
+  ].slice(0, limit);
+
+  const getRankIcon = (rank: number) => {
+    switch (rank) {
+      case 1: return <Crown className="w-5 h-5 text-yellow-500" />;
+      case 2: return <Medal className="w-5 h-5 text-gray-400" />;
+      case 3: return <Medal className="w-5 h-5 text-amber-600" />;
+      default: return <Trophy className="w-4 h-4 text-gray-400" />;
+    }
+  };
+
+  const getRankStyle = (rank: number) => {
+    switch (rank) {
+      case 1: return 'bg-yellow-50 border-yellow-200';
+      case 2: return 'bg-gray-50 border-gray-200';
+      case 3: return 'bg-amber-50 border-amber-200';
+      default: return 'bg-white border-gray-100';
+    }
+  };
+
+  return (
+    <div className="w-full">
+      {showTitle && (
+        <div className="text-center mb-6">
+          <h3 className="text-xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2">
+            <Trophy className="w-6 h-6 text-yellow-500" />
+            Top Players
+          </h3>
+          <p className="text-sm text-gray-600">See how you rank against other players!</p>
+        </div>
+      )}
+      
+      <div className="space-y-2">
+        {leaderboardData.map((player) => (
+          <div 
+            key={player.id} 
+            className={`flex items-center justify-between p-3 rounded-lg border ${getRankStyle(player.rank)} hover:shadow-sm transition-shadow`}
+          >
+            <div className="flex items-center space-x-3">
+              <div className="flex items-center justify-center w-8 h-8">
+                {getRankIcon(player.rank)}
+              </div>
+              <div>
+                <div className="font-medium text-gray-900">{player.username}</div>
+                <div className="text-sm text-gray-500">Rank #{player.rank}</div>
+              </div>
+            </div>
+            <div className="text-right">
+              <div className="font-bold text-blue-600">{player.score.toLocaleString()}</div>
+              <div className="text-xs text-gray-500">points</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Leaderboard;
