@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { searchTools } from '@/lib/search';
 import { tools } from '@/data/tools';
-import { Search, Play, Sparkles, Trophy, Target } from 'lucide-react';
+import { Search, Play, Sparkles, Trophy, Target, HeartPulse, BookOpen, Brain } from 'lucide-react';
 
 const HeroSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
