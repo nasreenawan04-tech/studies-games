@@ -275,10 +275,10 @@ const Home = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-16">
                 <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  How DapsiGames Works
+                  Ready to Start Your Study Gaming Quest?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Getting started is simple. No complicated setup, no subscriptions, no hidden fees.
+                  Jump into your learning adventure in 3 simple steps. No complex tutorials, no subscriptions, no hidden costs - just pure educational gaming fun!
                 </p>
               </div>
 
@@ -289,10 +289,10 @@ const Home = () => {
                       <span className="text-2xl font-bold text-white">1</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Choose Your Game</h3>
+                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Select Your Adventure</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Browse our categories or use the search bar to find exactly what you need.
-                    From math games to logic puzzles, we have games for every subject.
+                    Browse our game categories or search for your perfect study challenge.
+                    From challenging math games to multi-step logic puzzles, pick your learning quest and get ready to level up!
                   </p>
                 </div>
 
@@ -302,10 +302,10 @@ const Home = () => {
                       <span className="text-2xl font-bold text-white">2</span>
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Start Playing</h3>
+                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Power Up & Play</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Our games are designed to be user-friendly with clear instructions and interactive gameplay.
-                    Just jump in and start learning!
+                    Our study games feature intuitive controls and engaging gameplay mechanics.
+                    Hit 'Play' and dive straight into your educational gaming experience!
                   </p>
                 </div>
 
@@ -313,10 +313,10 @@ const Home = () => {
                   <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-2xl font-bold text-white">3</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Learn & Improve</h3>
+                  <h3 className="text-2xl font-bold text-neutral-800 mb-4">Level Up Your Brain</h3>
                   <p className="text-neutral-600 leading-relaxed">
-                    Track your progress, master new skills, and achieve your learning goals with our engaging
-                    educational games. Practice makes perfect!
+                    Watch your knowledge stats grow, unlock new skill achievements, and complete learning objectives with our
+                    addictive educational gameplay. Keep practicing to reach mastery level!
                   </p>
                 </div>
               </div>
@@ -331,9 +331,9 @@ const Home = () => {
                   Trusted by Learners Worldwide
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Join millions of students, educators, and lifelong learners who rely on DapsiGames'
-                  collection of engaging educational games for fun and effective learning. Our platform delivers
-                  consistent, enjoyable experiences that users trust for academic success.
+                  Join millions of players in the ultimate study gaming community! Students, teachers, and lifelong learners 
+                  have powered up their knowledge with our epic educational game collection. Level up your learning journey 
+                  with trusted, high-score educational experiences that turn studying into your favorite game.
                 </p>
               </div>
 
@@ -385,10 +385,10 @@ const Home = () => {
 
               <div className="text-center mb-12">
                 <h3 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
-                  Why Students Love DapsiGames
+                  Why Gamers Choose DapsiGames Study Hub
                 </h3>
                 <p className="text-lg text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Our platform serves students of all ages who want to make learning fun and effective. Here's how different learners engage with DapsiGames:
+                  Our study gaming platform attracts players of all levels who want to turn boring lessons into epic adventures. Here's how different types of learner-gamers dominate their educational quests:
                 </p>
               </div>
 
