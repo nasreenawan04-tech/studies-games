@@ -113,26 +113,26 @@ const LogicGames = () => {
 
               {/* Popular Games Section */}
               <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Logic Games</h2>
+                <h2 className="text-2xl font-bold text-neutral-800 mb-8 text-center">Popular Logic Games</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-4 bg-green-50 rounded-xl">
-                    <Puzzle className="w-6 h-6 text-green-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Sudoku Solver</h3>
+                  <div className="text-center p-6 bg-green-50 rounded-xl hover:bg-green-100 transition-colors cursor-pointer group">
+                    <Puzzle className="w-8 h-8 text-green-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Sudoku Solver</h3>
                     <p className="text-sm text-neutral-600">Master sudoku puzzles with hints</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-xl">
-                    <Puzzle className="w-6 h-6 text-green-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Chess Tactics</h3>
+                  <div className="text-center p-6 bg-emerald-50 rounded-xl hover:bg-emerald-100 transition-colors cursor-pointer group">
+                    <Target className="w-8 h-8 text-emerald-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Chess Tactics</h3>
                     <p className="text-sm text-neutral-600">Improve chess strategy</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-xl">
-                    <Brain className="w-6 h-6 text-green-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Brain Teasers</h3>
+                  <div className="text-center p-6 bg-teal-50 rounded-xl hover:bg-teal-100 transition-colors cursor-pointer group">
+                    <Brain className="w-8 h-8 text-teal-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Brain Teasers</h3>
                     <p className="text-sm text-neutral-600">Challenge your mind</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-xl">
-                    <Lightbulb className="w-6 h-6 text-green-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Logic Puzzles</h3>
+                  <div className="text-center p-6 bg-lime-50 rounded-xl hover:bg-lime-100 transition-colors cursor-pointer group">
+                    <Lightbulb className="w-8 h-8 text-lime-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Logic Puzzles</h3>
                     <p className="text-sm text-neutral-600">Develop reasoning skills</p>
                   </div>
                 </div>
@@ -154,42 +154,42 @@ const LogicGames = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Brain className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Critical Thinking</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Develop analytical skills and logical reasoning abilities through challenging puzzles and brain teasers.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Puzzle className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Problem Solving</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Master systematic approaches to breaking down complex problems into manageable steps.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Puzzle className="text-white" size={24} />
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
+                    <Target className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Strategic Planning</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Learn to think ahead, consider multiple possibilities, and make optimal decisions under constraints.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-green-700 to-green-800 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-lime-500 to-green-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Lightbulb className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Creative Solutions</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Discover innovative approaches and develop lateral thinking skills for unique problem solving.
                   </p>
                 </div>

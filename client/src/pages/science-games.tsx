@@ -108,26 +108,26 @@ const ScienceGames = () => {
 
               {/* Popular Games Section */}
               <div className="mt-16 bg-white rounded-2xl shadow-lg p-8">
-                <h2 className="text-2xl font-bold text-neutral-800 mb-6 text-center">Popular Science Games</h2>
+                <h2 className="text-2xl font-bold text-neutral-800 mb-8 text-center">Popular Science Games</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-4 bg-pink-50 rounded-xl">
-                    <Beaker className="w-6 h-6 text-pink-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Chemistry Lab</h3>
+                  <div className="text-center p-6 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors cursor-pointer group">
+                    <Beaker className="w-8 h-8 text-pink-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Chemistry Lab</h3>
                     <p className="text-sm text-neutral-600">Explore chemical reactions</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-xl">
-                    <Atom className="w-6 h-6 text-red-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Physics Simulator</h3>
+                  <div className="text-center p-6 bg-red-50 rounded-xl hover:bg-red-100 transition-colors cursor-pointer group">
+                    <Atom className="w-8 h-8 text-red-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Physics Simulator</h3>
                     <p className="text-sm text-neutral-600">Simulate physics experiments</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-xl">
-                    <Microscope className="w-6 h-6 text-blue-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Biology Quiz</h3>
+                  <div className="text-center p-6 bg-blue-50 rounded-xl hover:bg-blue-100 transition-colors cursor-pointer group">
+                    <Microscope className="w-8 h-8 text-blue-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Biology Quiz</h3>
                     <p className="text-sm text-neutral-600">Test biological knowledge</p>
                   </div>
-                  <div className="text-center p-4 bg-purple-50 rounded-xl">
-                    <Telescope className="w-6 h-6 text-purple-600 mb-2 mx-auto" />
-                    <h3 className="font-semibold text-neutral-800">Astronomy Adventure</h3>
+                  <div className="text-center p-6 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors cursor-pointer group">
+                    <Telescope className="w-8 h-8 text-purple-600 mb-3 mx-auto group-hover:scale-110 transition-transform" />
+                    <h3 className="font-semibold text-neutral-800 mb-2">Astronomy Adventure</h3>
                     <p className="text-sm text-neutral-600">Explore the solar system</p>
                   </div>
                 </div>
@@ -149,42 +149,42 @@ const ScienceGames = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <FlaskConical className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Scientific Discovery</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Explore the wonders of science through engaging and interactive virtual experiments.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-rose-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-rose-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Activity className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Hands-On Learning</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Conduct virtual experiments safely while learning fundamental scientific principles.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Zap className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Quick Understanding</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Grasp complex concepts quickly through visual simulations and interactive demonstrations.
                   </p>
                 </div>
 
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <div className="text-center group">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform shadow-lg">
                     <Target className="text-white" size={24} />
                   </div>
                   <h3 className="text-lg font-bold text-neutral-800 mb-3">Scientific Thinking</h3>
-                  <p className="text-neutral-600">
+                  <p className="text-neutral-600 leading-relaxed">
                     Develop critical thinking and analytical skills essential for scientific reasoning.
                   </p>
                 </div>
