@@ -15,10 +15,10 @@ const LogicGames = () => {
 
   // Parse URL parameters
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(location.split('?')[1] || '');
     const searchParam = urlParams.get('search') || '';
     setSearchQuery(searchParam);
-  }, []);
+  }, [location]);
 
   // Filter games based on search
   useEffect(() => {
