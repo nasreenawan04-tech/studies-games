@@ -229,9 +229,9 @@ const Home = () => {
                   What is DapsiGames Study Hub?
                 </h2>
                 <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed mb-8">
-                  DapsiGames is your ultimate study games platform featuring 150+ engaging educational games completely free to play.
-                  No registration required, no hidden fees, no software downloads - just fun study games that make learning effective
-                  and enjoyable across all devices.
+                  DapsiGames Study Hub transforms learning into an epic gaming adventure with 150+ free educational games that make studying feel like playing!
+                  Level up your knowledge through interactive challenges, hit learning milestones in every subject, and master new skills while having a blast.
+                  No registration, no downloads, no hidden fees - just pure, free study-powered gaming fun across all your devices.
                 </p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
                   <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
