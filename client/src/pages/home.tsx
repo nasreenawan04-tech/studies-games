@@ -547,123 +547,143 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Comprehensive FAQ Section */}
-          <section className="py-20 bg-gray-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Comprehensive FAQ Section - Gaming Style */}
+          <section className="py-20 bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 relative overflow-hidden">
+            {/* Gaming background elements */}
+            <div className="absolute inset-0 opacity-5">
+              <div className="absolute top-20 left-16 w-40 h-40 border-2 border-cyan-400 rounded-full animate-pulse"></div>
+              <div className="absolute top-40 right-32 w-28 h-28 border-2 border-purple-400 rounded-lg rotate-12 animate-bounce"></div>
+              <div className="absolute bottom-32 left-1/3 w-20 h-20 border-2 border-green-400 rounded-full animate-ping"></div>
+              <div className="absolute bottom-48 right-1/4 w-24 h-24 border-2 border-yellow-400 rounded-lg animate-spin"></div>
+            </div>
+            
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  Frequently Asked Questions
+                <div className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white font-bold text-sm mb-4 animate-pulse">
+                  🎯 GAME GUIDE 🎯
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
+                  Player's Knowledge Base
                 </h2>
-                <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
-                  Everything you need to know about DapsiGames' free educational games
+                <p className="text-xl text-purple-100 max-w-3xl mx-auto">
+                  Level up your understanding! Everything you need to dominate DapsiGames' epic educational quests 🚀
                 </p>
               </div>
 
               <div className="grid lg:grid-cols-2 gap-8">
                 <div className="space-y-8">
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-free-tools">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Are all 150+ study games really free to play?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-cyan-500/30 hover:border-cyan-400 transition-all duration-300 group" data-testid="faq-free-games">
+                    <h3 className="text-lg font-semibold text-cyan-300 mb-3 flex items-center gap-2">
+                      💎 Are all 150+ study games really FREE to unlock?
+                      <span className="text-xs bg-green-500/30 px-2 py-1 rounded-full text-green-300">FREE TIER</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Yes! Every single game on DapsiGames is completely free with no hidden costs, subscriptions, or premium upgrades.
-                      This includes our advanced math games, science simulations, language learning games, memory training exercises, and logic puzzles.
-                      We believe educational games should be accessible to all learners.
+                    <p className="text-cyan-100 leading-relaxed">
+                      Absolutely! Every single educational quest on DapsiGames is completely FREE with zero microtransactions, no premium DLC, or hidden paywalls.
+                      This includes our legendary math wizardry, epic science experiments, word warrior adventures, brain-training challenges, and logic puzzle dungeons.
+                      We believe all players deserve access to legendary learning content! 🎮
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-loan-calculator">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      How do the math games help improve learning?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-blue-500/30 hover:border-blue-400 transition-all duration-300 group" data-testid="faq-math-power">
+                    <h3 className="text-lg font-semibold text-blue-300 mb-3 flex items-center gap-2">
+                      🧮 How do math games boost my learning XP?
+                      <span className="text-xs bg-blue-500/30 px-2 py-1 rounded-full text-blue-300">SKILL TREE</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/math-games" className="text-secondary hover:text-secondary/90 underline">math games</a> use proven educational techniques like spaced repetition, progressive difficulty, and immediate feedback to reinforce learning.
-                      Games cover arithmetic, algebra, geometry, statistics, and calculus through interactive challenges that make math concepts engaging and memorable. Explore all <a href="/math-games" className="text-secondary hover:text-secondary/90 underline">math games</a>.
+                    <p className="text-blue-100 leading-relaxed">
+                      Our <a href="/math-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">math wizard quests</a> use proven leveling techniques like XP multipliers, progressive difficulty scaling, and instant feedback rewards to maximize learning gains.
+                      Battle through arithmetic dungeons, algebra campaigns, geometry realms, and calculus boss fights that make number-crunching feel epic! Level up with <a href="/math-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">math adventures</a>. ⚔️
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-mortgage-calculator">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      What makes your science games engaging?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-pink-500/30 hover:border-pink-400 transition-all duration-300 group" data-testid="faq-science-lab">
+                    <h3 className="text-lg font-semibold text-pink-300 mb-3 flex items-center gap-2">
+                      🧪 What makes science games so addictive?
+                      <span className="text-xs bg-pink-500/30 px-2 py-1 rounded-full text-pink-300">LAB MODE</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/science-games" className="text-secondary hover:text-secondary/90 underline">science games</a> cover physics experiments, chemistry lab simulations, biology explorations, astronomy adventures, earth science investigations, and environmental studies.
-                      Students can safely conduct virtual experiments and explore scientific concepts through hands-on interactive gameplay. Find more <a href="/science-games" className="text-secondary hover:text-secondary/90 underline">science games</a>.
+                    <p className="text-pink-100 leading-relaxed">
+                      Our <a href="/science-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">science laboratory adventures</a> feature explosive physics simulations, chemistry brewing minigames, biology exploration quests, space exploration campaigns, and environmental puzzle challenges.
+                      Conduct virtual experiments safely without real-world consequences - perfect for mad scientist gameplay! Discover <a href="/science-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">science quests</a>. 🔬
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-bmi-health-tools">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Which language games improve vocabulary and reading skills?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-purple-500/30 hover:border-purple-400 transition-all duration-300 group" data-testid="faq-word-warrior">
+                    <h3 className="text-lg font-semibold text-purple-300 mb-3 flex items-center gap-2">
+                      📝 How do word games level up my vocabulary?
+                      <span className="text-xs bg-purple-500/30 px-2 py-1 rounded-full text-purple-300">WORD POWER</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      We provide <a href="/language-games" className="text-secondary hover:text-secondary/90 underline">language games</a> that use storytelling, word association, spelling challenges, grammar adventures, and reading comprehension quests to build vocabulary, improve writing skills, and enhance reading fluency.
-                      All <a href="/language-games" className="text-secondary hover:text-secondary/90 underline">language games</a> adapt to different skill levels and provide personalized learning paths.
+                    <p className="text-purple-100 leading-relaxed">
+                      Master the <a href="/language-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">word warrior arts</a> through storytelling RPGs, spell-checking battles, grammar boss fights, and reading comprehension raids that unlock vocabulary achievements and writing skill bonuses.
+                      All <a href="/language-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">language adventures</a> feature adaptive difficulty and personalized learning paths! 📚
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-text-tools">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Can memory games improve cognitive abilities?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-green-500/30 hover:border-green-400 transition-all duration-300 group" data-testid="faq-brain-training">
+                    <h3 className="text-lg font-semibold text-green-300 mb-3 flex items-center gap-2">
+                      🧠 Can memory games actually buff my brain stats?
+                      <span className="text-xs bg-green-500/30 px-2 py-1 rounded-full text-green-300">BRAIN BOOST</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Our <a href="/memory-games" className="text-secondary hover:text-secondary/90 underline">memory games</a> are based on cognitive science research and include working memory exercises, spatial memory challenges, pattern recognition training, and mnemonic device practice.
-                      Regular play can improve focus, attention span, and memory recall abilities. Explore our <a href="/memory-games" className="text-secondary hover:text-secondary/90 underline">memory games</a>.
+                    <p className="text-green-100 leading-relaxed">
+                      Our <a href="/memory-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">memory ninja training</a> is based on cognitive science research featuring working memory challenges, spatial memory trials, pattern recognition tournaments, and mnemonic device mastery.
+                      Regular gameplay sessions can permanently boost your focus stats, attention span buffs, and memory recall abilities! Train with <a href="/memory-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">brain games</a>. 🥷
                     </p>
                   </div>
                 </div>
 
                 <div className="space-y-8">
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-no-registration">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Do I need to sign up or download anything to play?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-orange-500/30 hover:border-orange-400 transition-all duration-300 group" data-testid="faq-instant-play">
+                    <h3 className="text-lg font-semibold text-orange-300 mb-3 flex items-center gap-2">
+                      🚀 Do I need to create an account or download game files?
+                      <span className="text-xs bg-orange-500/30 px-2 py-1 rounded-full text-orange-300">INSTANT PLAY</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      No registration, downloads, or installations required! Simply visit any game page and start playing immediately.
-                      All games work directly in your web browser on any device. Your privacy is protected since we don't collect
-                      personal information or require accounts.
+                    <p className="text-orange-100 leading-relaxed">
+                      Zero setup required! No account creation, no downloads, no installations - just hit "Play" and jump straight into the action!
+                      All educational quests run directly in your browser on any device. Your anonymity is protected since we don't track personal data or require player profiles.
+                      It's like arcade gaming - just pick up and play! 🎮
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-mobile-compatibility">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Do the games work on mobile phones and tablets?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-teal-500/30 hover:border-teal-400 transition-all duration-300 group" data-testid="faq-cross-platform">
+                    <h3 className="text-lg font-semibold text-teal-300 mb-3 flex items-center gap-2">
+                      📱 Are the games compatible with mobile devices?
+                      <span className="text-xs bg-teal-500/30 px-2 py-1 rounded-full text-teal-300">CROSS-PLATFORM</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Absolutely! All our study games are mobile-optimized and work seamlessly on smartphones, tablets, laptops, and desktops.
-                      The responsive design ensures buttons are easy to tap, forms are simple to fill out, and results display perfectly
-                      on any screen size.
+                    <p className="text-teal-100 leading-relaxed">
+                      Full cross-platform compatibility! Our educational adventures work flawlessly on smartphones, tablets, laptops, and desktop PCs.
+                      The responsive interface automatically adapts to your screen - touch controls feel natural, buttons are perfectly sized, and gameplay remains smooth across all devices.
+                      Play at home, school, or on-the-go! 📲
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-data-security">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Is my learning progress and game data secure?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-yellow-500/30 hover:border-yellow-400 transition-all duration-300 group" data-testid="faq-save-system">
+                    <h3 className="text-lg font-semibold text-yellow-300 mb-3 flex items-center gap-2">
+                      🛡️ Is my progress and game data secure?
+                      <span className="text-xs bg-yellow-500/30 px-2 py-1 rounded-full text-yellow-300">SECURE SAVE</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Yes! All game progress and learning data remain completely private and secure. Games process locally in your browser - we don't store your scores, answers, or personal learning data on our servers.
-                      Your educational journey remains private and protected. Read our <a href="/privacy-policy" className="text-secondary hover:text-secondary/90 underline">Privacy Policy</a> for details.
+                    <p className="text-yellow-100 leading-relaxed">
+                      Your game saves are completely secure! All progress, scores, and learning achievements are stored locally in your browser - we never upload your personal gameplay data to our servers.
+                      Your educational journey stays 100% private and protected. Check our <a href="/privacy-policy" className="text-cyan-300 hover:text-cyan-200 underline font-semibold">Privacy Shield Policy</a> for technical details. 🔒
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-commercial-use">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      Can teachers use these games in classrooms?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 group" data-testid="faq-classroom-guild">
+                    <h3 className="text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2">
+                      🎓 Can teachers use these games in classroom guilds?
+                      <span className="text-xs bg-indigo-500/30 px-2 py-1 rounded-full text-indigo-300">GUILD MODE</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Absolutely! Our educational games are perfect for classroom use, homeschooling, tutoring sessions, and educational institutions.
-                      Teachers regularly use our games to supplement lessons, engage students, and provide interactive learning experiences that make studying fun and effective.
+                    <p className="text-indigo-100 leading-relaxed">
+                      Perfect for educational guilds! Our learning adventures are ideal for classroom campaigns, homeschool quests, tutoring parties, and educational institutions.
+                      Teachers regularly deploy our games as lesson supplements, student engagement missions, and interactive learning experiences that transform boring study sessions into epic adventures! 🏫
                     </p>
                   </div>
 
-                  <div className="bg-white rounded-lg p-6 shadow-md" data-testid="faq-support">
-                    <h3 className="text-lg font-semibold text-neutral-800 mb-3">
-                      How can I request new games or report issues?
+                  <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl p-6 shadow-2xl border-2 border-red-500/30 hover:border-red-400 transition-all duration-300 group" data-testid="faq-game-requests">
+                    <h3 className="text-lg font-semibold text-red-300 mb-3 flex items-center gap-2">
+                      💬 How can I request new quests or report bugs?
+                      <span className="text-xs bg-red-500/30 px-2 py-1 rounded-full text-red-300">SUPPORT GUILD</span>
                     </h3>
-                    <p className="text-neutral-600 leading-relaxed">
-                      Contact us through our support page for help, game requests, or to report issues. We actively listen
-                      to user feedback and regularly add new games based on demand. Our goal is to continuously improve and
-                      expand our collection to meet your learning needs.
+                    <p className="text-red-100 leading-relaxed">
+                      Join our Support Guild through the help center for game requests, bug reports, or technical assistance! We actively monitor player feedback and regularly release new educational content based on community demand.
+                      Our mission is to continuously expand and improve our learning game universe to meet every player's educational goals! 🎯
                     </p>
                   </div>
                 </div>
