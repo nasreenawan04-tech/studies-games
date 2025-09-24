@@ -4,38 +4,38 @@
 @tailwind utilities;
 
 :root {
-  --background: #F9FAFB; /* Light Gray/Off-White */
-  --foreground: #1C1C1E; /* Dark Gray */
+  --background: hsl(210, 40%, 98%); /* Light Blue-Gray */
+  --foreground: hsl(222, 84%, 5%); /* Dark Navy */
   --card: #FFFFFF;
-  --card-foreground: #1C1C1E;
+  --card-foreground: hsl(222, 84%, 5%);
   --popover: #FFFFFF;
-  --popover-foreground: #1C1C1E;
-  --primary: #FF3B30; /* Vibrant Red */
+  --popover-foreground: hsl(222, 84%, 5%);
+  --primary: hsl(210, 100%, 55%); /* Bright Blue */
   --primary-foreground: #FFFFFF;
-  --secondary: #007AFF; /* Bright Blue */
+  --secondary: hsl(142, 71%, 45%); /* Vibrant Green */
   --secondary-foreground: #FFFFFF;
-  --muted: #F3F4F6;
-  --muted-foreground: #6B7280;
-  --accent: #FFD60A; /* Yellow */
-  --accent-foreground: #1C1C1E;
-  --destructive: #FF3B30;
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 13%, 45%);
+  --accent: hsl(45, 93%, 58%); /* Bright Yellow */
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: #FFFFFF;
-  --border: #E5E7EB;
+  --border: hsl(214, 32%, 91%);
   --input: #FFFFFF;
-  --ring: #007AFF;
-  --chart-1: #FF3B30;
-  --chart-2: #007AFF;
-  --chart-3: #FFD60A;
-  --chart-4: #10B981;
-  --chart-5: #EC4899;
+  --ring: hsl(210, 100%, 55%);
+  --chart-1: hsl(210, 100%, 55%);
+  --chart-2: hsl(142, 71%, 45%);
+  --chart-3: hsl(45, 93%, 58%);
+  --chart-4: hsl(160, 84%, 39%);
+  --chart-5: hsl(291, 64%, 42%);
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #1C1C1E;
-  --sidebar-primary: #FF3B30;
+  --sidebar-foreground: hsl(222, 84%, 5%);
+  --sidebar-primary: hsl(210, 100%, 55%);
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FFD60A;
-  --sidebar-accent-foreground: #1C1C1E;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #007AFF;
+  --sidebar-accent: hsl(45, 93%, 58%);
+  --sidebar-accent-foreground: hsl(222, 84%, 5%);
+  --sidebar-border: hsl(214, 32%, 91%);
+  --sidebar-ring: hsl(210, 100%, 55%);
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
@@ -69,38 +69,38 @@
 }
 
 .dark {
-  --background: #111827;
-  --foreground: #F9FAFB;
-  --card: #1F2937;
-  --card-foreground: #F9FAFB;
-  --popover: #1F2937;
-  --popover-foreground: #F9FAFB;
-  --primary: #FF3B30;
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(224, 71%, 7%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(224, 71%, 7%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(210, 100%, 60%);
   --primary-foreground: #FFFFFF;
-  --secondary: #007AFF;
+  --secondary: hsl(142, 71%, 50%);
   --secondary-foreground: #FFFFFF;
-  --muted: #374151;
-  --muted-foreground: #9CA3AF;
-  --accent: #FFD60A;
-  --accent-foreground: #111827;
-  --destructive: #FF3B30;
+  --muted: hsl(224, 71%, 10%);
+  --muted-foreground: hsl(215, 13%, 65%);
+  --accent: hsl(45, 93%, 58%);
+  --accent-foreground: hsl(222, 84%, 5%);
+  --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: #FFFFFF;
-  --border: #374151;
-  --input: #1F2937;
-  --ring: #007AFF;
-  --chart-1: #FF3B30;
-  --chart-2: #007AFF;
-  --chart-3: #FFD60A;
-  --chart-4: #10B981;
-  --chart-5: #EC4899;
-  --sidebar: #1F2937;
-  --sidebar-foreground: #F9FAFB;
-  --sidebar-primary: #FF3B30;
+  --border: hsl(224, 71%, 10%);
+  --input: hsl(224, 71%, 7%);
+  --ring: hsl(210, 100%, 60%);
+  --chart-1: hsl(210, 100%, 60%);
+  --chart-2: hsl(142, 71%, 50%);
+  --chart-3: hsl(45, 93%, 58%);
+  --chart-4: hsl(160, 84%, 44%);
+  --chart-5: hsl(291, 64%, 52%);
+  --sidebar: hsl(224, 71%, 7%);
+  --sidebar-foreground: hsl(210, 40%, 98%);
+  --sidebar-primary: hsl(210, 100%, 60%);
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FFD60A;
-  --sidebar-accent-foreground: #111827;
-  --sidebar-border: #374151;
-  --sidebar-ring: #007AFF;
+  --sidebar-accent: hsl(45, 93%, 58%);
+  --sidebar-accent-foreground: hsl(222, 84%, 5%);
+  --sidebar-border: hsl(224, 71%, 10%);
+  --sidebar-ring: hsl(210, 100%, 60%);
 }
 
 @layer base {
@@ -113,47 +113,57 @@
   }
 }
 
-.gradient-blue-purple {
-  background: linear-gradient(135deg, #007AFF 0%, #FF3B30 100%);
+.gradient-blue-green {
+  background: linear-gradient(135deg, hsl(210, 100%, 55%) 0%, hsl(142, 71%, 45%) 100%);
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, #FF3B30 0%, #007AFF 30%, #FFD60A 100%);
+  background: linear-gradient(135deg, hsl(210, 100%, 55%) 0%, hsl(142, 71%, 45%) 30%, hsl(45, 93%, 58%) 100%);
 }
 
-.gradient-red-blue {
-  background: linear-gradient(135deg, #FF3B30 0%, #007AFF 100%);
+.gradient-green-yellow {
+  background: linear-gradient(135deg, hsl(142, 71%, 45%) 0%, hsl(45, 93%, 58%) 100%);
 }
 
 .gradient-accent {
-  background: linear-gradient(135deg, #FFD60A 0%, #FF3B30 100%);
+  background: linear-gradient(135deg, hsl(45, 93%, 58%) 0%, hsl(210, 100%, 55%) 100%);
 }
 
 .gradient-primary {
-  background: linear-gradient(135deg, #FF3B30 0%, #FF5B4A 100%);
+  background: linear-gradient(135deg, hsl(210, 100%, 55%) 0%, hsl(210, 100%, 50%) 100%);
+}
+
+.gradient-gaming {
+  background: linear-gradient(135deg, hsl(210, 100%, 55%) 0%, hsl(142, 71%, 45%) 50%, hsl(45, 93%, 58%) 100%);
 }
 
 /* Button and interactive element styles */
 .btn-primary {
-  background: #3b82f6;
+  background: hsl(210, 100%, 55%);
   color: white;
   transition: all 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px 0 rgba(0, 118, 255, 0.3);
 }
 
 .btn-primary:hover {
-  background: #2563eb;
-  transform: translateY(-1px);
+  background: hsl(210, 100%, 50%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(0, 118, 255, 0.4);
 }
 
 .btn-secondary {
-  background: #6b7280;
+  background: hsl(142, 71%, 45%);
   color: white;
   transition: all 0.2s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px 0 rgba(34, 197, 94, 0.3);
 }
 
 .btn-secondary:hover {
-  background: #4b5563;
-  transform: translateY(-1px);
+  background: hsl(142, 71%, 40%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(34, 197, 94, 0.4);
 }
 
 .accent-highlight {

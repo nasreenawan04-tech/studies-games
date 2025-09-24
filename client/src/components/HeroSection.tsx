@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { searchTools } from '@/lib/search';
 import { tools } from '@/data/tools';
-import { Search } from 'lucide-react';
+import { Search, Play, Sparkles, Trophy, Target } from 'lucide-react';
 
 const HeroSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -52,17 +52,71 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="gradient-hero text-white py-20 lg:py-28" data-testid="hero-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
-          Learn Through Play - 150+ Free Study Games
-        </h1>
-        <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
-          Transform your studying with engaging educational games across math, science, language, memory, and logic. No sign-up required.
-        </p>
+    <section className="gradient-gaming relative overflow-hidden" data-testid="hero-section">
+      {/* Floating gaming elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true" role="presentation">
+        <div className="absolute top-20 left-20 text-yellow-300/20 text-6xl motion-safe:animate-bounce">🎮</div>
+        <div className="absolute top-40 right-32 text-blue-300/20 text-4xl motion-safe:animate-pulse">⭐</div>
+        <div className="absolute bottom-32 left-16 text-green-300/20 text-5xl motion-safe:animate-bounce motion-safe:delay-500">🏆</div>
+        <div className="absolute bottom-20 right-20 text-yellow-300/20 text-3xl motion-safe:animate-pulse motion-safe:delay-300">💡</div>
+        <div className="absolute top-60 left-1/3 text-blue-300/20 text-4xl motion-safe:animate-bounce motion-safe:delay-700">🧠</div>
+      </div>
 
-        {/* Search Bar */}
-        <div className="max-w-2xl mx-auto mb-16 relative">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        
+        {/* Hero Content */}
+        <div className="text-center text-white">
+          {/* Logo and Brand */}
+          <div className="flex justify-center items-center mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/20">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                  <span className="text-2xl">🎓</span>
+                </div>
+                <div className="text-left">
+                  <h2 className="text-2xl font-bold text-white">DapsiGames</h2>
+                  <p className="text-white/80 text-sm">Study + Gaming Hub</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight" data-testid="text-hero-title">
+            <span className="bg-gradient-to-r from-yellow-300 to-yellow-100 bg-clip-text text-transparent">
+              Learn Through Play
+            </span>
+            <br />
+            <span className="text-white">150+ Study Games</span>
+          </h1>
+          
+          <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
+            Transform studying into an adventure! Master math, science, language, memory, and logic through 
+            <span className="text-yellow-300 font-semibold"> engaging educational games</span> designed to make learning fun and effective.
+          </p>
+
+          {/* Call-to-Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <button
+              onClick={() => setLocation('/games')}
+              className="group bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-8 py-4 rounded-2xl font-bold text-lg shadow-2xl hover:shadow-yellow-400/25 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center gap-3"
+              data-testid="button-start-playing"
+            >
+              <Play className="w-6 h-6" />
+              Start Playing Now
+              <Sparkles className="w-5 h-5 group-hover:animate-spin" />
+            </button>
+            
+            <button
+              onClick={() => setLocation('/about')}
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:border-white/50"
+              data-testid="button-learn-more"
+            >
+              Learn More
+            </button>
+          </div>
+
+          {/* Search Bar */}
+          <div className="max-w-2xl mx-auto mb-16 relative">
           <form onSubmit={handleSearch} className="relative">
             <input 
               type="text" 
@@ -137,23 +191,38 @@ const HeroSection = () => {
           )}
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          <div className="text-center" data-testid="stat-active-players">
-            <div className="text-3xl lg:text-4xl font-bold mb-2">500K+</div>
-            <div className="text-white/90 text-sm lg:text-base">Active Players</div>
-          </div>
-          <div className="text-center" data-testid="stat-games-played">
-            <div className="text-3xl lg:text-4xl font-bold mb-2">5M+</div>
-            <div className="text-white/90 text-sm lg:text-base">Games Played</div>
-          </div>
-          <div className="text-center" data-testid="stat-study-games">
-            <div className="text-3xl lg:text-4xl font-bold mb-2">150+</div>
-            <div className="text-white/90 text-sm lg:text-base">Study Games</div>
-          </div>
-          <div className="text-center" data-testid="stat-learning-hours">
-            <div className="text-3xl lg:text-4xl font-bold mb-2">1M+</div>
-            <div className="text-white/90 text-sm lg:text-base">Learning Hours</div>
+          {/* Gaming-themed Stats Section */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center group" data-testid="stat-active-players">
+                <div className="flex items-center justify-center mb-3">
+                  <Trophy className="w-8 h-8 text-yellow-300 group-hover:animate-bounce" />
+                </div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-yellow-300">500K+</div>
+                <div className="text-white/90 text-sm lg:text-base">Active Players</div>
+              </div>
+              <div className="text-center group" data-testid="stat-games-played">
+                <div className="flex items-center justify-center mb-3">
+                  <Target className="w-8 h-8 text-green-300 group-hover:animate-pulse" />
+                </div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-green-300">5M+</div>
+                <div className="text-white/90 text-sm lg:text-base">Games Played</div>
+              </div>
+              <div className="text-center group" data-testid="stat-study-games">
+                <div className="flex items-center justify-center mb-3">
+                  <Sparkles className="w-8 h-8 text-blue-300 group-hover:animate-spin" />
+                </div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-blue-300">150+</div>
+                <div className="text-white/90 text-sm lg:text-base">Study Games</div>
+              </div>
+              <div className="text-center group" data-testid="stat-learning-hours">
+                <div className="flex items-center justify-center mb-3">
+                  <span className="text-3xl animate-pulse">🧠</span>
+                </div>
+                <div className="text-3xl lg:text-4xl font-bold mb-2 text-yellow-300">1M+</div>
+                <div className="text-white/90 text-sm lg:text-base">Learning Hours</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
