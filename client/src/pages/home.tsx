@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import PopularGamesSection from '@/components/PopularGamesSection';
 import CategorySection from '@/components/CategorySection';
+import WhyChooseSection from '@/components/WhyChooseSection';
 import Footer from '@/components/Footer';
 import FavoritesSection from '@/components/FavoritesSection';
 import { Calculator, PenTool, HeartPulse, Zap, Shield, Smartphone, Globe, BookOpen, Brain, FlaskConical, Target, Gamepad2 } from 'lucide-react';
@@ -263,104 +264,8 @@ const Home = () => {
 
           <PopularGamesSection />
           <CategorySection />
-
-          {/* About DapsiGames Section */}
-          <section className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
-                  Why Choose DapsiGames Study Hub?
-                </h2>
-                <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  We've created the most engaging collection of study games to help you learn smarter, not harder.
-                  From interactive math challenges to virtual science labs and brain training exercises, we've got you covered with
-                  study games that make learning fun and effective.
-                </p>
-              </div>
-
-              <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-                <div>
-                  <h3 className="text-3xl font-bold text-neutral-800 mb-6">
-                    Study Games, Zero Cost
-                  </h3>
-                  <p className="text-lg text-neutral-600 mb-6 leading-relaxed">
-                    Access high-quality study games designed by learning experts and game developers. Our platform offers engaging
-                    learning experiences that rival expensive educational software, but completely free and accessible through your web browser.
-                  </p>
-                  <p className="text-lg text-neutral-600 leading-relaxed">
-                    Whether you're a student mastering math concepts, a teacher looking for classroom activities, or a parent supporting learning at home -
-                    our study games deliver effective education without the expensive price tag.
-                  </p>
-                </div>
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 shadow-inner">
-                  <div className="grid grid-cols-2 gap-6 text-center">
-                    <div>
-                      <div className="text-4xl font-bold text-secondary mb-2">150+</div>
-                      <div className="text-neutral-700 font-medium">Free Games</div>
-                    </div>
-                    <div>
-                      <div className="text-4xl font-bold text-primary mb-2">0</div>
-                      <div className="text-neutral-700 font-medium">Registration Required</div>
-                    </div>
-                    <div>
-                      <div className="text-4xl font-bold text-purple-600 mb-2">5</div>
-                      <div className="text-neutral-700 font-medium">Learning Categories</div>
-                    </div>
-                    <div>
-                      <div className="text-4xl font-bold text-orange-600 mb-2">24/7</div>
-                      <div className="text-neutral-700 font-medium">Always Available</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#F59E0B] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Zap className="text-white" size={24} />
-                  </div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-4">Instant Play</h4>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Our games load instantly without waiting for downloads, installations, or lengthy setup times. Start learning
-                    immediately with games optimized for speed and performance across all devices.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#6B7280] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Shield className="text-white" size={24} />
-                  </div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-4">Safe & Private</h4>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Your learning progress stays private. We don't store your game data or personal information. All game progress
-                    and learning analytics remain secure and private to your device.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Smartphone className="text-white" size={24} />
-                  </div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-4">Play Anywhere</h4>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Play our educational games on any device - desktop, laptop, tablet, or smartphone. Responsive design ensures
-                    perfect gameplay experience across all screen sizes and browsers.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-[#22C55E] rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <Globe className="text-white" size={24} />
-                  </div>
-                  <h4 className="text-xl font-bold text-neutral-800 mb-4">Learn Globally</h4>
-                  <p className="text-neutral-600 leading-relaxed">
-                    Educational content designed for learners worldwide. Games support multiple learning styles and adapt to different
-                    skill levels. Available 24/7 from anywhere with internet access.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
+          
+          <WhyChooseSection />
 
           {/* Featured Games Spotlight */}
           <section className="py-20 bg-gradient-to-br from-neutral-50 to-blue-50">
