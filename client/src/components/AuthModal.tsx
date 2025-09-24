@@ -99,6 +99,11 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
               : 'Create an account to save your scores and join the leaderboard'
             }
           </DialogDescription>
+          {activeTab === 'login' && (
+            <div className="text-center text-xs text-blue-600 bg-blue-50 p-2 rounded-md mt-2">
+              Demo: Use email "demo@dapsigames.com" with password "demo123"
+            </div>
+          )}
         </DialogHeader>
 
         {/* Tab Switcher */}
@@ -147,8 +152,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                         <Input 
                           {...field} 
                           type="email" 
-                          placeholder="Enter your email"
+                          placeholder="Enter your email (try: demo@dapsigames.com)"
                           className="pl-10"
+                          disabled={loading}
                         />
                       </div>
                     </FormControl>
@@ -170,8 +176,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                         <Input 
                           {...field} 
                           type={showPassword ? 'text' : 'password'}
-                          placeholder="Enter your password"
+                          placeholder="Enter your password (try: demo123)"
                           className="pl-10 pr-10"
+                          disabled={loading}
                         />
                         <button
                           type="button"
@@ -212,6 +219,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                           {...field} 
                           placeholder="Choose a username"
                           className="pl-10"
+                          disabled={loading}
                         />
                       </div>
                     </FormControl>
@@ -241,6 +249,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                           type="email" 
                           placeholder="Enter your email"
                           className="pl-10"
+                          disabled={loading}
                         />
                       </div>
                     </FormControl>
@@ -267,6 +276,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                           type={showPassword ? 'text' : 'password'}
                           placeholder="Create a password"
                           className="pl-10 pr-10"
+                          disabled={loading}
                         />
                         <button
                           type="button"
@@ -297,6 +307,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialTab = 'lo
                           type={showPassword ? 'text' : 'password'}
                           placeholder="Confirm your password"
                           className="pl-10"
+                          disabled={loading}
                         />
                       </div>
                     </FormControl>

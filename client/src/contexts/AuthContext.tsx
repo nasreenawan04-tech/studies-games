@@ -52,47 +52,76 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const login = async (email: string, password: string) => {
     try {
-      const response = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Login failed');
+      // Mock authentication for development
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API delay
+      
+      // Simple mock validation
+      if (email === 'demo@dapsigames.com' && password === 'demo123') {
+        const mockUser: User = {
+          id: '1',
+          username: 'Demo User',
+          email: email,
+          totalScore: 1250,
+          gamesPlayed: 15,
+          createdAt: new Date().toISOString(),
+          avatar: undefined
+        };
+        
+        setUser(mockUser);
+        localStorage.setItem('dapsigames-user', JSON.stringify(mockUser));
+        localStorage.setItem('dapsigames-token', 'mock-jwt-token');
+        return;
       }
-
-      const data = await response.json();
-      setUser(data.user);
-      localStorage.setItem('dapsigames-user', JSON.stringify(data.user));
-      localStorage.setItem('dapsigames-token', data.token);
+      
+      // For any other credentials, create a user account automatically for demo
+      const mockUser: User = {
+        id: Math.random().toString(36).substr(2, 9),
+        username: email.split('@')[0],
+        email: email,
+        totalScore: 0,
+        gamesPlayed: 0,
+        createdAt: new Date().toISOString(),
+        avatar: undefined
+      };
+      
+      setUser(mockUser);
+      localStorage.setItem('dapsigames-user', JSON.stringify(mockUser));
+      localStorage.setItem('dapsigames-token', 'mock-jwt-token');
     } catch (error) {
-      throw error;
+      throw new Error('Login failed. Please try again.');
     }
   };
 
   const register = async (username: string, email: string, password: string) => {
     try {
-      const response = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, email, password }),
-      });
-
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Registration failed');
+      // Mock registration for development
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API delay
+      
+      // Check if user already exists in localStorage (simple check)
+      const existingUsers = localStorage.getItem('dapsigames-users') || '[]';
+      const users = JSON.parse(existingUsers);
+      
+      if (users.find((user: any) => user.email === email)) {
+        throw new Error('User with this email already exists');
       }
-
-      const data = await response.json();
-      setUser(data.user);
-      localStorage.setItem('dapsigames-user', JSON.stringify(data.user));
-      localStorage.setItem('dapsigames-token', data.token);
+      
+      const newUser: User = {
+        id: Math.random().toString(36).substr(2, 9),
+        username: username,
+        email: email,
+        totalScore: 0,
+        gamesPlayed: 0,
+        createdAt: new Date().toISOString(),
+        avatar: undefined
+      };
+      
+      // Save to mock database
+      users.push(newUser);
+      localStorage.setItem('dapsigames-users', JSON.stringify(users));
+      
+      setUser(newUser);
+      localStorage.setItem('dapsigames-user', JSON.stringify(newUser));
+      localStorage.setItem('dapsigames-token', 'mock-jwt-token');
     } catch (error) {
       throw error;
     }
@@ -108,20 +137,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (!user) return;
 
     try {
-      const token = localStorage.getItem('dapsigames-token');
-      const response = await fetch('/api/auth/update-score', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`,
-        },
-        body: JSON.stringify({ gameId, score }),
-      });
-
-      if (response.ok) {
-        const updatedUser = await response.json();
-        setUser(updatedUser);
-        localStorage.setItem('dapsigames-user', JSON.stringify(updatedUser));
+      // Mock score update
+      const updatedUser = {
+        ...user,
+        totalScore: user.totalScore + score,
+        gamesPlayed: user.gamesPlayed + 1
+      };
+      
+      setUser(updatedUser);
+      localStorage.setItem('dapsigames-user', JSON.stringify(updatedUser));
+      
+      // Update in mock database too
+      const existingUsers = localStorage.getItem('dapsigames-users') || '[]';
+      const users = JSON.parse(existingUsers);
+      const userIndex = users.findIndex((u: any) => u.id === user.id);
+      
+      if (userIndex >= 0) {
+        users[userIndex] = updatedUser;
+        localStorage.setItem('dapsigames-users', JSON.stringify(users));
       }
     } catch (error) {
       console.error('Failed to update score:', error);
