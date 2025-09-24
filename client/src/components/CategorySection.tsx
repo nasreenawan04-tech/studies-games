@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'wouter';
 import { getCategoryStats, categories } from '@/data/tools';
 import { Calculator, FlaskConical, BookOpen, Brain, Puzzle, ChevronRight, Gamepad2, Trophy, Star, Target } from 'lucide-react';
@@ -54,10 +53,10 @@ const CategorySection = () => {
       title: categories.memory,
       description: 'Train your brain with memory challenges, pattern recognition, and cognitive exercises',
       icon: Brain,
-      gradient: 'from-purple-500 to-purple-700',
-      bgGradient: 'from-purple-50 to-purple-100 dark:from-purple-950/30 dark:to-purple-900/30',
-      borderColor: 'border-purple-200 hover:border-purple-400',
-      textColor: 'text-purple-700 dark:text-purple-300',
+      gradient: 'from-green-500 to-blue-600',
+      bgGradient: 'from-green-50 to-blue-50 dark:from-green-950/30 dark:to-blue-900/30',
+      borderColor: 'border-green-200 hover:border-blue-400',
+      textColor: 'text-green-700 dark:text-blue-300',
       count: stats.memory,
       href: '/memory-games',
       emoji: '🧠',
@@ -68,10 +67,10 @@ const CategorySection = () => {
       title: categories.logic,
       description: 'Solve puzzles, crack codes, and develop critical thinking through logic challenges',
       icon: Puzzle,
-      gradient: 'from-indigo-500 to-indigo-700',
-      bgGradient: 'from-indigo-50 to-indigo-100 dark:from-indigo-950/30 dark:to-indigo-900/30',
-      borderColor: 'border-indigo-200 hover:border-indigo-400',
-      textColor: 'text-indigo-700 dark:text-indigo-300',
+      gradient: 'from-blue-500 to-green-600',
+      bgGradient: 'from-blue-50 to-green-50 dark:from-blue-950/30 dark:to-green-900/30',
+      borderColor: 'border-blue-200 hover:border-green-400',
+      textColor: 'text-blue-700 dark:text-green-300',
       count: stats.logic,
       href: '/logic-games',
       emoji: '🧩',

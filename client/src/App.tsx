@@ -58,7 +58,7 @@ function Router() {
 
       {/* Support pages */}
       <Route path="/contact" component={ContactUs} />
-      <Route path="/privacy" component={PrivacyPolicy} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms" component={TermsOfService} />
       <Route path="/help" component={HelpCenter} />
       <Route path="/about" component={AboutUs} />
