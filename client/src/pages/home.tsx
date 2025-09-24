@@ -323,123 +323,154 @@ const Home = () => {
             </div>
           </section>
 
-          {/* Trust & Reliability Section */}
-          <section className="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50" data-testid="section-trust">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Trust & Reliability Section - Gaming Style */}
+          <section className="py-20 bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 relative overflow-hidden" data-testid="section-trust">
+            {/* Gaming background patterns */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-10 left-10 w-32 h-32 border-2 border-cyan-400 rounded-full animate-pulse"></div>
+              <div className="absolute top-32 right-20 w-24 h-24 border-2 border-purple-400 rounded-lg rotate-45 animate-bounce"></div>
+              <div className="absolute bottom-20 left-1/4 w-16 h-16 border-2 border-green-400 rounded-full animate-ping"></div>
+              <div className="absolute bottom-32 right-1/3 w-20 h-20 border-2 border-yellow-400 rounded-lg animate-spin"></div>
+            </div>
+            
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 mb-6">
+                <div className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-bold text-sm mb-4 animate-pulse">
+                  🎮 ACHIEVEMENT UNLOCKED 🎮
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-6">
                   Trusted by Learners Worldwide
                 </h2>
-                <p className="text-xl text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Join millions of players in the ultimate study gaming community! Students, teachers, and lifelong learners 
-                  have powered up their knowledge with our epic educational game collection. Level up your learning journey 
-                  with trusted, high-score educational experiences that turn studying into your favorite game.
+                <p className="text-xl text-cyan-100 max-w-4xl mx-auto leading-relaxed">
+                  Join millions of study-gamers in the ultimate learning arena! Students, teachers, and knowledge hunters 
+                  have unlocked epic achievements with our legendary educational game collection. Level up your brain, 
+                  collect XP points, and dominate the leaderboards in the most addictive study games ever created! 🚀
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16">
-                <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 group" data-testid="stat-calculations">
-                  <div className="w-16 h-16 bg-[#2563EB] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                    <Calculator className="text-white" size={24} />
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 lg:p-8 shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 border-2 border-cyan-500/30 group hover:border-cyan-400 relative overflow-hidden" data-testid="stat-players">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-cyan-500/20 to-transparent rounded-bl-full"></div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-cyan-500/50">
+                    <Gamepad2 className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-secondary mb-2">25M+</div>
-                    <div className="text-neutral-800 font-semibold text-lg mb-1">Calculations Completed</div>
-                    <div className="text-sm text-neutral-500">Accurate results delivered daily</div>
+                    <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent mb-2">2.5M+</div>
+                    <div className="text-cyan-100 font-semibold text-lg mb-1">Active Players</div>
+                    <div className="text-sm text-cyan-300">Gaming & learning daily</div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-green-100 group" data-testid="stat-tools">
-                  <div className="w-16 h-16 bg-[#22C55E] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                    <PenTool className="text-white" size={24} />
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 lg:p-8 shadow-2xl hover:shadow-green-500/25 transition-all duration-300 border-2 border-green-500/30 group hover:border-green-400 relative overflow-hidden" data-testid="stat-achievements">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-500/20 to-transparent rounded-bl-full"></div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-green-500/50">
+                    <Target className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">180+</div>
-                    <div className="text-neutral-800 font-semibold text-lg mb-1">Professional Tools</div>
-                    <div className="text-sm text-neutral-500">Continuously expanding collection</div>
+                    <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent mb-2">150M+</div>
+                    <div className="text-green-100 font-semibold text-lg mb-1">XP Points Earned</div>
+                    <div className="text-sm text-green-300">Knowledge achievements unlocked</div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100 group" data-testid="stat-uptime">
-                  <div className="w-16 h-16 bg-[#6B7280] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                    <Shield className="text-white" size={24} />
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 lg:p-8 shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 border-2 border-purple-500/30 group hover:border-purple-400 relative overflow-hidden" data-testid="stat-sessions">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-purple-500/20 to-transparent rounded-bl-full"></div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-purple-500/50">
+                    <Brain className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">99.9%</div>
-                    <div className="text-neutral-800 font-semibold text-lg mb-1">Service Reliability</div>
-                    <div className="text-sm text-neutral-500">Always available when you need it</div>
+                    <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-purple-400 to-purple-300 bg-clip-text text-transparent mb-2">50M+</div>
+                    <div className="text-purple-100 font-semibold text-lg mb-1">Study Sessions</div>
+                    <div className="text-sm text-purple-300">Epic learning adventures</div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-orange-100 group" data-testid="stat-security">
-                  <div className="w-16 h-16 bg-[#F59E0B] rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                    <Globe className="text-white" size={24} />
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 lg:p-8 shadow-2xl hover:shadow-yellow-500/25 transition-all duration-300 border-2 border-yellow-500/30 group hover:border-yellow-400 relative overflow-hidden" data-testid="stat-highscores">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-500/20 to-transparent rounded-bl-full"></div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-yellow-500/50">
+                    <Zap className="text-white" size={24} />
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">100%</div>
-                    <div className="text-neutral-800 font-semibold text-lg mb-1">Free & Accessible</div>
-                    <div className="text-sm text-neutral-500">No subscriptions or hidden fees</div>
+                    <div className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent mb-2">∞</div>
+                    <div className="text-yellow-100 font-semibold text-lg mb-1">High Scores</div>
+                    <div className="text-sm text-yellow-300">Beat your personal best!</div>
                   </div>
                 </div>
               </div>
 
               <div className="text-center mb-12">
-                <h3 className="text-3xl lg:text-4xl font-bold text-neutral-800 mb-6">
-                  Why Gamers Choose DapsiGames Study Hub
+                <div className="inline-flex items-center justify-center px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full text-white font-bold text-sm mb-4">
+                  ⭐ PLAYER CLASSES ⭐
+                </div>
+                <h3 className="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent mb-6">
+                  Choose Your Learning Class
                 </h3>
-                <p className="text-lg text-neutral-600 max-w-4xl mx-auto leading-relaxed">
-                  Our study gaming platform attracts players of all levels who want to turn boring lessons into epic adventures. Here's how different types of learner-gamers dominate their educational quests:
+                <p className="text-lg text-purple-100 max-w-4xl mx-auto leading-relaxed">
+                  Our study gaming platform attracts players of all levels who want to turn boring lessons into epic adventures. 
+                  Pick your player class and start your educational quest! 🎯
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-xl border border-gray-100">
+              <div className="bg-gradient-to-br from-slate-800/80 to-slate-900/80 rounded-2xl p-8 lg:p-12 shadow-2xl border-2 border-purple-500/30 backdrop-blur-sm">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div>
                     <div className="space-y-6">
-                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-50 to-blue-100 border border-blue-200" data-testid="use-case-financial">
-                        <div className="w-12 h-12 bg-[#2563EB] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-blue-600/20 to-blue-500/20 border-2 border-blue-400/40 hover:border-blue-400 transition-all duration-300 group" data-testid="use-case-math">
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/50 group-hover:scale-110 transition-transform duration-300">
                           <BookOpen className="text-white" size={20} />
                         </div>
                         <div>
-                          <h4 className="font-bold text-neutral-800 mb-2">Math Enthusiasts</h4>
-                          <p className="text-neutral-700 text-sm leading-relaxed">
-                            Master arithmetic, algebra, geometry, and advanced math concepts through interactive games and challenges designed for all skill levels.
+                          <h4 className="font-bold text-blue-300 mb-2 flex items-center gap-2">
+                            📊 Math Wizards
+                            <span className="text-xs bg-blue-500/30 px-2 py-1 rounded-full">LVL 50+</span>
+                          </h4>
+                          <p className="text-blue-100 text-sm leading-relaxed">
+                            Cast spells with numbers! Master arithmetic, algebra, geometry through epic mathematical quests and number-crunching adventures.
                           </p>
                         </div>
                       </div>
 
-                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-pink-50 to-pink-100 border border-pink-200" data-testid="use-case-health">
-                        <div className="w-12 h-12 bg-[#22C55E] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-pink-600/20 to-pink-500/20 border-2 border-pink-400/40 hover:border-pink-400 transition-all duration-300 group" data-testid="use-case-science">
+                        <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-pink-500/50 group-hover:scale-110 transition-transform duration-300">
                           <FlaskConical className="text-white" size={20} />
                         </div>
                         <div>
-                          <h4 className="font-bold text-neutral-800 mb-2">Science Explorers</h4>
-                          <p className="text-neutral-700 text-sm leading-relaxed">
-                            Conduct virtual experiments, explore physics, chemistry, and biology concepts through engaging simulations and interactive learning games.
+                          <h4 className="font-bold text-pink-300 mb-2 flex items-center gap-2">
+                            🧪 Science Alchemists
+                            <span className="text-xs bg-pink-500/30 px-2 py-1 rounded-full">LVL 40+</span>
+                          </h4>
+                          <p className="text-pink-100 text-sm leading-relaxed">
+                            Brew knowledge potions! Conduct virtual experiments in physics, chemistry, and biology labs without the mess!
                           </p>
                         </div>
                       </div>
 
-                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-purple-50 to-purple-100 border border-purple-200" data-testid="use-case-content">
-                        <div className="w-12 h-12 bg-[#F59E0B] rounded-xl flex items-center justify-center flex-shrink-0">
-                          <Target className="text-white" size={20} />
+                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-purple-600/20 to-purple-500/20 border-2 border-purple-400/40 hover:border-purple-400 transition-all duration-300 group" data-testid="use-case-language">
+                        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-purple-500/50 group-hover:scale-110 transition-transform duration-300">
+                          <PenTool className="text-white" size={20} />
                         </div>
                         <div>
-                          <h4 className="font-bold text-neutral-800 mb-2">Language Learners</h4>
-                          <p className="text-neutral-700 text-sm leading-relaxed">
-                            Build vocabulary, improve grammar, and enhance reading skills with fun word games, spelling challenges, and interactive storytelling.
+                          <h4 className="font-bold text-purple-300 mb-2 flex items-center gap-2">
+                            📝 Word Warriors
+                            <span className="text-xs bg-purple-500/30 px-2 py-1 rounded-full">LVL 35+</span>
+                          </h4>
+                          <p className="text-purple-100 text-sm leading-relaxed">
+                            Wield the power of language! Battle through vocabulary dungeons, grammar quests, and reading comprehension raids.
                           </p>
                         </div>
                       </div>
 
-                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-50 to-green-100 border border-green-200" data-testid="use-case-students">
-                        <div className="w-12 h-12 bg-[#6B7280] rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-start space-x-4 p-4 rounded-xl bg-gradient-to-r from-green-600/20 to-green-500/20 border-2 border-green-400/40 hover:border-green-400 transition-all duration-300 group" data-testid="use-case-memory">
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/50 group-hover:scale-110 transition-transform duration-300">
                           <Brain className="text-white" size={20} />
                         </div>
                         <div>
-                          <h4 className="font-bold text-neutral-800 mb-2">Memory & Logic Trainers</h4>
-                          <p className="text-neutral-700 text-sm leading-relaxed">
-                            Boost cognitive abilities with memory games, pattern recognition challenges, and logic puzzles designed to sharpen your mind.
+                          <h4 className="font-bold text-green-300 mb-2 flex items-center gap-2">
+                            🧠 Memory Ninjas
+                            <span className="text-xs bg-green-500/30 px-2 py-1 rounded-full">LVL 60+</span>
+                          </h4>
+                          <p className="text-green-100 text-sm leading-relaxed">
+                            Train your mental dojo! Level up focus, memory recall, and cognitive abilities through brain-training challenges.
                           </p>
                         </div>
                       </div>
@@ -447,58 +478,65 @@ const Home = () => {
                   </div>
 
                   <div className="space-y-6">
-                    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 border border-blue-200">
-                      <h4 className="text-2xl font-bold text-neutral-800 mb-4 text-center">
-                        Start Learning Today
-                      </h4>
-                      <p className="text-neutral-700 mb-6 leading-relaxed text-center">
-                        Join millions of learners who engage with DapsiGames for fun and effective education.
-                        No registration required - just click and start playing any game instantly.
-                      </p>
+                    <div className="bg-gradient-to-br from-cyan-600/20 to-purple-600/20 rounded-2xl p-8 border-2 border-cyan-400/40 backdrop-blur-sm">
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center justify-center px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-bold text-xs mb-3 animate-pulse">
+                          🚀 READY TO PLAY? 🚀
+                        </div>
+                        <h4 className="text-2xl font-bold bg-gradient-to-r from-cyan-300 to-purple-300 bg-clip-text text-transparent mb-4">
+                          Start Your Quest Today!
+                        </h4>
+                        <p className="text-cyan-100 mb-6 leading-relaxed">
+                          Join millions of study-gamers in the ultimate learning arena! 
+                          No tutorials, no downloads, no subscriptions - just pure educational gaming!
+                        </p>
+                      </div>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                         <a
                           href="/math-games"
-                          className="inline-block bg-secondary text-white px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-all duration-200 shadow-lg text-center hover:shadow-xl transform hover:-translate-y-0.5"
-                          data-testid="link-finance-tools"
+                          className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-cyan-600 hover:to-cyan-700 transition-all duration-200 shadow-lg shadow-cyan-500/50 text-center hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                          data-testid="link-math-games"
                         >
-                          Explore Math Games
+                          🧮 Math Wizard Quest
                         </a>
                         <a
                           href="/science-games"
-                          className="inline-block bg-white text-secondary border-2 border-secondary px-6 py-3 rounded-xl font-semibold hover:bg-secondary/10 transition-all duration-200 text-center hover:shadow-lg transform hover:-translate-y-0.5"
-                          data-testid="link-health-tools"
+                          className="inline-block bg-gradient-to-r from-pink-500 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-pink-600 hover:to-pink-700 transition-all duration-200 shadow-lg shadow-pink-500/50 text-center hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                          data-testid="link-science-games"
                         >
-                          Try Science Games
+                          🧪 Science Alchemy
                         </a>
                       </div>
                       <div className="text-center">
-                        <p className="text-sm text-neutral-600">
-                          Or explore all <a href="/games" className="text-secondary hover:text-secondary/90 underline font-semibold">150+ educational games</a>
+                        <p className="text-sm text-cyan-200">
+                          Or explore all <a href="/games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold glow">150+ epic educational adventures</a> ⚔️
                         </p>
                       </div>
                     </div>
 
                     <div className="grid grid-cols-1 gap-4">
-                      <div className="bg-white rounded-xl p-4 shadow-md border border-gray-100">
-                        <h5 className="font-bold text-neutral-800 mb-3 text-center">Learning Features</h5>
+                      <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-xl p-4 shadow-lg border-2 border-yellow-400/30">
+                        <h5 className="font-bold text-yellow-300 mb-3 text-center flex items-center justify-center gap-2">
+                          ⚡ Gaming Features ⚡
+                        </h5>
                         <div className="grid grid-cols-3 gap-4 text-center">
-                          <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-security">
-                            <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                              <Gamepad2 className="text-[#22C55E]" size={20} />
+                          <div className="flex flex-col items-center space-y-2" data-testid="gaming-feature-engaging">
+                            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-lg shadow-green-500/50">
+                              <Gamepad2 className="text-white" size={20} />
                             </div>
-                            <span className="text-xs font-medium text-neutral-700">Engaging Games</span>
+                            <span className="text-xs font-medium text-green-300">Epic Games</span>
                           </div>
-                          <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-speed">
-                            <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
-                              <Zap className="text-[#F59E0B]" size={20} />
+                          <div className="flex flex-col items-center space-y-2" data-testid="gaming-feature-instant">
+                            <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center shadow-lg shadow-yellow-500/50">
+                              <Zap className="text-white" size={20} />
                             </div>
-                            <span className="text-xs font-medium text-neutral-700">Instant Play</span>
+                            <span className="text-xs font-medium text-yellow-300">Instant Quest</span>
                           </div>
-                          <div className="flex flex-col items-center space-y-2" data-testid="trust-indicator-devices">
-                            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                              <Smartphone className="text-[#2563EB]" size={20} />
+                          <div className="flex flex-col items-center space-y-2" data-testid="gaming-feature-crossplatform">
+                            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-purple-500/50">
+                              <Smartphone className="text-white" size={20} />
                             </div>
-                            <span className="text-xs font-medium text-neutral-700">All Devices</span>
+                            <span className="text-xs font-medium text-purple-300">All Devices</span>
                           </div>
                         </div>
                       </div>
