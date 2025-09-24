@@ -611,8 +611,8 @@ const Home = () => {
                       <span className="text-xs bg-blue-500/30 px-2 py-1 rounded-full text-blue-300">SKILL TREE</span>
                     </h3>
                     <p className="text-blue-100 leading-relaxed">
-                      Our <a href="/math-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">math wizard quests</a> use proven leveling techniques like XP multipliers, progressive difficulty scaling, and instant feedback rewards to maximize learning gains.
-                      Battle through arithmetic dungeons, algebra campaigns, geometry realms, and calculus boss fights that make number-crunching feel epic! Level up with <a href="/math-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">math adventures</a>. ⚔️
+                      Our math wizard quests use proven leveling techniques like XP multipliers, progressive difficulty scaling, and instant feedback rewards to maximize learning gains.
+                      Battle through arithmetic dungeons, algebra campaigns, geometry realms, and calculus boss fights that make number-crunching feel epic! Level up with math adventures. ⚔️
                     </p>
                   </div>
 
@@ -622,8 +622,8 @@ const Home = () => {
                       <span className="text-xs bg-pink-500/30 px-2 py-1 rounded-full text-pink-300">LAB MODE</span>
                     </h3>
                     <p className="text-pink-100 leading-relaxed">
-                      Our <a href="/science-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">science laboratory adventures</a> feature explosive physics simulations, chemistry brewing minigames, biology exploration quests, space exploration campaigns, and environmental puzzle challenges.
-                      Conduct virtual experiments safely without real-world consequences - perfect for mad scientist gameplay! Discover <a href="/science-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">science quests</a>. 🔬
+                      Our science laboratory adventures feature explosive physics simulations, chemistry brewing minigames, biology exploration quests, space exploration campaigns, and environmental puzzle challenges.
+                      Conduct virtual experiments safely without real-world consequences - perfect for mad scientist gameplay! Discover science quests. 🔬
                     </p>
                   </div>
 
@@ -633,8 +633,8 @@ const Home = () => {
                       <span className="text-xs bg-purple-500/30 px-2 py-1 rounded-full text-purple-300">WORD POWER</span>
                     </h3>
                     <p className="text-purple-100 leading-relaxed">
-                      Master the <a href="/language-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">word warrior arts</a> through storytelling RPGs, spell-checking battles, grammar boss fights, and reading comprehension raids that unlock vocabulary achievements and writing skill bonuses.
-                      All <a href="/language-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">language adventures</a> feature adaptive difficulty and personalized learning paths! 📚
+                      Master the word warrior arts through storytelling RPGs, spell-checking battles, grammar boss fights, and reading comprehension raids that unlock vocabulary achievements and writing skill bonuses.
+                      All language adventures feature adaptive difficulty and personalized learning paths! 📚
                     </p>
                   </div>
 
@@ -644,8 +644,8 @@ const Home = () => {
                       <span className="text-xs bg-green-500/30 px-2 py-1 rounded-full text-green-300">BRAIN BOOST</span>
                     </h3>
                     <p className="text-green-100 leading-relaxed">
-                      Our <a href="/memory-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">memory ninja training</a> is based on cognitive science research featuring working memory challenges, spatial memory trials, pattern recognition tournaments, and mnemonic device mastery.
-                      Regular gameplay sessions can permanently boost your focus stats, attention span buffs, and memory recall abilities! Train with <a href="/memory-games" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">brain games</a>. 🥷
+                      Our memory ninja training is based on cognitive science research featuring working memory challenges, spatial memory trials, pattern recognition tournaments, and mnemonic device mastery.
+                      Regular gameplay sessions can permanently boost your focus stats, attention span buffs, and memory recall abilities! Train with brain games. 🥷
                     </p>
                   </div>
                 </div>
@@ -682,7 +682,7 @@ const Home = () => {
                     </h3>
                     <p className="text-yellow-100 leading-relaxed">
                       Your game saves are completely secure! All progress, scores, and learning achievements are stored locally in your browser - we never upload your personal gameplay data to our servers.
-                      Your educational journey stays 100% private and protected. Check our <a href="/privacy-policy" className="text-cyan-300 hover:text-cyan-200 underline font-semibold">Privacy Shield Policy</a> for technical details. 🔒
+                      Your educational journey stays 100% private and protected. Check our privacy policy for technical details. 🔒
                     </p>
                   </div>
 
@@ -703,7 +703,7 @@ const Home = () => {
                       <span className="text-xs bg-red-500/30 px-2 py-1 rounded-full text-red-300">SUPPORT GUILD</span>
                     </h3>
                     <p className="text-red-100 leading-relaxed">
-                      Join our Support Guild through the help center for game requests, bug reports, or technical assistance! We actively monitor player feedback and regularly release new educational content based on community demand.
+                      Contact us through our help center for game requests, bug reports, or technical assistance! We actively monitor player feedback and regularly release new educational content based on community demand.
                       Our mission is to continuously expand and improve our learning game universe to meet every player's educational goals! 🎯
                     </p>
                   </div>

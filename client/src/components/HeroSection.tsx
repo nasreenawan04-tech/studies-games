@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { searchTools } from '@/lib/search';
 import { tools } from '@/data/tools';
-import { Search, Play, Sparkles, Trophy, Target, BookOpen, Brain, HeartPulse } from 'lucide-react';
+import { Search, Play, Sparkles, Trophy, Target, BookOpen, Brain, Heart } from 'lucide-react';
 
 const HeroSection = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -195,7 +195,7 @@ const HeroSection = () => {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center group" data-testid="stat-active-players">
                 <div className="flex items-center justify-center mb-3">
-                  <HeartPulse className="w-8 h-8 text-blue-300" />
+                  <Heart className="w-8 h-8 text-blue-300" />
                 </div>
                 <div className="text-3xl lg:text-4xl font-bold mb-2 text-blue-300">500K+</div>
                 <div className="text-white/90 text-sm lg:text-base">Active Learners</div>
