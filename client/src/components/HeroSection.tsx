@@ -63,7 +63,7 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-        
+
         {/* Hero Content */}
         <div className="text-center text-white">
           {/* Logo and Brand */}
@@ -88,7 +88,7 @@ const HeroSection = () => {
             <br />
             <span className="text-white">150+ Educational Tools</span>
           </h1>
-          
+
           <p className="text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="text-hero-subtitle">
             Enhance your academic performance with our comprehensive suite of interactive learning tools. 
             Master <span className="text-blue-300 font-semibold">mathematics, science, language arts, and critical thinking</span> through evidence-based educational methodologies.
@@ -104,7 +104,7 @@ const HeroSection = () => {
               <Play className="w-5 h-5" />
               Access Learning Tools
             </button>
-            
+
             <button
               onClick={() => setLocation('/about')}
               className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 hover:border-white/50"
