@@ -506,6 +506,13 @@ const Home = () => {
                         >
                           🧪 Science Alchemy
                         </a>
+                        <a
+                          href="/leaderboard"
+                          className="inline-block bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-yellow-600 hover:to-orange-600 transition-all duration-200 shadow-lg shadow-yellow-500/50 text-center hover:shadow-xl transform hover:-translate-y-1 hover:scale-105"
+                          data-testid="link-leaderboard"
+                        >
+                          🏆 View Leaderboard
+                        </a>
                       </div>
                       <div className="text-center">
                         <p className="text-sm text-cyan-200">

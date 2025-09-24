@@ -4,15 +4,22 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { searchTools } from '@/lib/search';
 import { tools } from '@/data/tools';
 import Logo from './Logo';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, User, Trophy } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { useAuth } from '@/contexts/AuthContext';
+import AuthModal from './AuthModal';
+import UserProfile from './UserProfile';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalTab, setAuthModalTab] = useState<'login' | 'register'>('login');
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState(tools);
   const [location, setLocation] = useLocation();
   const isMobile = useIsMobile();
+  const { user } = useAuth();
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -31,12 +38,18 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const openAuthModal = (tab: 'login' | 'register') => {
+    setAuthModalTab(tab);
+    setIsAuthModalOpen(true);
+  };
+
   const navLinks = [
     { href: '/math-games', label: 'Math Games' },
     { href: '/science-games', label: 'Science Games' },
     { href: '/language-games', label: 'Language Games' },
     { href: '/memory-games', label: 'Memory Games' },
-    { href: '/logic-games', label: 'Logic Games' }
+    { href: '/logic-games', label: 'Logic Games' },
+    { href: '/leaderboard', label: 'Leaderboard', icon: Trophy }
   ];
 
   return (
@@ -58,17 +71,18 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-neutral-600 dark:text-neutral-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium whitespace-nowrap ${
+                className={`flex items-center space-x-1 text-neutral-600 dark:text-neutral-300 hover:text-primary dark:hover:text-primary transition-colors duration-200 font-medium whitespace-nowrap ${
                   location === link.href ? 'text-primary dark:text-primary' : ''
                 }`}
                 data-testid={`link-${link.label.toLowerCase().replace(' ', '-')}`}
               >
-                {link.label}
+                {link.icon && <link.icon size={16} />}
+                <span>{link.label}</span>
               </Link>
             ))}
           </nav>
 
-          {/* Search and Mobile Menu */}
+          {/* Search, Auth, and Mobile Menu */}
           <div className="flex items-center space-x-1 sm:space-x-2">
             {/* Search */}
             <button
@@ -80,6 +94,29 @@ const Header = () => {
             >
               <Search size={isMobile ? 16 : 18} />
             </button>
+
+            {/* Authentication */}
+            {user ? (
+              <UserProfile />
+            ) : (
+              <div className="hidden sm:flex items-center space-x-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => openAuthModal('login')}
+                  data-testid="button-login"
+                >
+                  Sign In
+                </Button>
+                <Button
+                  size="sm"
+                  onClick={() => openAuthModal('register')}
+                  data-testid="button-register"
+                >
+                  Sign Up
+                </Button>
+              </div>
+            )}
 
             {/* Mobile Menu */}
             <button
@@ -115,7 +152,7 @@ const Header = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`block px-4 py-3 text-base font-medium transition-colors rounded-lg ${
+                  className={`flex items-center space-x-2 px-4 py-3 text-base font-medium transition-colors rounded-lg ${
                     location === link.href 
                       ? 'text-primary dark:text-primary bg-red-50 dark:bg-red-900/20' 
                       : 'text-neutral-600 dark:text-neutral-300 hover:text-primary dark:hover:text-primary hover:bg-neutral-50 dark:hover:bg-neutral-800'
@@ -123,9 +160,39 @@ const Header = () => {
                   onClick={handleLinkClick}
                   data-testid={`mobile-link-${link.label.toLowerCase().replace(' ', '-')}`}
                 >
-                  {link.label}
+                  {link.icon && <link.icon size={18} />}
+                  <span>{link.label}</span>
                 </Link>
               ))}
+              
+              {/* Mobile Auth Section */}
+              {!user && (
+                <div className="pt-4 mt-4 border-t border-gray-200 dark:border-neutral-700 space-y-2">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-start"
+                    onClick={() => {
+                      openAuthModal('login');
+                      setIsMobileMenuOpen(false);
+                    }}
+                    data-testid="mobile-button-login"
+                  >
+                    <User className="mr-2 h-4 w-4" />
+                    Sign In
+                  </Button>
+                  <Button
+                    className="w-full justify-start"
+                    onClick={() => {
+                      openAuthModal('register');
+                      setIsMobileMenuOpen(false);
+                    }}
+                    data-testid="mobile-button-register"
+                  >
+                    <User className="mr-2 h-4 w-4" />
+                    Sign Up
+                  </Button>
+                </div>
+              )}
             </div>
           </nav>
         </div>
@@ -194,6 +261,13 @@ const Header = () => {
           </div>
         </div>
       )}
+
+      {/* Auth Modal */}
+      <AuthModal 
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        initialTab={authModalTab}
+      />
     </header>
   );
 };

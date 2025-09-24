@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { PageLoadingSpinner } from "@/components/ui/loading-spinner";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { BackToTop } from "@/components/ui/back-to-top";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 // Core pages (loaded immediately for performance)
 import Home from "@/pages/home";
@@ -25,6 +26,7 @@ const PrivacyPolicy = lazy(() => import("@/pages/privacy-policy"));
 const TermsOfService = lazy(() => import("@/pages/terms-of-service"));
 const ToolPage = lazy(() => import("@/pages/tool-page"));
 const AboutUs = lazy(() => import("@/pages/about-us"));
+const LeaderboardPage = lazy(() => import("@/pages/leaderboard"));
 
 
 
@@ -62,6 +64,7 @@ function Router() {
       <Route path="/terms" component={TermsOfService} />
       <Route path="/help" component={HelpCenter} />
       <Route path="/about" component={AboutUs} />
+      <Route path="/leaderboard" component={LeaderboardPage} />
       <Route component={NotFound} />
         </Switch>
       </Suspense>
@@ -72,13 +75,15 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="light" storageKey="dapsigames-ui-theme">
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-          <BackToTop />
-        </TooltipProvider>
-      </ThemeProvider>
+      <AuthProvider>
+        <ThemeProvider defaultTheme="light" storageKey="dapsigames-ui-theme">
+          <TooltipProvider>
+            <Toaster />
+            <Router />
+            <BackToTop />
+          </TooltipProvider>
+        </ThemeProvider>
+      </AuthProvider>
     </QueryClientProvider>
   );
 }
